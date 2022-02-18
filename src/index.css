@@ -2,3 +2,8 @@
   margin: 0px;
   padding: 0px;
 }
+
+
+.section:hover{
+  border-bottom: 1px solid #fff;
+}

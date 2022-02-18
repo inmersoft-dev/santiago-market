@@ -1,0 +1,17 @@
+.socialNetwork{
+    display: flex;    
+    flex-direction: column;
+}
+
+.socialNetwork-container{
+    height: 60px;
+    width: 60px;
+    background: red;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 11px;
+    justify-content: center;
+    align-items: center;
+}
+

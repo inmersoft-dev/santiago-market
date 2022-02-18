@@ -3,4 +3,28 @@
    width: 1920px;
    height: 1080px;
    object-fit: contain;
+  
+}
+
+.section-container{
+   display: flex;
+}
+
+.banner-section-left{
+   display: flex;
+    flex-direction: column;
+    flex: 0.2 1;
+   
+    margin-top: 456px;
+   
+    margin-left: 50px;
+}
+
+.banner-section-rigth{
+   display: flex;
+   flex: 0.5 1;
+   text-align: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+   padding-top: 144px;
 }

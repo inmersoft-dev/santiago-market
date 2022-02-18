@@ -22,7 +22,7 @@ export default function NavBar() {
          sections.map((section)=>
             (
               <div className="navbar-center-link">
-                <Typography  className="navbar-center-link-text"  key={section} variant="h5" color="initial"> {section}</Typography>   
+                <Typography  className="navbar-center-link-text"  key={section} variant="h5" color="#fff" sx={{textAlign:'center'}}> {section}</Typography>   
               </div>            
             
             ))
