@@ -15,7 +15,7 @@ import banner4  from './../../assets/carrusel/para slider/4.jpg';
 import carrusel1 from './../../assets/carrusel/1.jpg';
 import carrusel2 from './../../assets/carrusel/2.jpg';
 import carrusel3 from './../../assets/carrusel/3.jpg';
-import carrusel4 from './../../assets/carrusel/2.jpg';
+import carrusel4 from './../../assets/carrusel/4.jpg';
 
 
 import icono1 from './../../assets/carrusel/icons/Grupo 14.svg';
@@ -41,7 +41,7 @@ function Carrusel() {
                 return <div  key={index} className="carrusel-item" style={{
                     backgroundSize: "cover",
                     backgroundImage:`url(${item})`, 
-                    backgroundPosition: "center",                  
+                    backgroundPosition: "center center",                  
                     
                 }}>
                     {/* <img src={item} alt="" /> */}
