@@ -16,7 +16,7 @@ const AboutUs = () => {
      width: '100%',
      height: '1080px',}}>
 
-       
+          
 
       </div>
       
