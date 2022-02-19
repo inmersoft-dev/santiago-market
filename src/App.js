@@ -7,6 +7,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { theme } from "./componentes/theme/Theme";
 import Header from './componentes/Header/Header';
 import Carrusel from './componentes/Carrusel/Carrusel';
+import AboutUs from './componentes/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
        
         <Header/>
         <Carrusel/>
+        <AboutUs/>
 
             
     </ThemeProvider>
