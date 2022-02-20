@@ -22,9 +22,21 @@
 
 .banner-section-rigth{
    display: flex;
-   flex: 0.5 1;
-   text-align: center;
+   flex: 0.8 1;
+   /* text-align: center; */
    flex-wrap: wrap;
-   flex-direction: column;
    padding-top: 144px;
+}
+
+.banner-section-rigth-contenido1{
+   display: flex;
+    flex: 0.5;
+    flex-direction: row;
+}
+
+.banner-section-rigth-contenido2{
+   display: flex;
+    flex: 0.5;
+    flex-direction: row;
+    align-items: flex-end;
 }

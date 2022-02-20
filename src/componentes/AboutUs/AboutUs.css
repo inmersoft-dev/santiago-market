@@ -4,35 +4,32 @@
 
 .aboutus-imgs-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 0.5;
 }
 
 .aboutus-img1{
     display: flex;
-    width: 60%;
-    height: 58%;
-    position: relative;
-    top: 12%;
-    left: 120px;
+    width: 53%;
+    height: 70%;
     border-radius: 15px;
+    position: absolute;
+    object-fit: cover;
 }
 
 .aboutus-img2{
     display: flex;
     width: 40%;
     height: 35%;
-    position: relative;
-    left: 57%;
+   
+    
     border-radius: 10px;
 }
 
 .aboutus-art-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 0.5; 
-    /* justify-content: center; */
-    /* align-items: center; */
     
 }
 
@@ -41,7 +38,6 @@
      margin-bottom: 40px !important;
      width: 55%;
      margin-left: 5% !important;
-
 }
 
 .aboutus-art-text:first-child{

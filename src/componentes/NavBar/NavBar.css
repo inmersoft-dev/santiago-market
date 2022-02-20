@@ -12,12 +12,13 @@
     height: 80px;       
 }
 
-.navbar-logo{
+.navbar-left-log{
     position: absolute;    
     top: 6%;
     left: 11%;
     height: 70px;   
 }
+
 .navbar-center{
     display: flex;   
     flex: 0.5;
@@ -38,7 +39,7 @@
 
 .navbar-center-link:hover{    
     border-bottom: 1px solid red;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .navbar-center-link-text{
@@ -73,25 +74,21 @@ color: red;
 .navbar-rigth-search input{
     background: transparent; 
     border:none;    
-    width: 280px;
+    width: 230px;
     height: 40px;
     padding: 10px;
     font-size: 20px;
     
 }
-.navbar-rigth-search input:focus{
-   
+
+.navbar-button-rigth{
+    margin-right: 22%
+}
+.navbar-rigth-search input:focus{   
     background: cornflowerblue;
     border: 1px solid darkgrey;
     outline: 0;
     font-size: 20px;
     border-radius: 20px;
     transition: background,border 0.200s;
-}
-
-.navbar-rigth-button{
-    height: 50px;
-    width: 120px;
-    border-radius: 5px;
-    margin-right: 28% !important;
 }

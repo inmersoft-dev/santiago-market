@@ -15,45 +15,49 @@ import about2 from './../../assets/AboutUs/about2.jpg';
 
 const AboutUs = () => {
   return (
-    <div className='aboutUs-container'> 
-      
-      <div className='aboutUs-imgfondo' style={{backgroundSize: "cover",
-     backgroundImage:`url(${banner})`, 
-     backgroundPosition: "center center", 
-     width: '100%',
-     height: '1080px',}}>
-         <div className='aboutUs-container'>
+    <div className='aboutUs-container'>
 
-       
-        <div className='aboutus-imgs-container'>
-          <img className='aboutus-img1' src={about1} alt=""/>
-          <img className='aboutus-img2' src={about2} alt=""/>
+      <div className='aboutUs-imgfondo' style={{
+        backgroundSize: "cover",
+        backgroundImage: `url(${banner})`,
+        backgroundPosition: "center center",
+        width: '100%',
+        height: '1080px',
+      }}>
+        <div className='aboutUs-container'>
+          <div className='aboutus-imgs-container'>
+            <div className='section1'>
+              <img className='aboutus-img1' src={about1} alt="" />
+            </div>
+            <div className='section2'>
+              <Typography className="aboutus-art-text" variant="h2" color="#fff"> ¿Qué es San en Santiago?</Typography>
 
+              <Typography className="aboutus-art-text" variant="h6" color="#fff">
+                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+              </Typography>
+
+              <Button className="aboutus-art-button" variant="text" size="large" style={{ width: '110px', padding: '2px' }}>
+                Saber más
+              </Button>
+            </div>
+          </div>
+
+          <div className='aboutus-art-container'>
+            <Typography className="aboutus-art-text" variant="h6" color="#fff">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            </Typography>
+
+
+            <img className='aboutus-img2' src={about2} alt="" />
+
+
+          </div>
 
         </div>
-          
-        <div className='aboutus-art-container'>
-          <Typography className="aboutus-art-text" variant="h6" color="#fff">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
-          </Typography>
-
-          <Typography className="aboutus-art-text" variant="h2" color="#fff"> ¿Qué es San en Santiago?</Typography>
-
-          <Typography className="aboutus-art-text" variant="h6" color="#fff">
-             'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. 
-           </Typography>
-
-            <Button className="aboutus-art-button" variant="text" size="large" style={{width:'110px', padding:'2px'}}>
-              Saber más
-            </Button>
-
-        </div> 
-
       </div>
-    </div>
 
-     
-      
+
+
     </div>
   )
 }
