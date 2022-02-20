@@ -73,11 +73,8 @@ margin-left: 140px;
 }
 
 .sideImg-fade{
-    height: 100px;
-    background-image: linear-gradient(
-        180deg, 
-        transparent,
-        rgba(37,37,37,0.61),
-        #111
-    );
+    position: absolute;
+    height: 1080px;
+    width: 250px;
+    background-image: linear-gradient( 270deg, transparent, rgb(221 26 30 / 82%), #dd1a1e );
 }
