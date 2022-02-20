@@ -14,7 +14,7 @@ export default function NavBar() {
     <div className='navbar-container'>
         {/* Section izquierda del la Barra de Navegacion */}
        <div className='navbar-left'>
-            <img src={logo} alt=''/>
+            <img className="navbar-log" src={logo} alt=''/>
        </div>
        {/* Section Central del la Barra de Navegacion */}
        <div className='navbar-center'>
@@ -22,7 +22,7 @@ export default function NavBar() {
          sections.map((section)=>
             (
               <div className="navbar-center-link">
-                <Typography  className="navbar-center-link-text"  key={section} variant="h5" color="#fff" sx={{textAlign:'center'}}> {section}</Typography>   
+                <Typography  className="navbar-center-link-text"  key={section} variant="h6" color="#fff" sx={{textAlign:'center'}}> {section}</Typography>   
               </div>            
             
             ))
@@ -34,7 +34,7 @@ export default function NavBar() {
        <div className='navbar-rigth'>
            <div className="navbar-rigth-search">
               <input  type="text"/>
-              <SearchIcon fontSize="large" />              
+              <SearchIcon fontSize="large" style={{color:'#fff'}} />              
            </div>
            <Button className="navbar-rigth-button" variant="contained">Suscribir</Button>
        </div>

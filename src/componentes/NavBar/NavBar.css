@@ -1,23 +1,23 @@
 .navbar-container{
     display: flex;
-    align-content: space-between;   
-    /* background: #dd1a1e; */
-   
+    align-content: space-between;      
     width: 100%;
     height: 200px;
 }
 
 .navbar-left{
-   
     display: flex;
-    flex: 0.2;
+    flex: 0.2 1;
     object-fit: contain;
-    height: 80px;  
-    padding-top: 70px;
-    padding-left: 126px;
-       
+    height: 80px;       
 }
 
+.navbar-logo{
+    position: absolute;    
+    top: 6%;
+    left: 11%;
+    height: 70px;   
+}
 .navbar-center{
     display: flex;   
     flex: 0.5;
@@ -31,10 +31,8 @@
 
 
 .navbar-center-link {
-    display: flex;
-    
-    text-transform: uppercase;
-    
+    display: flex;    
+    text-transform: uppercase;  
    
 }
 
@@ -50,12 +48,14 @@
 .navbar-center-link-text:hover{
 color: red;
 }
+
+
 .navbar-rigth{
     display: flex;
     flex: 0.3 1;
-    padding-top: 10px;   
-    align-items: center;
-    width: auto;
+    
+    align-items: center;   
+    justify-content: center;
 
 }
 
@@ -63,7 +63,7 @@ color: red;
     display: flex;
     height: 51px;
     margin-right: 30px;
-    background: blueviolet;
+    background: transparent;
     width: 350px;
     border-radius: 10px;
     align-items: center;
@@ -73,21 +73,25 @@ color: red;
 .navbar-rigth-search input{
     background: transparent; 
     border:none;    
-    width: 300px;
-    height: 50px;
+    width: 280px;
+    height: 40px;
     padding: 10px;
     font-size: 20px;
     
 }
 .navbar-rigth-search input:focus{
-    background:none; 
-    border:none; 
-    outline:0;
+   
+    background: cornflowerblue;
+    border: 1px solid darkgrey;
+    outline: 0;
     font-size: 20px;
+    border-radius: 20px;
+    transition: background,border 0.200s;
 }
 
 .navbar-rigth-button{
     height: 50px;
-    width: 115px;
+    width: 120px;
     border-radius: 5px;
+    margin-right: 28% !important;
 }
