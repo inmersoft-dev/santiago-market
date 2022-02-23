@@ -46,7 +46,9 @@
 }
 
 .aboutus-art-text1{
-    margin-left: 20px                                                       ;
+    margin-left: 20px ;   
+    width:90%;        
+    margin-bottom: 30px !important;                                         ;
 }
 
 .aboutus-art-text{
