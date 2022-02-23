@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../NavBar/NavBar'
 import Icon from '../Icons/Icon';
 import Typography from '@mui/material/Typography';
+
 /**Importando estilos Css */
 import './Header.css';
 
@@ -34,8 +35,7 @@ function Header() {
           <div className='banner-section-rigth-contenido2'>
 
             <Typography variant="h6" color="#fff" sx={{
-              marginTop: '40px',
-              padding: '14px'
+             padding: '14px'
             }}>
               {contenido[1]}
             </Typography>

@@ -1,8 +1,5 @@
 .banner{
-   position: relative;
-  /*  width: 1920px;
-   height: 1080px; */
-  /*  object-fit: contain; */
+   position: relative; 
   
 }
 
@@ -13,17 +10,14 @@
 .banner-section-left{
    display: flex;
     flex-direction: column;
-    flex: 0.2 1;
-   
-    margin-top: 456px;
-   
+    flex: 0.1 1;   
+    margin-top: 456px;   
     margin-left: 50px;
 }
 
 .banner-section-rigth{
    display: flex;
-   flex: 0.8 1;
-   /* text-align: center; */
+   flex: 0.8 1;  
    flex-wrap: wrap;
    padding-top: 144px;
 }
@@ -36,7 +30,9 @@
 
 .banner-section-rigth-contenido2{
    display: flex;
-    flex: 0.5;
+    flex: 0.5 1;
     flex-direction: row;
-    align-items: flex-end;
+    /* margin-bottom: 50px; */
+    align-content: center;
+    align-items: center;
 }
