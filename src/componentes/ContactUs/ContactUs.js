@@ -7,6 +7,7 @@ import FormControl from "@mui/material/FormControl";
 import { styled } from '@mui/material/styles';
 
 import sideImg from './../../assets/carrusel/3.jpg';
+import banner from './../../assets/banner.jpg';
 
 /**Importando Estilos CSS */
 import "./ContactUs.css";
@@ -33,7 +34,15 @@ const CssTextField = styled(TextField)({
 
 const ContactUs = () => {
   return (
-    <div className="contactUs-container">
+    <div className="contactUs-container" 
+    style={{
+      backgroundSize: "cover",
+      backgroundImage: `url(${banner})`,
+      backgroundPosition: "center center",
+      width: '100%',
+      height: '1080px',
+    }}
+    >
       <div className="contactUs-form-container">
 
         <div className="text-container">
@@ -78,8 +87,7 @@ const ContactUs = () => {
         </FormControl>
       </div>
       <div className="contactUs-img-container">
-          <img className="sideImg" src={sideImg} alt=""/>
-          <div className="sideImg-fade"/>
+         
       </div>
     </div>
   );

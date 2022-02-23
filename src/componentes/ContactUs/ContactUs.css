@@ -1,25 +1,32 @@
 .contactUs-container{
-    display: flex;
+    display: flex;    
+   /*  display: flex;
     width: 100%;
     height: 1080px;
-    background: #dd1a1e;
+    background: #dd1a1e; */
 }
 
 .contactUs-form-container{
     display: flex;
-    flex: 0.5 1;
+    flex: 0.55 1;
     flex-direction: column;
     justify-content: center;
+    background-image: linear-gradient( 270deg, #dd1a1eba, rgb(221 26 30 / 73%), #ff1418c4 );
+    margin-left: 120px;
 }
 
 .contactUs-img-container{
     display: flex;
-    flex: 0.5;
+    flex: 0.4;
     flex-direction: column;
 }
 
 .text-container{
-margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contactUs-form-bold{
@@ -47,7 +54,7 @@ margin-left: 140px;
 }
 
 .contactUs-form-button{
-    width: 100px;
+    width: 150px;
     height: 50px;
 /*     background-color: #7188df; */
 }
