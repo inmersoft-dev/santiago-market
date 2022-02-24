@@ -7,7 +7,7 @@ import FormControl from "@mui/material/FormControl";
 import { styled } from '@mui/material/styles';
 
 import sideImg from './../../assets/carrusel/3.jpg';
-import banner from './../../assets/banner.jpg';
+import banner2 from './../../assets/banner2.jpg';
 
 /**Importando Estilos CSS */
 import "./ContactUs.css";
@@ -37,7 +37,7 @@ const ContactUs = () => {
     <div className="contactUs-container" 
     style={{
       backgroundSize: "cover",
-      backgroundImage: `url(${banner})`,
+      backgroundImage: `url(${banner2})`,
       backgroundPosition: "center center",
       width: '100%',
       height: '1080px',
