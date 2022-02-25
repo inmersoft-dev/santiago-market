@@ -1,6 +1,8 @@
 .socialNetwork{
     display: flex;    
     flex-direction: column;
+    position: fixed;
+    z-index: 999;
 }
 
 .socialNetwork-container{
@@ -13,5 +15,6 @@
     margin-bottom: 11px;
     justify-content: center;
     align-items: center;
+    
 }
 

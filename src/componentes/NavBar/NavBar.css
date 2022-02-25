@@ -2,11 +2,27 @@
   display: flex;
   align-content: center;
   width: 100%;
-  height: 200px;
+  height: 150px;
   flex-wrap: wrap;
   flex-direction: row;
+  position: fixed;
+    z-index: 999;
 }
 
+.nav-painted{
+  background-color: #cd1626;  
+  transition: background-color 80ms ease;
+  transition: height 200ms ease;
+}
+
+.nav-noShow{
+  height: 0px !important;
+  transition: height 200ms ease !important;
+}
+
+.nav-noShow *{
+  display: none !important;
+}
 .navbar-left {
   display: flex;
   flex: 0.1 1;
@@ -16,9 +32,9 @@
 
 .navbar-left-log {
   position: absolute;
-  top: 6%;
-  left: 5%;
-  height: 70px;
+    top: 32%;
+    left: 6%;
+    height: 70px;
 }
 
 .navbar-center {
@@ -76,6 +92,11 @@
 
 .navbar-button-rigth {
   margin-right: 22%;
+  background-color: #e3474b !important;
+}
+
+.navbar-button-rigth:hover{
+  background-color: #dd1a1e !important;
 }
 .navbar-rigth-search input:focus {
   background: cornflowerblue;
