@@ -19,7 +19,7 @@ const AboutUs = () => {
 
       <div className='aboutUs-imgfondo' style={{
         backgroundSize: "cover",
-        backgroundImage: `url(${banner})`,
+        backgroundColor: "#0c2372",        
         backgroundPosition: "center center",
         width: '100%',
         height: '1080px',

@@ -1,6 +1,7 @@
 .aboutUs-container{
     display: flex;
     flex-direction: column;
+    background-color: "secondary",
 }
 
 .aboutus-imgs-container{

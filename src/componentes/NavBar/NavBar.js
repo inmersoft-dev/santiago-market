@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
@@ -19,24 +20,17 @@ const sections = [
 export default function NavBar() {
   const [fondo, handleFondo] = useState(false);
 
-  const [show, handleShow] = useState(true);
+  /* const [hide, handleHide] = useState(false);
 
-  const showControl = () => {
-    if (show) {
-      handleShow(false);
-    }
-  };
-  const showtime = () =>
-    setTimeout(() => {
-      showControl();
-      console.log(show);
-    }, 4000);
+  const hideControl = () => {
+    handleHide(!hide)   
+  }; */
+ 
 
-  const transitionNavBar = () => {
-    console.log(window.scrollY);
+  const transitionNavBar = () => {    
     if (window.scrollY > 100) {
-      handleFondo(true);
-      showtime();
+      handleFondo(true);  
+      
     } else {
       handleFondo(false);
     }
@@ -46,20 +40,24 @@ export default function NavBar() {
 
 }; */
 
+/* useEffect(()=>{
+  const hidetime = () =>
+  setTimeout(() => {      
+    hideControl();    
+  }, 4000);
+  return ()=>clearTimeout(hidetime);
+},[hideControl]) */
+
   useEffect(() => {
     window.addEventListener("scroll", transitionNavBar);
     return () => {
       window.removeEventListener("scroll", transitionNavBar);
-      clearTimeout(showtime);
     };
   }, []);
 
   return (
     <div
-      className={`navbar-container ${fondo && "nav-painted"} ${
-        !show && "nav-noShow"
-      }`}
-    >
+      className={`navbar-container ${fondo && "nav-painted"}`}>
       {/* Section izquierda del la Barra de Navegacion */}
       <div className="navbar-left">
         <img className="navbar-left-log" src={Logo} alt="" />

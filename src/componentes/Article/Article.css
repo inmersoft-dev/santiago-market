@@ -1,0 +1,20 @@
+.article-container {
+  height: 1080px;
+  width: 100%;
+  display: flex;
+}
+
+.article-leftSide {
+  display: flex;
+  flex: 0.4 1;
+  height: 100%;
+  background-color: black;
+  
+}
+
+.article-rigthSide {
+  display: flex;
+  flex: 0.6 1;
+  height: 100%;
+  background-color: #0c2372;
+}

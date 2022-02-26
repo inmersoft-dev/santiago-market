@@ -13,16 +13,17 @@
   background-color: #cd1626;  
   transition: background-color 80ms ease;
   transition: height 200ms ease;
+  height: 100px !important;
 }
 
-.nav-noShow{
+/* .nav-hide{
   height: 0px !important;
   transition: height 200ms ease !important;
 }
 
-.nav-noShow *{
+.nav-hide *{
   display: none !important;
-}
+} */
 .navbar-left {
   display: flex;
   flex: 0.1 1;
@@ -32,9 +33,9 @@
 
 .navbar-left-log {
   position: absolute;
-    top: 32%;
+    top: 25%;
     left: 6%;
-    height: 70px;
+    height: 65px;
 }
 
 .navbar-center {
