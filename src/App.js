@@ -1,5 +1,5 @@
 import { ThemeProvider } from '@mui/material/styles';
-import Home from './views/Home';
+import Home from './views/Home/Home';
 import Article from './componentes/Article/Article';
 
 

@@ -14,14 +14,14 @@ const Article = () => {
   return (
     <div className='article-container'>
         <div className='article-leftSide'>
-            <img className='article-img' src={imagenArticulo}/>
+            <img className='article-img' src={imagenArticulo} alt=''/>
             
             <button className='article-arrowIcon-container'>
-              <SvgIcon  className="article-arrowIcon"  component={ArrowBackIosNewIcon} fontSize="large" sx={{color: '#fff'}}/>
+              <SvgIcon  className="article-arrowIcon"  component={ArrowBackIosNewIcon} fontSize="medium" sx={{color: '#fff'}}/>
             </button>
-            <Typography className='article-title' variant="h3" color="#fff">
-                
-                Introduccion a la producción virtual</Typography>
+            <Typography className='article-title' variant="h3" color="#fff">                
+                Introducción a la producción virtual
+            </Typography>
 
         </div>
         <div className='article-rigthSide'>
