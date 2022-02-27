@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
-import Icon from '../Icons/Icon';
+import Icons from '../Icons/Icons';
 import Typography from '@mui/material/Typography';
 
 /**Importando estilos Css */
@@ -24,7 +24,7 @@ function Header() {
       <NavBar />
       <div className="section-container">
         <div className="banner-section-left">
-          <Icon color="#e8eaf6" />
+          <Icons color="#e8eaf6" />
         </div>
         <div className="banner-section-rigth">
           <div className='banner-section-rigth-contenido1'>

@@ -1,0 +1,24 @@
+.disruptor-container {
+  width: 100vw;
+  height: 1600px;
+  background-color: #dd1a1e;
+  
+}
+
+.disruptor-head {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1100px;
+  padding-right: 200px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.disruptor-head h4{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.disruptor-head p{
+    margin-top: 50px;
+}

@@ -8,6 +8,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { theme } from "./componentes/theme/Theme";
 
 import './App.css';
+
 import Programacion from './views/Programacion/Programacion';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
   {/*       <Article/> */}
             <Programacion/>
+           
             
     </ThemeProvider>
   );

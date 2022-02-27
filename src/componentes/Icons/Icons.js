@@ -7,11 +7,11 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import SvgIcon from '@mui/material/SvgIcon';
 
 /**Importando Estilo CSS */
-import './Icon.css';
+import './Icons.css';
 
 const socialNet = [TwitterIcon,FacebookOutlinedIcon,EmailIcon,InstagramIcon,WhatsAppIcon]
 
-function Icon({color}) {
+function Icons({color}) {
   return (
     <div className="socialNetwork">
      {
@@ -27,4 +27,4 @@ function Icon({color}) {
   )
 }
 
-export default Icon;
+export default Icons;
