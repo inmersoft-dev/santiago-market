@@ -24,3 +24,7 @@
   /* background: #fff; */
   border-radius: 50%;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
