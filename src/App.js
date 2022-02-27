@@ -1,6 +1,6 @@
 import { ThemeProvider } from '@mui/material/styles';
-import Home from './views/Home/Home';
-import Article from './componentes/Article/Article';
+/* import Home from './views/Home/Home'; */
+/* import Article from './componentes/Article/Article'; */
 
 
 
@@ -8,14 +8,15 @@ import Article from './componentes/Article/Article';
 import { theme } from "./componentes/theme/Theme";
 
 import './App.css';
+import Programacion from './views/Programacion/Programacion';
 
 function App() {
   return (
   <ThemeProvider theme={theme}>
        {/*  <Home/>   */}
 
-        <Article/>
-
+  {/*       <Article/> */}
+            <Programacion/>
             
     </ThemeProvider>
   );
