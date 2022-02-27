@@ -8,6 +8,7 @@ const Programacion = () => {
       <SimpleHeader />
       <Disruptor />
       {/* CarruselSimple */}
+      
     </>
   );
 };
