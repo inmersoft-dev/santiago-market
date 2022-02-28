@@ -1,0 +1,25 @@
+.masterClasses-container {
+  height: 1080px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.massterClasses-sectionTop {
+  flex: 0.5;
+  width: 100vw;
+  height: 540px;
+
+}
+
+.sectionTop-img{
+  height: 540px;
+}
+
+img.cover{
+    object-fit: cover;
+}
+
+.massterClasses-sectionBottom {
+  flex: 0.5;
+}

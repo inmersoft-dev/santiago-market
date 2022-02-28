@@ -1,5 +1,6 @@
 import React from "react";
 import Disruptor from "../../componentes/Disruptor/Disruptor";
+import MasterClasses from "../../componentes/MasterClasses/MasterClasses";
 import SimpleHeader from "../../componentes/SimpleHeader/SimpleHeader";
 
 const Programacion = () => {
@@ -7,7 +8,9 @@ const Programacion = () => {
     <>
       <SimpleHeader />
       <Disruptor />
-      {/* CarruselSimple */}
+      {/* MasterClassCarrusel */}
+      {/* MasterClasses */}
+      <MasterClasses/>
       
     </>
   );
