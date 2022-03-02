@@ -2,6 +2,7 @@ import React from "react";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import CarruselItem from "../Carruseltem/CarruselItem";
 
 import "./CarruselSimple.css";
 
@@ -44,10 +45,18 @@ const CarruselSimple = () => {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        <div>Item 1</div>
-        <div>Item 2</div>
-        <div>Item 3</div>
-        <div>Item 4</div>
+        <div>
+        <CarruselItem />
+        </div>
+        <div>
+        <CarruselItem />
+        </div>
+        <div>
+        <CarruselItem />
+        </div>
+        
+       
+       
       </Carousel>
       ;
     </div>

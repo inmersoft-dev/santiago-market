@@ -10,7 +10,8 @@ import { theme } from "./componentes/theme/Theme";
 import './App.css';
 
 /* import Programacion from './views/Programacion/Programacion'; */
-import CarruselItem from './componentes/Carruseltem/CarruselItem';
+/* import CarruselItem from './componentes/Carruseltem/CarruselItem'; */
+import CarruselSimple from './componentes/CarruselSimple/CarruselSimple';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
            {/*  <Programacion/> */}
          {/*    <AboutUS/> */}
 
-         <CarruselItem/>
+        <CarruselSimple/>
            
             
     </ThemeProvider>

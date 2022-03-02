@@ -1,5 +1,52 @@
-.carruselItem-container{
-    width: 25vw;
-    height: 850px;
-    background-color: aquamarine;
+.carruselItem-container {
+  width: 25vw;
+  height: 750px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.carruselItem-top {
+  flex: 0.5 1;
+
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.carruselItem-bottom {
+  flex: 0.5 1;
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carruselItem-img {
+  object-fit: cover;
+  width: 100%;
+  height: 376px;
+}
+
+.carruselItem-title {
+  position: absolute;
+  text-transform: uppercase;
+  margin-bottom: -7px;
+  padding: 33px;
+  text-align: center;
+  z-index: 999;
+}
+
+.img-degradado {
+  height: 150px;
+  background-image: linear-gradient(360deg, #dd1a1ed9, transparent);
+  position: absolute;
+  width: 25vw;
+}
+
+.carruselItem-text {
+  padding: 50px;
+  text-align: center;
 }
