@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from '@mui/material/Typography';
 import CarruseSimple from './../CarruselSimple/CarruselSimple'
+import CarruselItem from "../Carruseltem/CarruselItem";
 
 import './SectionCarrousel.css';
 
@@ -21,7 +22,7 @@ const SectionCarrousel = () => {
       </div>
 
       <div className="sectionCarrousel-carrouselContainer">
-            <CarruseSimple/>
+            <CarruseSimple  item={CarruselItem}/>
       </div>
     </div>
   );

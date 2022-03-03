@@ -1,0 +1,23 @@
+.workShop-container{
+    height: 1080px;
+    width: 100vw;
+    background-color: #0c2372;
+    display: flex;
+}
+
+.workShop-rigth{
+    flex: 0.7 1;
+    display: flex;
+}
+
+.colum-1{
+    flex: 0.5;
+}
+
+.colum-2{
+    flex: 0.5;
+}
+
+.workShop-lefth{
+    flex: 0.3 1;
+}
