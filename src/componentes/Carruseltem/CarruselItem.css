@@ -1,14 +1,13 @@
 .carruselItem-container {
   width: 25vw;
   height: 750px;
-
   display: flex;
   flex-direction: column;
+  margin: 20px;
 }
 
 .carruselItem-top {
   flex: 0.5 1;
-
   width: auto;
   height: auto;
   display: flex;
@@ -18,12 +17,12 @@
 
 .carruselItem-bottom {
   flex: 0.5 1;
-
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .carruselItem-img {
   object-fit: cover;
   width: 100%;

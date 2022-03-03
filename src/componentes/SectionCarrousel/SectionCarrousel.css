@@ -1,0 +1,24 @@
+.sectionCarrousel-container{
+    height: 1200px;
+    width: 100vw;
+    background-color: #0c2372;   
+
+}
+
+.sectionCarrousel-textContainer{
+    padding: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+
+}
+
+
+.textContainer-text{
+    width: 500px;
+    margin-top: 35px;
+}
+
+.sectionCarrousel-carrouselContainer{
+    height: auto;
+}

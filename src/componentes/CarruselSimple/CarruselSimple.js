@@ -1,66 +1,86 @@
-import React from "react";
+import React, { Component } from "react";
+import Slider from "react-slick";
 
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import CarruselItem from "../Carruseltem/CarruselItem";
 
-import "./CarruselSimple.css";
+import CarruselItem from './../Carruseltem/CarruselItem';
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
+/* 
+import "./slick.min.css"; 
+import "./slick-theme.min.css"; */
 
-const CarruselSimple = () => {
+/* function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
   return (
-    <div className="carruselSimple-container">
-      <Carousel
-        swipeable={false}
-        draggable={false}
-        showDots={true}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        autoPlay={this.props.deviceType !== "mobile" ? true : false}
-        autoPlaySpeed={1000}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        deviceType={this.props.deviceType}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
-      >
-        <div>
-        <CarruselItem />
-        </div>
-        <div>
-        <CarruselItem />
-        </div>
-        <div>
-        <CarruselItem />
-        </div>
-        
-       
-       
-      </Carousel>
-      ;
-    </div>
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "red" }}
+      onClick={onClick}
+    />
   );
-};
+}
 
-export default CarruselSimple;
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    />
+  );
+} */
+
+export default class CarruselSimple extends Component {
+  render() {
+    const settings = {
+      className: "",
+      dots: true,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      nextArrow: <button type="button" class="slick-next">Next</button> ,
+      prevArrow: <button type="button" class="slick-prev">Previous</button>,      
+      
+    };
+    return (
+      <div className="carruselSimple-container">       
+        <Slider {...settings}>
+          <div>
+            <CarruselItem/>
+          </div>
+          <div>
+            <CarruselItem/>
+          </div>
+          <div>
+            <CarruselItem/>
+          </div>
+
+          <div>
+            <CarruselItem/>
+          </div>
+          <div>
+            <CarruselItem/>
+          </div>
+          <div>
+            <CarruselItem/>
+          </div>
+          <div>
+            <CarruselItem/>
+          </div>
+          <div>
+            <CarruselItem/>
+          </div>
+
+          <div>
+            <CarruselItem/>
+          </div>
+          <div>
+            <CarruselItem/>
+          </div>
+          
+        </Slider>
+      </div>
+    );
+  }
+}
