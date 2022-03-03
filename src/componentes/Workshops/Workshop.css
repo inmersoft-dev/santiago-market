@@ -1,23 +1,44 @@
-.workShop-container{
-    height: 1080px;
-    width: 100vw;
-    background-color: #0c2372;
-    display: flex;
+.workShop-container {
+  height: 1080px;
+  width: 100vw;
+  background-color: #dd1a1e;
+  display: flex;
 }
 
-.workShop-rigth{
-    flex: 0.7 1;
-    display: flex;
+.workShop-rigth {
+  flex: 0.7 1;
+  display: flex;
 }
 
-.colum-1{
-    flex: 0.5;
+.colum-1 {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
-.colum-2{
-    flex: 0.5;
+.colum-2 {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.workShop-lefth{
-    flex: 0.3 1;
+.workShop-lefth {
+  flex: 0.3 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
+  
+}
+
+.workShop-title{
+    margin-bottom: 50px !important;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+}
+
+.workShop-text{
+    width: 500px;
 }

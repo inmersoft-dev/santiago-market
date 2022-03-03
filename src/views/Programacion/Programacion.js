@@ -5,7 +5,8 @@ import MasterClasses from "../../componentes/MasterClasses/MasterClasses";
 import SectionCarrousel from "../../componentes/SectionCarrousel/SectionCarrousel";
 import SimpleHeader from "../../componentes/SimpleHeader/SimpleHeader";
 import Roundtable from "../../componentes/Roundtables/Roundtable";
-import ImgCard from "../../componentes/ImgCard/ImgCard";
+
+import Workshop from "../../componentes/Workshops/Workshop";
 
 const Programacion = () => {
   return (
@@ -15,7 +16,8 @@ const Programacion = () => {
       <SectionCarrousel />
       <MasterClasses />
       <Roundtable/>
-      <ImgCard/>
+      <Workshop/>
+      
       
     </>
   );
