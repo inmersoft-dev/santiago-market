@@ -1,0 +1,39 @@
+.FooterImg-container {
+  height: 1080px;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img-fade{
+    height: 1080px;
+    width: 100vw;
+    height: 1080px;
+    width: 100vw;
+    background: linear-gradient(181deg, rgb(6 6 6 / 25%), rgb(6 6 6 / 54%)), linear-gradient(1deg, #201a3669, #201a3678);
+    -webkit-backdrop-filter: brightness(0.5);   
+    background-blend-mode: multiply;
+}
+
+.footer-title{
+    color: #fff !important;
+}
+
+.footer-text{
+    color: #fff !important;
+}
+
+.footer-text-container{
+    position: absolute;
+    width: 600px; 
+    padding: 200px;
+}
+
+.footer-title{
+    margin-bottom: 60px !important  ;
+
+}
+
+.footer-text{
+    text-align: justify;
+}

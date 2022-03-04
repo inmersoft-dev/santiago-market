@@ -7,6 +7,7 @@ import SimpleHeader from "../../componentes/SimpleHeader/SimpleHeader";
 import Roundtable from "../../componentes/Roundtables/Roundtable";
 
 import Workshop from "../../componentes/Workshops/Workshop";
+import FooterImg from "../../componentes/FooterImg/FooterImg";
 
 const Programacion = () => {
   return (
@@ -17,7 +18,7 @@ const Programacion = () => {
       <MasterClasses />
       <Roundtable/>
       <Workshop/>
-      
+      <FooterImg/>
       
     </>
   );
