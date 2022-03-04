@@ -28,14 +28,14 @@ function Header() {
         </div>
         <div className="banner-section-rigth">
           <div className='banner-section-rigth-contenido1'>
-            <Typography variant="h1" color="#fff" sx={{ fontSize: '3rem' }}>
+            <Typography variant="h1" color="#fff" sx={{ fontSize: '2.5rem' , fontWeight:'600'}}>
               {contenido[0]}
             </Typography>
           </div>
           <div className='banner-section-rigth-contenido2'>
 
-            <Typography variant="h6" color="#fff" sx={{
-             padding: '14px'
+            <Typography variant="h5" color="#fff"   sx={{
+             padding: '14px', lineHeight:'40px'
             }}>
               {contenido[1]}
             </Typography>

@@ -4,17 +4,35 @@ import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
 import Typography from "@mui/material/Typography";
 
+import {  
+  Link,
+  Outlet,
+} from "react-router-dom";
+
 import "./NavBar.css";
 
 import Logo from "./../../assets/logo.svg";
 
 const sections = [
-  "Que es el San",
-  "Santiago Shawsace",
-  "Programación",
-  "Cortografia",
-  "Acreditaciones",
-  "Contacto",
+  {
+    id:"Que es el San",
+  link:"/home"},
+  {
+    id:"Santiago Shawsace",
+  link:"/about"},
+  {
+    id:"Programación",
+  link:"/programacion"},
+  {
+    id:"Cortografia",
+  link:"/about"},
+  {
+    id:"Acreditaciones",
+  link:"/about"},
+  {
+    id:"Contacto",
+  link:"/about"}
+
 ];
 
 export default function NavBar() {
@@ -64,21 +82,25 @@ export default function NavBar() {
       </div>
       {/* Section Central del la Barra de Navegacion */}
       <div className="navbar-center">
-        {sections.map((section) => (
-          <div className="navbar-center-link">
+        {sections.map(({id,link}) => (
+          <Link to={link} style={{textDecoration:"none"}}>
+            <div className="navbar-center-link">
             <Typography
               className="navbar-center-link-text"
-              key={section}
-              variant="body1"
+              key={id}
+              variant="h6"
               color="#fff"
               sx={{ textAlign: "center" }}
             >
-              {" "}
-              {section}
+             
+              {id}
             </Typography>
           </div>
+          </Link>
+          
         ))}
       </div>
+      <Outlet />
       {/* Section Derecha del la Barra de Navegacion */}
       <div className="navbar-rigth">
         <div className="navbar-rigth-search">

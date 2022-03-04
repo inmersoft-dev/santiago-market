@@ -16,15 +16,11 @@
   transition: height 200ms ease;
   height: 100px !important;
 }
-
-/* .nav-hide{
-  height: 0px !important;
-  transition: height 200ms ease !important;
+.nav-painted:hover{
+  color: rgb(17, 0, 255) !important;
 }
 
-.nav-hide *{
-  display: none !important;
-} */
+
 .navbar-left {
   display: flex;
   flex: 0.1 1;
@@ -41,9 +37,7 @@
 
 .navbar-center {
     display: flex;
-    flex: 0.6 1;
-    /* padding-top: 90px; */
-    /* padding-left: 30px; */
+    flex: 0.6 1;   
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
