@@ -8,8 +8,13 @@
       <li>
         /assets
         <ul>
-          <li>images</li>
-          <li>theme</li>
+          <li>/images</li>
+          <li>
+            /theme
+            <ul>
+              <li>theme.js</li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li>
