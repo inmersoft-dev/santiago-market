@@ -49,9 +49,27 @@
       <li>
         /views
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            /Home
+            <ul>
+              <li>Home.jsx</li>
+              <li>style.css</li>
+            </ul>
+          </li>
+          <li>
+            /About
+            <ul>
+              <li>About.jsx</li>
+              <li>style.css</li>
+            </ul>
+          </li>
+          <li>
+            /Contact
+            <ul>
+              <li>Contact.jsx</li>
+              <li>style.css</li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li>App.js</li>
