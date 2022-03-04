@@ -16,6 +16,7 @@
 .descripton-rigth {
   display: flex;
   flex: 0.5;
+  align-items: center;
 }
 
 .description-img-container {
@@ -53,4 +54,10 @@ description-list {
   width: 80% !important;
   margin-left: 50px !important;
   margin-top: 200px !important;
+}
+
+
+.itemText{
+  margin-bottom: 20px !important;
+  width: 850px;
 }

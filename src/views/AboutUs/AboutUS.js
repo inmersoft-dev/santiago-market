@@ -1,5 +1,6 @@
 import React from "react";
 import Description from "../../componentes/Description/Description";
+import DescriptionInscription from "../../componentes/DescriptionInscription/DescriptionInscription";
 import Header from "../../componentes/Header/Header";
 
 import "./AboutUs.css";
@@ -9,9 +10,10 @@ const AboutUS = () => {
     <>
       <Header />
 
-      {/* Description */}
+     
       <Description/>
       {/* InscriptionDescription */}
+      <DescriptionInscription/>
       {/* InscriptionRequest */}
     </>
   );
