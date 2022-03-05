@@ -104,7 +104,7 @@ export default function NavBar() {
       {/* Section Derecha del la Barra de Navegacion */}
       <div className="navbar-rigth">
         <div className="navbar-rigth-search">
-          <input type="text" />
+          {/* <input type="text" /> */}
           <SearchIcon fontSize="large" style={{ color: "#fff" }} />
         </div>
         <Button className="navbar-button-rigth" variant="contained">

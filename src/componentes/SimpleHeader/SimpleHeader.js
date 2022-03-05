@@ -10,7 +10,7 @@ const SimpleHeader = () => {
     <div className='simpleHeader-container'>
         <NavBar/>
         
-        <Typography className='simpleHeader-text' variant="body1" color="#fff">
+        <Typography className='simpleHeader-text' variant="h5" color="#fff">
             'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
             'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
             'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '

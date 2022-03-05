@@ -1,16 +1,16 @@
 .simpleHeader-container{
     background-color: #0c2372;
+    
     width: 100vw;
-    height: 400px;    
+    height: 950px;    
 }
 
 .simpleHeader-text{
     display: flex;
     position: relative;
-    width: 650px;
+    width: 950px;
     margin-left: auto !important;
-    margin-right: auto !important; 
-    top: 160px;
-    text-align: center;     
+    margin-right: auto !important;
+    top: 233px;
+    text-align: center;
 }
-
