@@ -23,8 +23,31 @@
           <li>auth.js</li>
         </ul>
       </li>
-      <li>/components</li>
-      <li>/context</li>
+      <li>
+        /components
+        <ul>
+          <li>
+            /Card
+            <ul>
+              <li>Card.jsx</li>
+              <li>style.css</li>
+              <li>
+                /ImageHeader
+                <ul>
+                  <li>ImageHeader.jsx</li>
+                  <li>style.css</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        /context
+        <ul>
+          <li>Context.jsx</li>
+        </ul>
+      </li>
       <li>
         /lang
         <ul>
