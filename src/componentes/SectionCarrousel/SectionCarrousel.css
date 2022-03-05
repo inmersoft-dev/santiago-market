@@ -1,16 +1,15 @@
 .sectionCarrousel-container{
-    height: 1200px;
+    height: 1300px;
     width: 100vw;
     background-color: #0c2372;   
 
 }
 
 .sectionCarrousel-textContainer{
-    padding: 110px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     margin-left: 130px;
-
 }
 
 
