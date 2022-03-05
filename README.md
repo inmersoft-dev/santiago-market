@@ -1,4 +1,4 @@
-# Página web de Santiago Cult
+# Santiago Cultural
 
 ### Estructura por defecto
 <ul>
@@ -32,9 +32,9 @@
               <li>Card.jsx</li>
               <li>style.css</li>
               <li>
-                /ImageHeader
+                /ImageCard
                 <ul>
-                  <li>ImageHeader.jsx</li>
+                  <li>ImageCard.jsx</li>
                   <li>style.css</li>
                 </ul>
               </li>
