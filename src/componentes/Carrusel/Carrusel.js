@@ -27,8 +27,7 @@ const icons = [icono1, icono2, icono3, icono4];
 function Carrusel() {
   const [photoToggled, setPhotoToggled] = useState(-1);
 
-  const toggleHover = (e) => {
-    console.log(e.target.id.substring(1));
+  const toggleHover = (e) => {    
     setPhotoToggled(Number(e.target.id.substring(1)));
   };
 
