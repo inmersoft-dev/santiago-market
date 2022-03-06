@@ -38,10 +38,11 @@ export default class CarruselSimple extends Component {
       className: "carruselSimple-slide",
       dots: true,
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 2.9,
       slidesToScroll: 1,
       adaptiveHeight: true,
-      /* centerPadding: 100, */
+      centerMode:true,
+      
       nextArrow: (
         <button type="button" class="slick-next">
           Next
