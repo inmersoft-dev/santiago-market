@@ -19,8 +19,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    /* height: 1000px; */
+    
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
+    height: 900px;
 }

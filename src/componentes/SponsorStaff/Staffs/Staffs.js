@@ -5,6 +5,8 @@ import Typography from "@mui/material/Typography";
 import "./Staffs.css";
 import Staff from "./Staff/Staff";
 
+import avatar from './../../../assets/avatar.png';
+
 const staffs = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const Staffs = () => {
@@ -18,7 +20,7 @@ const Staffs = () => {
 
       <div className="staffs-logos">
         {staffs.map((item, index) => (
-          <Staff key={index} />
+          <Staff avatar={avatar} key={index} />
         ))}
       </div>
       <Divider

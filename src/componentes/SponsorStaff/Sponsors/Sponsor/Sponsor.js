@@ -1,13 +1,17 @@
-import React from 'react';
-import './Sponsor.css';
+import React from "react";
+import "./Sponsor.css";
 
-const Sponsor = () => {
+const Sponsor = ({ sponsor }) => {
   return (
-    <div className='sponsor'>
+    <div
+      className="sponsor"
+      style={{
+        backgroundImage: `url(${sponsor})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+      }}
+    ></div>
+  );
+};
 
-      
-    </div>
-  )
-}
-
-export default Sponsor
+export default Sponsor;

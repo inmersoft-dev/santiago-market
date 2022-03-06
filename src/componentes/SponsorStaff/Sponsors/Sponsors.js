@@ -3,6 +3,7 @@ import "./Sponsors.css";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Sponsor from "./Sponsor/Sponsor";
+import sponsorImg from './../../../assets/sponsor.png';
 
 const sponsors = [1, 2, 3, 4, 5];
 
@@ -17,7 +18,7 @@ const Sponsors = () => {
 
       <div className="sponsors-logos">
         {sponsors.map((item, index) => (
-          <Sponsor key={index} />
+          <Sponsor sponsor={sponsorImg} key={index} />
         ))}
       </div>
       <Divider  style={{borderColor:'#fff'}}/>
