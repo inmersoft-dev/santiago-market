@@ -25,7 +25,7 @@ const sections = [
   link:"/programacion"},
   {
     id:"Cortografia",
-  link:"/about"},
+  link:"/cortografia"},
   {
     id:"Acreditaciones",
   link:"/about"},

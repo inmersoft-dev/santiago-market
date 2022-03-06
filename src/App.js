@@ -12,6 +12,7 @@ import "./App.css";
 
 import Programacion from './views/Programacion/Programacion';
 import ShowCase from "./views/ShowCase/ShowCase";
+import Cortografia from "./views/Cortografia/Cortografia";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route  path="programacion" element={<Programacion/>} />
         <Route  path="showcase" element={<ShowCase/>} />
         <Route path="*" element={<Home />} />
+        <Route path="cortografia" element={<Cortografia />} />
         
       </Routes>
     </ThemeProvider>
