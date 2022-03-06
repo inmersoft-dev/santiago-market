@@ -1,16 +1,16 @@
-/* import { Routes, Route, Link } from "react-router-dom"; */
+import { Routes, Route, Link } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
-/* import Home from "./views/Home/Home"; */
+import Home from "./views/Home/Home";
 /* import Article from './componentes/Article/Article'; */
 
-/* import AboutUS from "./views/AboutUs/AboutUS"; */
+import AboutUS from "./views/AboutUs/AboutUS";
 
 /**Importando theme de la aplicacion */
 import { theme } from "./componentes/theme/Theme";
 
 import "./App.css";
 
-/* import Programacion from './views/Programacion/Programacion'; */
+import Programacion from './views/Programacion/Programacion';
 import ShowCase from "./views/ShowCase/ShowCase";
 
 
@@ -20,13 +20,14 @@ function App() {
       {/*       <Article/> */}
       
       
-      {/* <Routes> */}
-        {/* <Route  path="/" element={<Home />} />
+      <Routes>
+        <Route  path="/" element={<Home />} />
         <Route  path="about" element={<AboutUS />} />        
         <Route  path="programacion" element={<Programacion/>} />
-        <Route path="*" element={<Home />} /> */}
-        <ShowCase/>
-      {/* </Routes> */}
+        <Route  path="showcase" element={<ShowCase/>} />
+        <Route path="*" element={<Home />} />
+        
+      </Routes>
     </ThemeProvider>
   );
 }

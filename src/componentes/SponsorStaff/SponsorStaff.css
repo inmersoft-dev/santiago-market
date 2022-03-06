@@ -1,0 +1,13 @@
+.sponsorStaff-container{
+    width: 100vw;
+    /* height: 1400px; */
+    background-color: #dd1a1e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.invento{
+    width: 100vw;
+    height: 200px;
+}

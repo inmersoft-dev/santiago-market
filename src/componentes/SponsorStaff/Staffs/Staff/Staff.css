@@ -1,0 +1,18 @@
+.staff-container{
+    height: 280px;
+    width: 280px;
+    margin: 10px;
+    border: 2px solid blue;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+}
+
+.img-container{
+    height: 240px;
+    width: 240px;
+    background-color: brown;
+    border-radius: 999px;
+}

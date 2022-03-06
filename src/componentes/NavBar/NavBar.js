@@ -18,8 +18,8 @@ const sections = [
     id:"Que es el San",
   link:"/home"},
   {
-    id:"Santiago Shawsace",
-  link:"/about"},
+    id:"Santiago Showcase",
+  link:"/showcase"},
   {
     id:"Programación",
   link:"/programacion"},
