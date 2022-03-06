@@ -1,5 +1,6 @@
 .cortografia-container {
   width: 100vw;
-  height: 1200px;
+  height: auto !important;
   background-color: #0c2372;
+  
 }
