@@ -1,10 +1,10 @@
 import React from "react";
-import img from "./../../assets/masonry/3.jpg";
+
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 
 import "./ImgCard.css";
 
-const ImgCard = () => {
+const ImgCard = ({img}) => {
   return (
     <div className="imgCard-container">
       <img clasname="imgCard-img" src={img} alt="" />
