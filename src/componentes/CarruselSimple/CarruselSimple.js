@@ -6,31 +6,9 @@ import CarruselItem from "./../Carruseltem/CarruselItem";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-/* import './slick.min.css';
-import './slick-theme.min.css'; */
 
+import './CarruselSimple.css';
 
-/* function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
-} */
 
 export default class CarruselSimple extends Component {
   render() {
@@ -39,17 +17,17 @@ export default class CarruselSimple extends Component {
       dots: true,
       infinite: true,
       slidesToShow: 2.9,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       adaptiveHeight: true,
       centerMode:true,
       
       nextArrow: (
-        <button type="button" class="slick-next">
+        <button type="button" class="slick-next" /* style={{marginRigth:10}} */>
           Next
         </button>
       ),
       prevArrow: (
-        <button type="button" class="slick-prev">
+        <button type="button" class="slick-prev" >
           Previous
         </button>
       ),
@@ -60,7 +38,7 @@ export default class CarruselSimple extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true,
+           
           },
         },
         {
@@ -86,7 +64,10 @@ export default class CarruselSimple extends Component {
         <Slider
           {...settings}
           style={{           
-            margin: "20px",
+            paddinLeft: 50,
+            paddinRight: 20,
+            marginLeft: 35,
+            marginRight: 49,
           }}
         >
           <div className="Slide-container">

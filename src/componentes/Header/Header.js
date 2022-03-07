@@ -24,7 +24,7 @@ function Header() {
       <NavBar />
       <div className="section-container">
         <div className="banner-section-left">
-          <Icons color="#e8eaf6" />
+         {/*  <Icons color="#e8eaf6" /> */}
         </div>
         <div className="banner-section-rigth">
           <div className='banner-section-rigth-contenido1'>
