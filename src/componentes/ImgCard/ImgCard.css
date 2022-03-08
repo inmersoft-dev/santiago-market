@@ -1,6 +1,6 @@
 .imgCard-container{
-    height: 400px !important;
-    width: 350px !important;
+    width: 280px !important;
+    height: 380px !important;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -11,18 +11,13 @@
 
 
 
-.imgCard-buttom{
-    height: 40px;   
-    color:blue;
-    padding: 20px;
-    position: absolute !important;
-}
+
 
 .imgCard-container > img{
     object-fit: cover;
     object-position: center;   
     border-radius: 20px !important;
-    width: 350px !important;
-    height: 400px !important;
+    width: 240px !important;
+    height: 300px !important;
     position: absolute !important;
 }
