@@ -25,15 +25,16 @@
 
 .footer-text-container{
     position: absolute;
-    width: 600px; 
+    width: 380px; 
     padding: 200px;
 }
 
 .footer-title{
     margin-bottom: 60px !important  ;
+    font-weight: 700 !important;
 
 }
 
 .footer-text{
-    text-align: justify;
+    /* text-align: justify; */
 }
