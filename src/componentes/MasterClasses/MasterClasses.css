@@ -1,5 +1,5 @@
 .masterClasses-container {
-  height: 2000px;
+  height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;

@@ -24,7 +24,7 @@ const CarruselItem = () => {
         onMouseLeave={unToggleHover}
       >
         <img className="carruselItem-img" src={img} alt="" />
-        <Typography className="carruselItem-title" variant="h5" color="#fff">
+        <Typography className="carruselItem-title" variant="h6" color="#fff">
           Este es el titulo de la section
         </Typography>
 

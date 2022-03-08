@@ -14,10 +14,10 @@ export default class CarruselSimple extends Component {
   render() {
     const settings = {
       className: "carruselSimple-slide",
-      dots: true,
+      dots: false,
       infinite: true,
-      slidesToShow: 2.9,
-      slidesToScroll: 2,
+      slidesToShow: 2.6,
+      slidesToScroll: 1,
       adaptiveHeight: true,
       centerMode:true,
       

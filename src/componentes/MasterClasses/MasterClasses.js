@@ -16,11 +16,11 @@ const MasterClasses = () => {
         </div>
         <div className='massterClasses-sectionBottom'>
             <div className='sectionBottom-left'>
-              <Typography className='sectionBottom-left-title' variant="h2" color="#fff">
+              <Typography className='sectionBottom-left-title' variant="h3" color="#fff">
                       Titulo de la Section
               </Typography>
 
-              <Typography className='sectionBottom-left-text' variant="h5" color="#fff">
+              <Typography className='sectionBottom-left-text' variant="body1" color="#fff">
                   'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
                   'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
                   'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '

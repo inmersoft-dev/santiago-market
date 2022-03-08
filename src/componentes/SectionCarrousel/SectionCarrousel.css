@@ -1,5 +1,5 @@
 .sectionCarrousel-container{
-    height: 1300px;
+    height: auto;
     width: 100vw;
     background-color: #0c2372;   
 
@@ -15,9 +15,13 @@
 
 .textContainer-text{
     width: 500px;
-    margin-top: 35px;
+    margin-top: 50px !important;
 }
 
 .sectionCarrousel-carrouselContainer{
     height: auto;
+}
+
+.textContainer-title{
+    font-weight: 700 !important;
 }
