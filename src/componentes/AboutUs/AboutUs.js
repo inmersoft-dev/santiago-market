@@ -25,9 +25,7 @@ const AboutUs = () => {
       >
         <div className="aboutUs-container">
           <div className="aboutus-imgs-container">
-            <div className="section1">
-              <img className="aboutus-img1" src={about1} alt="" />
-            </div>
+            <img className="aboutus-img1" src={about1} alt="" />
             <div className="section2">
               <Typography
                 className="aboutus-art-text1"
