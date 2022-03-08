@@ -13,8 +13,7 @@
   background-color: #cd1626;  
   transition: background-color 80ms ease;
   transition: height 200ms ease;
-  height: 60px !important;
-}
+  height: 60px !important;}
 .nav-painted:hover{
   color: rgb(17, 0, 255) !important;
 }

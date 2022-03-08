@@ -18,7 +18,7 @@ function Icons({color}) {
          socialNet.map((item, index)=>{
 
             return <div className='socialNetwork-container'>
-              <SvgIcon  className="socialNetwork-icon" key={index} component={item} fontSize="large" sx={{color: {color}}}/>
+              <SvgIcon  className="socialNetwork-icon" key={index} component={item} fontSize="medium" sx={{color: {color}}}/>
               </div>
             
          })
