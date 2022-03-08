@@ -5,7 +5,7 @@ import "./CarruselItem.css";
 import img from "./../../assets/masonry/6.jpg";
 import Typography from "@mui/material/Typography";
 
-const CarruselItem = () => {
+const CarruselItem = ({title,buttom,text}) => {
   const [hide, setHide] = useState(true);
 
   const toggleHover = (e) => {
@@ -32,7 +32,7 @@ const CarruselItem = () => {
       </div>
       <div className="carruselItem-bottom">
         <Typography className="carruselItem-text" variant="body1" color="#fff">
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
           felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla

@@ -5,6 +5,12 @@ import CarruselItem from "../Carruseltem/CarruselItem";
 
 import "./Roundtable.css";
 
+const contenido =[{
+  title:"Este es el titulo de la section",
+  texto:"Esto es el precontenido del articulo para llenar el cuerpo del articulo que sera parte del contenido del carrusel"
+}
+]
+
 const Roundtable = () => {
   return (
     <div className="roundTable-container">
@@ -24,7 +30,7 @@ const Roundtable = () => {
       </div>
 
       <div className="roundTable-carrouselContainer">
-        <CarruselSimple item={CarruselItem} />
+        <CarruselSimple item={CarruselItem} contenido={contenido}/>
       </div>
     </div>
   );

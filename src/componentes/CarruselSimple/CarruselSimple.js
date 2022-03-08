@@ -22,7 +22,7 @@ export default class CarruselSimple extends Component {
       centerMode:true,
       
       nextArrow: (
-        <button type="button" class="slick-next" /* style={{marginRigth:10}} */>
+        <button type="button" class="slick-next" >
           Next
         </button>
       ),
