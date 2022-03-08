@@ -1,24 +1,17 @@
-.socialNetwork{
-    display: flex;    
-    flex-direction: column;
-    position: fixed;
-    z-index: 999;
-    margin-left: 23px;
-    top:65vh;
-    margin-left: 60px;    
+.socialNetwork {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  margin-left: 23px;
+  top: 65vh;
+  margin-left: 60px;
 }
 
-.socialNetwork-container{
-    height: 30px;
-    width: 30px;
-    background: red;
-    border-radius: 30px;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 11px;
-    justify-content: center;
-    align-items: center;
-   
-    
+.socialNetwork-container {
+  background: red;
+  border-radius: 30px;
+  display: flex;
+  margin-bottom: 11px;
+  padding: 5px 5px 5px 4px;
 }
-
