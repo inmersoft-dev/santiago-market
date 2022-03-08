@@ -40,6 +40,7 @@ const sections = [
 
 export default function NavBar() {
   const [fondo, handleFondo] = useState(false);
+  const [activeLink, setActiveLink] = useState(0);
 
   /* const [hide, handleHide] = useState(false);
 
@@ -67,6 +68,7 @@ export default function NavBar() {
   return ()=>clearTimeout(hidetime);
 },[hideControl]) */
 
+  // scroll handler
   useEffect(() => {
     window.addEventListener("scroll", transitionNavBar);
     return () => {
@@ -74,37 +76,62 @@ export default function NavBar() {
     };
   }, []);
 
+  // active setter
+  useEffect(() => {
+    const result = sessionStorage.getItem("active");
+    console.log(result);
+    if (result !== null) setActiveLink(Number(result));
+  });
+
+  const linkClicked = (e) => {
+    const { id } = e.target;
+    const reduced = id.substring(1);
+    console.log(reduced);
+    sessionStorage.setItem("active", reduced);
+    setActiveLink(Number(reduced));
+    return true;
+  };
+
   return (
-    <div className={`navbar-container ${fondo && "nav-painted"}`}>
-      {/* Section izquierda del la Barra de Navegacion */}
-      <div className="navbar-left">
-        <img className="navbar-left-log" src={Logo} alt="" />
-      </div>
-      {/* Section Central del la Barra de Navegacion */}
-      <div className="navbar-center">
-        {sections.map(({ id, link }) => (
-          <div className="navbar-center-link">
-            <Link
-              className="navbar-center-link-text"
-              key={`link${id}`}
-              to={link}
-              style={{ textDecoration: "none" }}
-            >
-              {id}
-            </Link>
-          </div>
-        ))}
-      </div>
-      <Outlet />
-      {/* Section Derecha del la Barra de Navegacion */}
-      <div className="navbar-rigth">
-        <div className="navbar-rigth-search">
-          {/* <input type="text" /> */}
-          <SearchIcon fontSize="medium" style={{ color: "#fff" }} />
+    <div
+      className={`navbar ${fondo && "nav-painted"}`}
+      style={{ width: "100%" }}
+    >
+      <div className="navbar-container">
+        {/* Section izquierda del la Barra de Navegacion */}
+        <div className="navbar-left">
+          <img className="navbar-left-log" src={Logo} alt="" />
         </div>
-        <Button className="navbar-button-rigth" variant="contained">
-          Suscribir
-        </Button>
+        {/* Section Central del la Barra de Navegacion */}
+        <div className="navbar-center">
+          {sections.map(({ id, link }, i) => (
+            <div className="navbar-center-link">
+              <Link
+                className={`navbar-center-link-text ${
+                  activeLink === i ? "active-link" : ""
+                } `}
+                key={`link${id}`}
+                to={link}
+                id={`l${i}`}
+                onClick={linkClicked}
+              >
+                {id}
+              </Link>
+            </div>
+          ))}
+          <div style={{ width: 200 }}></div>
+        </div>
+        <Outlet />
+        {/* Section Derecha del la Barra de Navegacion */}
+        <div className="navbar-rigth">
+          <div className="navbar-rigth-search">
+            {/* <input type="text" /> */}
+            <SearchIcon fontSize="medium" style={{ color: "#fff" }} />
+          </div>
+          <Button className="navbar-button-right" variant="contained">
+            Suscribir
+          </Button>
+        </div>
       </div>
     </div>
   );
