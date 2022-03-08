@@ -1,13 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import Button from "@mui/material/Button";
-import SearchIcon from "@mui/icons-material/Search";
-import Typography from "@mui/material/Typography";
 
-import {  
-  Link,
-  Outlet,
-} from "react-router-dom";
+// mui components
+import { Button } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
+
+import { Link, Outlet } from "react-router-dom";
 
 import "./NavBar.css";
 
@@ -15,24 +13,29 @@ import Logo from "./../../assets/logo.svg";
 
 const sections = [
   {
-    id:"Que es el San",
-  link:"/home"},
+    id: "Que es el San",
+    link: "/home",
+  },
   {
-    id:"Santiago Showcase",
-  link:"/showcase"},
+    id: "Santiago Showcase",
+    link: "/showcase",
+  },
   {
-    id:"Programación",
-  link:"/programacion"},
+    id: "Programación",
+    link: "/programacion",
+  },
   {
-    id:"Cortografia",
-  link:"/cortografia"},
+    id: "Cortografía",
+    link: "/cortografia",
+  },
   {
-    id:"Acreditaciones",
-  link:"/about"},
+    id: "Acreditaciones",
+    link: "/about",
+  },
   {
-    id:"Contacto",
-  link:"/about"}
-
+    id: "Contacto",
+    link: "/about",
+  },
 ];
 
 export default function NavBar() {
@@ -43,12 +46,10 @@ export default function NavBar() {
   const hideControl = () => {
     handleHide(!hide)   
   }; */
- 
 
-  const transitionNavBar = () => {    
+  const transitionNavBar = () => {
     if (window.scrollY > 100) {
-      handleFondo(true);  
-      
+      handleFondo(true);
     } else {
       handleFondo(false);
     }
@@ -58,7 +59,7 @@ export default function NavBar() {
 
 }; */
 
-/* useEffect(()=>{
+  /* useEffect(()=>{
   const hidetime = () =>
   setTimeout(() => {      
     hideControl();    
@@ -74,30 +75,24 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div
-      className={`navbar-container ${fondo && "nav-painted"}`}>
+    <div className={`navbar-container ${fondo && "nav-painted"}`}>
       {/* Section izquierda del la Barra de Navegacion */}
       <div className="navbar-left">
         <img className="navbar-left-log" src={Logo} alt="" />
       </div>
       {/* Section Central del la Barra de Navegacion */}
       <div className="navbar-center">
-        {sections.map(({id,link}) => (
-          <Link to={link} style={{textDecoration:"none"}}>
-            <div className="navbar-center-link">
-            <Typography
+        {sections.map(({ id, link }) => (
+          <div className="navbar-center-link">
+            <Link
               className="navbar-center-link-text"
-              key={id}
-              variant="body2"
-              color="#fff"
-              sx={{ textAlign: "center" }}
+              key={`link${id}`}
+              to={link}
+              style={{ textDecoration: "none" }}
             >
-             
               {id}
-            </Typography>
+            </Link>
           </div>
-          </Link>
-          
         ))}
       </div>
       <Outlet />

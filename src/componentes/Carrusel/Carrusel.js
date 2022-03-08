@@ -74,6 +74,7 @@ function Carrusel() {
                 onMouseLeave={unToggleHover}
                 style={{ zIndex: 1 }}
                 id={`d${index}`}
+                className="carrusel-column"
               >
                 <div className="carrusel-icon-item" id={`c${index}`}>
                   <img src={icons[index]} alt="" id={`i${index}`} />

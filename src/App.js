@@ -6,29 +6,26 @@ import Home from "./views/Home/Home";
 import AboutUS from "./views/AboutUs/AboutUS";
 
 /**Importando theme de la aplicacion */
-import { theme } from "./componentes/theme/Theme";
+import { dark } from "./assets/theme/Theme";
 
 import "./App.css";
 
-import Programacion from './views/Programacion/Programacion';
+import Programacion from "./views/Programacion/Programacion";
 import ShowCase from "./views/ShowCase/ShowCase";
 import Cortografia from "./views/Cortografia/Cortografia";
 
-
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={dark}>
       {/*       <Article/> */}
-      
-      
+
       <Routes>
-        <Route  path="/" element={<Home />} />
-        <Route  path="about" element={<AboutUS />} />        
-        <Route  path="programacion" element={<Programacion/>} />
-        <Route  path="showcase" element={<ShowCase/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<AboutUS />} />
+        <Route path="programacion" element={<Programacion />} />
+        <Route path="showcase" element={<ShowCase />} />
         <Route path="*" element={<Home />} />
         <Route path="cortografia" element={<Cortografia />} />
-        
       </Routes>
     </ThemeProvider>
   );

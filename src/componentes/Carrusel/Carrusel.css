@@ -23,6 +23,12 @@
   flex-direction: column;
 }
 
+.carrusel-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .carrusel-item img {
   /*width: 519px;
   height: 1031px;
@@ -30,8 +36,6 @@
 }
 
 .carrusel-icon-item {
-  width: 100px;
-  height: 100px;
 }
 
 .carrusel-full img {
@@ -40,6 +44,5 @@
 }
 
 .carrusel-icon-item img {
-  width: 123px;
-  /*height: 108px;*/
+  width: 63px;
 }
