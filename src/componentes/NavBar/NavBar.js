@@ -88,7 +88,7 @@ export default function NavBar() {
             <Typography
               className="navbar-center-link-text"
               key={id}
-              variant="h6"
+              variant="body2"
               color="#fff"
               sx={{ textAlign: "center" }}
             >
@@ -105,7 +105,7 @@ export default function NavBar() {
       <div className="navbar-rigth">
         <div className="navbar-rigth-search">
           {/* <input type="text" /> */}
-          <SearchIcon fontSize="large" style={{ color: "#fff" }} />
+          <SearchIcon fontSize="medium" style={{ color: "#fff" }} />
         </div>
         <Button className="navbar-button-rigth" variant="contained">
           Suscribir
