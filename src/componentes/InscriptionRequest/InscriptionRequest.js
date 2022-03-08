@@ -20,45 +20,29 @@ const InscriptionRequest = () => {
           </div>
 
           <div className="sectio-left-text">
-            <Typography
-              className="sectio-leftText"
-              variant="h5"
-              color="#fff"
-            >
+            <Typography className="sectio-leftText" variant="h5" color="#fff">
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
             </Typography>
-            <Typography
-              className="sectio-leftText"
-              variant="h5"
-              color="#fff"
-            >
+            <Typography className="sectio-leftText" variant="h5" color="#fff">
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
             </Typography>
-            <Typography
-              className="sectio-leftText"
-              variant="h5"
-              color="#fff"
-            >
+            <Typography className="sectio-leftText" variant="h5" color="#fff">
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
             </Typography>
-            <Typography
-              className="sectio-leftText"
-              variant="h5"
-              color="#fff"
-            >
+            <Typography className="sectio-leftText" variant="h5" color="#fff">
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
             </Typography>
           </div>
         </div>
-        <div className="section-rigth">
+        <div className="section-right">
           <div className="section-left-title">
             <Typography className="section-leftTitle" variant="h4" color="#fff">
               A. Title Test of Section
@@ -66,38 +50,22 @@ const InscriptionRequest = () => {
           </div>
 
           <div className="sectio-left-text">
-            <Typography
-              className="sectio-leftText"
-              variant="h5"
-              color="#fff"
-            >
+            <Typography className="sectio-leftText" variant="h5" color="#fff">
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
             </Typography>
-            <Typography
-              className="sectio-leftText"
-              variant="h5"
-              color="#fff"
-            >
+            <Typography className="sectio-leftText" variant="h5" color="#fff">
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
             </Typography>
-            <Typography
-              className="sectio-leftText"
-              variant="h5"
-              color="#fff"
-            >
+            <Typography className="sectio-leftText" variant="h5" color="#fff">
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
             </Typography>
-            <Typography
-              className="sectio-leftText"
-              variant="h5"
-              color="#fff"
-            >
+            <Typography className="sectio-leftText" variant="h5" color="#fff">
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
@@ -108,7 +76,7 @@ const InscriptionRequest = () => {
       <div className="inscripReq-sectionFooter">
         <div className="sectionFooter-title">
           <Typography className="section-leftTitle" variant="h4" color="#fff">
-          Title Test of Section Title Test of Section Title Test of Section
+            Title Test of Section Title Test of Section Title Test of Section
           </Typography>
         </div>
 

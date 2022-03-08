@@ -65,12 +65,12 @@
   text-decoration: underline;
 }
 
-.navbar-rigth {
+.navbar-right {
   display: flex;
   align-items: center;
 }
 
-.navbar-rigth-search {
+.navbar-right-search {
   display: flex;
   height: 51px;
   margin-right: 20px;
@@ -79,7 +79,7 @@
   align-items: center;
 }
 
-/* .navbar-rigth-search input {
+/* .navbar-right-search input {
   background: transparent;
   border: none;
   width: 230px;
@@ -95,7 +95,7 @@
 .navbar-button-right:hover {
   background-color: #dd1a1e !important;
 }
-.navbar-rigth-search input:focus {
+.navbar-right-search input:focus {
   background: cornflowerblue;
   border: 1px solid darkgrey;
   outline: 0;

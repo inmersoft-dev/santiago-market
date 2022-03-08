@@ -4,8 +4,7 @@ import "./DescriptionInscription.css";
 import Typography from "@mui/material/Typography";
 import { Divider } from "@mui/material";
 
-
-import ImgDescription from './../../assets/masonry/2.jpg'
+import ImgDescription from "./../../assets/masonry/2.jpg";
 const DescriptionInscription = () => {
   return (
     <div className="descripIns-container">
@@ -51,11 +50,10 @@ const DescriptionInscription = () => {
         </div>
       </div>
 
-      <div className="dedescripIns-rigth">
-
-          <div className="imgDescription-container">
-              <img className="imgDescription" src={ImgDescription} alt=""/>
-          </div>
+      <div className="dedescripIns-right">
+        <div className="imgDescription-container">
+          <img className="imgDescription" src={ImgDescription} alt="" />
+        </div>
       </div>
     </div>
   );

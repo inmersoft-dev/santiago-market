@@ -27,14 +27,13 @@ function Header() {
     >
       <NavBar />
       <div className="section-container">
-        <div className="banner-section-left"></div>
-        <div className="banner-section-rigth">
-          <div className='banner-section-rigth-contenido1'>
-            <Typography variant="h5" color="#fff" sx={{ fontWeight:'600'}}>
+        <div className="banner-section">
+          <div className='banner-section-contenido1'>
+            <Typography variant="h4" color="#fff" sx={{ fontWeight:'600'}}>
               {contenido[0]}
             </Typography>
           </div>
-          <div className='banner-section-rigth-contenido2'>
+          <div className='banner-section-contenido2'>
 
             <Typography variant="body2" color="#fff"   sx={{
              padding: '14px', 

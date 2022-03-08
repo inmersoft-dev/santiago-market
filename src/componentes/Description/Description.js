@@ -34,7 +34,7 @@ const Description = () => {
           </Typography>
         </div>
       </div>
-      <div className="descripton-rigth">
+      <div className="descripton-right">
         <List className="description-list">
           {descriptions.map((item) => {
             return (

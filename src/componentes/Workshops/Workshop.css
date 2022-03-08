@@ -1,11 +1,11 @@
 .workShop-container {
   height: 1100px;
   width: 100vw;
-  
+
   display: flex;
 }
 
-.workShop-rigth {
+.workShop-right {
   flex: 0.7 1;
   display: flex;
 }
@@ -30,15 +30,14 @@
   display: flex;
   flex-direction: column;
   margin-top: 250px;
-  
 }
 
-.workShop-title{
-    margin-bottom: 50px !important;
-    text-transform: uppercase;
-    font-weight: 600 !important;
+.workShop-title {
+  margin-bottom: 50px !important;
+  text-transform: uppercase;
+  font-weight: 600 !important;
 }
 
-.workShop-text{
-    width: 500px;
+.workShop-text {
+  width: 500px;
 }

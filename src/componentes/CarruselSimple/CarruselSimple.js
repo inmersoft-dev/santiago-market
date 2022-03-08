@@ -6,9 +6,7 @@ import CarruselItem from "./../Carruseltem/CarruselItem";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-import './CarruselSimple.css';
-
+import "./CarruselSimple.css";
 
 export default class CarruselSimple extends Component {
   render() {
@@ -19,15 +17,15 @@ export default class CarruselSimple extends Component {
       slidesToShow: 2.9,
       slidesToScroll: 2,
       adaptiveHeight: true,
-      centerMode:true,
-      
+      centerMode: true,
+
       nextArrow: (
-        <button type="button" class="slick-next" /* style={{marginRigth:10}} */>
+        <button type="button" class="slick-next" /* style={{marginright:10}} */>
           Next
         </button>
       ),
       prevArrow: (
-        <button type="button" class="slick-prev" >
+        <button type="button" class="slick-prev">
           Previous
         </button>
       ),
@@ -38,7 +36,6 @@ export default class CarruselSimple extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-           
           },
         },
         {
@@ -57,13 +54,13 @@ export default class CarruselSimple extends Component {
           },
         },
       ],
-      useCSS: true
+      useCSS: true,
     };
     return (
       <div className="carruselSimple-container">
         <Slider
           {...settings}
-          style={{           
+          style={{
             paddinLeft: 50,
             paddinRight: 20,
             marginLeft: 35,

@@ -123,8 +123,8 @@ export default function NavBar() {
         </div>
         <Outlet />
         {/* Section Derecha del la Barra de Navegacion */}
-        <div className="navbar-rigth">
-          <div className="navbar-rigth-search">
+        <div className="navbar-right">
+          <div className="navbar-right-search">
             {/* <input type="text" /> */}
             <SearchIcon fontSize="medium" style={{ color: "#fff" }} />
           </div>

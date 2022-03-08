@@ -12,16 +12,13 @@ const Workshop = () => {
   const [imgSelect, SetimgSelect] = useState({ img1 });
 
   const mouseImg = (e) => {
-    console.log(':(');
+    console.log(":(");
     SetimgSelect(e.target.currentSrc);
   };
 
   const unMouseImg = (e) => {
-    
     SetimgSelect(`#dd1a1e`);
   };
-
-
 
   return (
     <div
@@ -30,31 +27,22 @@ const Workshop = () => {
         backgroundImage: `url(${imgSelect})`,
         backgroundSize: "cover",
         backgroundPosition: "center center",
-        backgroundColor: '#dd1a1e',
-        animation: 'all 200ms ease'
+        backgroundColor: "#dd1a1e",
+        animation: "all 200ms ease",
       }}
     >
-      <div className="workShop-rigth">
+      <div className="workShop-right">
         <div className="colum-1">
-          <div 
-          onMouseEnter={mouseImg}
-          onMouseLeave={unMouseImg}
-          >
+          <div onMouseEnter={mouseImg} onMouseLeave={unMouseImg}>
             <ImgCard img={img1} />
           </div>
 
-          <div 
-          onMouseEnter={mouseImg}
-          onMouseLeave={unMouseImg}
-          >
+          <div onMouseEnter={mouseImg} onMouseLeave={unMouseImg}>
             <ImgCard img={img2} />
           </div>
         </div>
         <div className="colum-2">
-          <div 
-          onMouseEnter={mouseImg}
-          onMouseLeave={unMouseImg}
-          >
+          <div onMouseEnter={mouseImg} onMouseLeave={unMouseImg}>
             <ImgCard img={img3} />
           </div>
         </div>
