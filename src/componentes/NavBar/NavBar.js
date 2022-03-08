@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 // mui components
-import { Button, Link as MuiLink } from "@mui/material";
+import { Button } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
 import { Link, Outlet } from "react-router-dom";
