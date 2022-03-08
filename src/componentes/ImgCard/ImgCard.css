@@ -1,23 +1,22 @@
-.imgCard-container{
-    width: 280px !important;
-    height: 380px !important;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    
-    
+.imgCard-container {
+  width: 240px !important;
+  height: 310px !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px !important;
 }
 
+/* .imgCard-container > img {
+  width: 240px !important;
+  height: 300px !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px !important;
+} */
 
-
-
-
-
-.imgCard-container > img{
-    object-fit: cover;
-    object-position: center;   
-    border-radius: 20px !important;
-    width: 240px !important;
-    height: 300px !important;
-    position: absolute !important;
+.customAddButtom-container {
+  margin-bottom: 20px;
 }
