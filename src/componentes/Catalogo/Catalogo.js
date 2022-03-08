@@ -10,7 +10,7 @@ const Catalogo = () => {
   return (
     <div className='catalogo-container'>
         <div className='catalogo-title'>
-          <Typography className='section-title' variant="h2" color="#fff">
+          <Typography className='section-title' variant="h3" color="#fff">
             SAN 2022 Catalogo
           </Typography>
         </div>
@@ -24,7 +24,7 @@ const Catalogo = () => {
               
             </div>
             <div className='catalogo-text'>
-              <Typography className='catalogo-textBody' variant="h5" color="#fff">
+              <Typography className='catalogo-textBody' variant="body1" color="#fff">
                 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
 
               </Typography>

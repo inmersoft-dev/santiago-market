@@ -10,7 +10,7 @@ const Cortografia = () => {
     <div className='cortografia-container'>
     <NavBar/>
     <Icons color="#fff"/>
-    {/*Catalogue*/}
+    
     <Catalogo/>
       
     </div>
