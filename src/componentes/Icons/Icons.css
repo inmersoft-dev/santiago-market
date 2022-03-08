@@ -5,13 +5,12 @@
     z-index: 999;
     margin-left: 23px;
     top:65vh;
-    margin-left: 60px;
-    
+    margin-left: 60px;    
 }
 
 .socialNetwork-container{
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     background: red;
     border-radius: 30px;
     display: flex;

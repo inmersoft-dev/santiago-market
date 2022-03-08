@@ -5,7 +5,7 @@
 
 .section-container{
    display: flex;
-   height: 100vh;
+   height: 1080px;
 }
 
 .banner-section-left{
@@ -26,9 +26,9 @@
 
 .banner-section-rigth-contenido1{
    display: flex;
-    flex: 0.5;
-    flex-direction: row;
-    padding-top: 142px;
+   flex: 0.5 1;
+   flex-direction: row;
+   padding-top: 80px;
 }
 
 .banner-section-rigth-contenido2{
