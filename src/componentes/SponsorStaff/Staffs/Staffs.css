@@ -1,5 +1,5 @@
 .staffs-title-container{
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .staffs-container{
@@ -13,15 +13,18 @@
 }
 
 
+.staffs-title{
+    font-weight: 700 !important;
+}
+
 
 .staffs-logos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     flex-direction: row;
-    
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    height: 900px;
+    height: 620px;
+    justify-content: space-between;
 }

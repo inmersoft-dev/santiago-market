@@ -7,8 +7,8 @@ const Sponsor = ({ sponsor }) => {
       className="sponsor"
       style={{
         backgroundImage: `url(${sponsor})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
+        /* backgroundSize: "cover",
+        backgroundPosition: "center center", */
       }}
     ></div>
   );

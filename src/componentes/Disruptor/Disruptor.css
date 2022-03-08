@@ -1,6 +1,6 @@
 .disruptor-container {
   width: 100vw;
-  height: 1600px;
+  height: auto;
   background-color: #dd1a1e;
   
 }
@@ -8,25 +8,31 @@
 .disruptor-head {
   display: flex;
   flex-direction: column;
-  margin-left: 1300px;
+  align-items: flex-end;
   padding-right: 200px;
   padding-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .disruptor-head-title{
     font-weight: 700 !important;
     text-transform: uppercase;
-    margin-bottom: 80px !important;
+    margin-bottom: 50px !important;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .disruptor-head p{
     margin-top: 50px;
+    
 }
 
 .disruptor-head-text{
-  width: 500px;
+  width: 400px !important;
+ 
 }
 .disruptor-articles{
-  margin-bottom: 300px;
+  
+  
+
 }

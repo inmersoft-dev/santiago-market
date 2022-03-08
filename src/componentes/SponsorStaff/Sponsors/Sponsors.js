@@ -11,7 +11,7 @@ const Sponsors = () => {
   return (
     <div className="sponsors-container">
       <div className="sponsors-title-container">
-        <Typography className="sponsors-title" variant="h2" color="#fff">
+        <Typography className="sponsors-title" variant="h3" color="#fff">
           Paternnes
         </Typography>
       </div>
