@@ -1,6 +1,6 @@
 import React from "react";
-import banner from "./../../assets/banner.jpg";
-import Button from "@mui/material/Button";
+
+import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 
 /**Import Estilos Css */
@@ -34,34 +34,27 @@ const AboutUs = () => {
                 variant="h3"
                 color="#fff"
               >
-               
-                ¿Qué es San en Santiago?
+                ¿Qué es SAN en Santiago?
               </Typography>
 
               <Typography
                 className="aboutus-art-text"
-                variant="h5"
+                variant="subtitle1"
                 color="#fff"
               >
-                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                pretium quis, sem. Nulla consequat massa quis enim. Donec pede
-                justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-                justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-                dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-                dapibus.
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
               </Typography>
 
-              <Button
-                className="aboutus-art-button"
-                variant="text"
-                size="large"
-                style={{ width: "110px", padding: "2px" }}
-              >
+              <Link className="aboutus-art-button" to="/">
                 Saber más
-              </Button>
+              </Link>
             </div>
           </div>
 
@@ -69,7 +62,7 @@ const AboutUs = () => {
             <div className="section3">
               <Typography
                 className="aboutus-art-text"
-                variant="h5"
+                variant="subtilte1"
                 color="#fff"
               >
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
