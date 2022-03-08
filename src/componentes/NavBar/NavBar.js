@@ -119,7 +119,7 @@ export default function NavBar() {
               </Link>
             </div>
           ))}
-          <div style={{ width: 200 }}></div>
+          <div style={{ width: "10%" }}></div>
         </div>
         <Outlet />
         {/* Section Derecha del la Barra de Navegacion */}
