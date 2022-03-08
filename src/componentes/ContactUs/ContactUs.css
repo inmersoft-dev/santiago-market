@@ -7,6 +7,7 @@
 }
 
 .contactUs-form-container {
+  padding: 0 52px 0 86px;
   width: 953px;
   display: flex;
   flex-direction: column;
