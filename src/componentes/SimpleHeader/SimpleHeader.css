@@ -15,11 +15,6 @@
 }
 
 .text-container {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  text-align: center;
-  width: 950px;
   display: flex;
   justify-content: center;
-  height: 550px;
 }
