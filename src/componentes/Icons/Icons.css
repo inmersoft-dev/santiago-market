@@ -14,4 +14,9 @@
   display: flex;
   margin-bottom: 11px;
   padding: 5px 5px 5px 4px;
+  cursor: pointer;
+}
+
+.socialNetwork-container:hover {
+  background: #f50057;
 }
