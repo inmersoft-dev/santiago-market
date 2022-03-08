@@ -17,10 +17,10 @@ const Staff = ({avatar}) => {
          </div>
       </div>
       <div className="text-container">
-            <Typography className="text-title" variant="h5" color="#fff">
+            <Typography className="text-title" variant="body1" color="#fff">
               Nombre Apellido
             </Typography>
-            <Typography  className="text-body" variant="h6" color="#fff">
+            <Typography  className="text-body" variant="body2" color="#fff">
               Cargo que Ocupa en Empresa
             </Typography>
           </div>

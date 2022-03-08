@@ -13,7 +13,7 @@ const Staffs = () => {
   return (
     <div className="staffs-container">
       <div className="staffs-title-container">
-        <Typography className="staffs-title" variant="h2" color="#fff">
+        <Typography className="staffs-title" variant="h3" color="#fff">
           Staff
         </Typography>
       </div>
@@ -26,9 +26,9 @@ const Staffs = () => {
       <Divider
         style={{
           borderColor: "#fff",
-          marginBottom: "40px",
+         /*  marginBottom: "40px", */
           width: "100%",
-          marginTop: "40px",
+          /* marginTop: "0px", */
         }}
       />
     </div>

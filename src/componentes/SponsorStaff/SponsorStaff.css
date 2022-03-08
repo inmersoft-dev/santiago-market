@@ -1,6 +1,5 @@
 .sponsorStaff-container{
-    width: 100vw;
-    /* height: 1400px; */
+    width: 100vw;    
     background-color: #dd1a1e;
     display: flex;
     flex-direction: row;
@@ -9,5 +8,5 @@
 
 .invento{
     width: 100vw;
-    height: 200px;
+    height: 100px;
 }
