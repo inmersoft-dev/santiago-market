@@ -4,7 +4,7 @@ import React from "react";
 import "./Description.css";
 import ImgDescription from "./../../assets/carrusel/3.jpg";
 import Typography from "@mui/material/Typography";
-import { List, ListItem} from "@mui/material";
+import { List, ListItem } from "@mui/material";
 
 const descriptions = [
   "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ",

@@ -8,17 +8,25 @@
 .disruptor-head {
   display: flex;
   flex-direction: column;
-  margin-left: 1100px;
+  margin-left: 1300px;
   padding-right: 200px;
   padding-top: 100px;
   margin-bottom: 100px;
 }
 
-.disruptor-head h4{
-    font-weight: 600;
+.disruptor-head-title{
+    font-weight: 700 !important;
     text-transform: uppercase;
+    margin-bottom: 80px !important;
 }
 
 .disruptor-head p{
     margin-top: 50px;
+}
+
+.disruptor-head-text{
+  width: 500px;
+}
+.disruptor-articles{
+  margin-bottom: 300px;
 }

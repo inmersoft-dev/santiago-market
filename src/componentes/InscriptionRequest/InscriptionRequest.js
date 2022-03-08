@@ -14,7 +14,7 @@ const InscriptionRequest = () => {
       <div className="inscripReq-sectionBody">
         <div className="section-left">
           <div className="section-left-title">
-            <Typography className="section-leftTitle" variant="h6" color="#fff">
+            <Typography className="section-leftTitle" variant="h4" color="#fff">
               A. Title Test of Section
             </Typography>
           </div>
@@ -22,7 +22,7 @@ const InscriptionRequest = () => {
           <div className="sectio-left-text">
             <Typography
               className="sectio-leftText"
-              variant="body1"
+              variant="h5"
               color="#fff"
             >
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -31,7 +31,7 @@ const InscriptionRequest = () => {
             </Typography>
             <Typography
               className="sectio-leftText"
-              variant="body1"
+              variant="h5"
               color="#fff"
             >
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -40,7 +40,7 @@ const InscriptionRequest = () => {
             </Typography>
             <Typography
               className="sectio-leftText"
-              variant="body1"
+              variant="h5"
               color="#fff"
             >
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -49,7 +49,7 @@ const InscriptionRequest = () => {
             </Typography>
             <Typography
               className="sectio-leftText"
-              variant="body1"
+              variant="h5"
               color="#fff"
             >
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -60,7 +60,7 @@ const InscriptionRequest = () => {
         </div>
         <div className="section-rigth">
           <div className="section-left-title">
-            <Typography className="section-leftTitle" variant="h6" color="#fff">
+            <Typography className="section-leftTitle" variant="h4" color="#fff">
               A. Title Test of Section
             </Typography>
           </div>
@@ -68,7 +68,7 @@ const InscriptionRequest = () => {
           <div className="sectio-left-text">
             <Typography
               className="sectio-leftText"
-              variant="body1"
+              variant="h5"
               color="#fff"
             >
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -77,7 +77,7 @@ const InscriptionRequest = () => {
             </Typography>
             <Typography
               className="sectio-leftText"
-              variant="body1"
+              variant="h5"
               color="#fff"
             >
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -86,7 +86,7 @@ const InscriptionRequest = () => {
             </Typography>
             <Typography
               className="sectio-leftText"
-              variant="body1"
+              variant="h5"
               color="#fff"
             >
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -95,7 +95,7 @@ const InscriptionRequest = () => {
             </Typography>
             <Typography
               className="sectio-leftText"
-              variant="body1"
+              variant="h5"
               color="#fff"
             >
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean

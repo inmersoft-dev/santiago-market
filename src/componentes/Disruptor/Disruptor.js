@@ -10,10 +10,10 @@ const Disruptor = () => {
     <div className="disruptor-container">
         <Icons color="#e8eaf6"/>
       <div className="disruptor-head">
-        <Typography variant="h4" color="#fff">
+        <Typography className="disruptor-head-title" variant="h3" color="#fff">
           Title Section
         </Typography>
-        <Typography variant="body1" color="#fff">
+        <Typography className="disruptor-head-text" variant="h5" color="#fff">
             'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
         </Typography>
       </div>

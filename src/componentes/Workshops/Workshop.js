@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ImgCard from "../ImgCard/ImgCard";
 
 import "./Workshop.css";
@@ -9,15 +9,54 @@ import img2 from "./../../assets/masonry/3.jpg";
 import img3 from "./../../assets/masonry/5.jpg";
 
 const Workshop = () => {
+  const [imgSelect, SetimgSelect] = useState({ img1 });
+
+  const mouseImg = (e) => {
+    console.log(':(');
+    SetimgSelect(e.target.currentSrc);
+  };
+
+  const unMouseImg = (e) => {
+    
+    SetimgSelect(`#dd1a1e`);
+  };
+
+
+
   return (
-    <div className="workShop-container">
+    <div
+      className="workShop-container"
+      style={{
+        backgroundImage: `url(${imgSelect})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        backgroundColor: '#dd1a1e',
+        animation: 'all 200ms ease'
+      }}
+    >
       <div className="workShop-rigth">
         <div className="colum-1">
-          <ImgCard img={img1} />
-          <ImgCard img={img2} />
+          <div 
+          onMouseEnter={mouseImg}
+          onMouseLeave={unMouseImg}
+          >
+            <ImgCard img={img1} />
+          </div>
+
+          <div 
+          onMouseEnter={mouseImg}
+          onMouseLeave={unMouseImg}
+          >
+            <ImgCard img={img2} />
+          </div>
         </div>
         <div className="colum-2">
-          <ImgCard img={img3}/>
+          <div 
+          onMouseEnter={mouseImg}
+          onMouseLeave={unMouseImg}
+          >
+            <ImgCard img={img3} />
+          </div>
         </div>
       </div>
       <div className="workShop-lefth">

@@ -1,5 +1,5 @@
 .description-container {
-  height: 1200px;
+  height: auto;
   width: 100%;
   display: flex;
   background-color: #0c2372;
@@ -15,8 +15,10 @@
 
 .descripton-rigth {
   display: flex;
-  flex: 0.5;
+  flex: 0.5 1;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .description-img-container {
@@ -25,6 +27,7 @@
   width: 750px;
   position: relative;
   bottom: 600px;
+  left: 30px;
 }
 
 .description-img {
@@ -37,13 +40,14 @@
   width: 70%;
   display: flex;
   position: relative;
-  bottom: 400px;
+  bottom: 450px;
+  left: 30px;
 }
 
 .description-title {
   color: #fff !important;
   font-weight: 600 !important ;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .itemList {
