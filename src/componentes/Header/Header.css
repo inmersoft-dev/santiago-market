@@ -5,7 +5,7 @@
 
 .section-container{
    display: flex;
-   height: 1080px;
+   height: auto;
 }
 
 .banner-section-left{
@@ -21,21 +21,21 @@
    display: flex;
    flex: 0.8 1;  
    flex-wrap: wrap;
-   padding-top: 144px;
+   /* padding-top: 144px; */
 }
 
 .banner-section-rigth-contenido1{
    display: flex;
    flex: 0.5 1;
    flex-direction: row;
-   padding-top: 80px;
+   padding-top: 200px;
 }
 
 .banner-section-rigth-contenido2{
    display: flex;
     flex: 0.5 1;
     flex-direction: row;
-    /* margin-bottom: 50px; */
+    height: 800px;
     align-content: center;
     align-items: center;
 }

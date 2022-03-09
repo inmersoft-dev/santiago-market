@@ -13,7 +13,7 @@ const DescriptionInscription = () => {
         <div className="description-textTop">
           <Typography
             className="description-textTop-title"
-            variant="h2"
+            variant="h3"
             color="#fff"
           >
             Title of Section
@@ -21,7 +21,7 @@ const DescriptionInscription = () => {
 
           <Typography
             className="description-textTop-text"
-            variant="h5"
+            variant="body1"
             color="#fff"
           >
             'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -33,7 +33,7 @@ const DescriptionInscription = () => {
         <div className="description-textBottom">
           <Typography
             className="description-textBottom-title"
-            variant="h2"
+            variant="h3"
             color="#fff"
           >
             Title of Section
@@ -41,7 +41,7 @@ const DescriptionInscription = () => {
 
           <Typography
             className="description-textBottom-text"
-            variant="h5"
+            variant="body1"
             color="#fff"
           >
             'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
