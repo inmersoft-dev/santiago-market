@@ -35,7 +35,6 @@ function Header() {
             </Typography>
           </div>
           <div className="banner-section-contenido2">
-            <div></div>
             <Typography
               variant="body2"
               color="#fff"
