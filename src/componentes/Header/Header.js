@@ -23,7 +23,7 @@ function Header() {
         backgroundImage: `url(${banner})`,
         backgroundPosition: "center center",
         width: "100%",
-        height: "1080px",
+        height: "auto",
       }}
     >
       <NavBar />

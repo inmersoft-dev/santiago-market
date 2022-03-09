@@ -12,7 +12,7 @@ import about2 from "./../../assets/AboutUs/about2.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="aboutUs-container">
+    <div className="aboutUs-container" id="aboutUs">
       <div
         className="aboutUs-imgfondo"
         style={{
@@ -25,7 +25,15 @@ const AboutUs = () => {
       >
         <div className="aboutUs-container">
           <div className="aboutus-imgs-container">
-            <img className="aboutus-img1" src={about1} alt="" />
+            <div className="section1"
+            style={{
+              backgroundImage:`url(${about1})`,
+              backgroundSize:'cover',
+              backgroundPosition:'center center'
+            }}
+            >
+            {/*   <img className="aboutus-img1" src={about1} alt="" /> */}
+            </div>
             <div className="section2">
               <Typography
                 className="aboutus-art-text1"

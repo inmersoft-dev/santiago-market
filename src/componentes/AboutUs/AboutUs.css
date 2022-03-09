@@ -5,7 +5,16 @@
 
 .aboutus-imgs-container {
   display: flex;
-  flex-wrap: wrap;
+  flex: 0.6;
+}
+
+.section1 {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  flex: 0.6 1;
+  width: 676px;
+  height: 650px;
 }
 
 .aboutus-imgs-container .aboutus-img1 {
@@ -19,12 +28,13 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  /* padding: 100px 160px 85px 160px; */
   justify-content: center;
-  padding: 80px 80px 85px 85px;
+  padding-left: 80px;
 }
 
 .section2 h6 {
-  width: 100%;
+  width: 90%;
 }
 
 .aboutus-img2 {
@@ -36,7 +46,7 @@
 
 .aboutus-art-container {
   display: flex;
-  flex: 0.6;
+  flex: 0.4;
 }
 
 .aboutus-art-text1 {

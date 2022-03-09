@@ -4,11 +4,12 @@ import "./CarruselItem.css";
 
 import img from "./../../assets/masonry/6.jpg";
 import Typography from "@mui/material/Typography";
+import CustomAddButtom from './../CustomAddButtom/CustomAddButtom';
 
-const CarruselItem = () => {
+const CarruselItem = (props) => {
   const [hide, setHide] = useState(true);
 
-  const toggleHover = (e) => {
+  const toggleHover = (e) => {    
     setHide(false);
   };
 
@@ -18,29 +19,35 @@ const CarruselItem = () => {
 
   return (
     <div className="carruselItem-container">
+      {console.log(props)}
       <div
         className="carruselItem-top"
         onMouseEnter={toggleHover}
         onMouseLeave={unToggleHover}
       >
         <img className="carruselItem-img" src={img} alt="" />
-        <Typography className="carruselItem-title" variant="h5" color="#fff">
-          Este es el titulo de la section
+        <Typography className="carruselItem-title" variant="h6" color="#fff">
+          {props.contenido[0].title}
         </Typography>
 
         { hide ? null: <div className="img-degradado" /> }
+        <div className="buttom-container">
+        {
+          props.buttom ? <CustomAddButtom /> : null
+        }
+        </div>
+        
       </div>
+      
       <div className="carruselItem-bottom">
-        <Typography className="carruselItem-text" variant="body1" color="#fff">
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-          nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-          venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-          Integer tincidunt. Cras dapibus.
+
+        {
+          props.contenido[0].texto ? <Typography className="carruselItem-text" variant="body1" color="#fff">
+          {props.contenido[0].texto}
         </Typography>
+        : null
+        }
+        
       </div>
     </div>
   );

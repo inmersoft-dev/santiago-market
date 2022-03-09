@@ -1,17 +1,21 @@
-.descripIns-container {
-  height: 1080px;
-  width: 100vw;
-  background-color: #dd1a1e;
-  display: flex;
+.descripIns-container{
+    height: auto;
+    width: 100vw;
+    background-color: #dd1a1e;
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 }
 
-.dedescripIns-left {
-  flex: 0.5 1;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+
+.dedescripIns-left{
+    flex: 0.5 1;
+    flex-direction: column;
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 
 .divider {
@@ -20,15 +24,15 @@
   margin-top: 40px !important;
 }
 
-.dedescripIns-right {
-  flex: 0.5 1;
-  display: flex;
-  align-items: center;
+.dedescripIns-rigth{
+    flex: 0.35 1;
+    display: flex;
+    padding-left: 60px;
+  
 }
 
-.description-textTop,
-.description-textBottom {
-  width: 600px;
+.description-textTop, .description-textBottom{
+    width: 500px;
 }
 
 .description-textTop-title,
@@ -38,19 +42,19 @@
   margin-bottom: 50px !important;
 }
 
-.description-textBottom-text,
-.description-textTop-text {
-  width: 550px;
+.description-textBottom-text, .description-textTop-text{
+    width: 425px;
 }
 
-.imgDescription-container {
-  height: 600px;
-  width: 550px;
-  display: flex;
+.imgDescription-container{
+    height: 480px;
+    width: 380px;
+    display: flex;
+    
 }
 
-.imgDescription {
-  height: 600px;
-  width: 550px;
-  object-fit: cover;
+.imgDescription{
+    height: 480px;
+    width: 380px;
+    object-fit: cover;
 }

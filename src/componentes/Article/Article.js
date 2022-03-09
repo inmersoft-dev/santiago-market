@@ -7,11 +7,18 @@ import imagenArticulo from "./../../assets/AboutUs/about1.jpg";
 
 import "./Article.css";
 
-const Article = () => {
+const Article = ({img}) => {
   return (
-    <div className="article-container">
-      <div className="article-leftSide">
-        <img className="article-img" src={imagenArticulo} alt="" />
+    <div className='article-container'>
+        <div className='article-leftSide'>
+            <img className='article-img' src={img} alt=''/>
+            
+            <button className='article-arrowIcon-container'>
+              <SvgIcon  className="article-arrowIcon"  component={ArrowBackIosNewIcon} fontSize="medium" sx={{color: '#fff'}}/>
+            </button>
+            <Typography className='article-title' variant="h3" color="#fff">                
+                Introducción a la producción virtual
+            </Typography>
 
         <button className="article-arrowIcon-container">
           <SvgIcon

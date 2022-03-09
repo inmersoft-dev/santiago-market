@@ -8,7 +8,7 @@
 
 .contactUs-form-container {
   padding: 0 52px 0 86px;
-  width: 953px;
+  width: 653px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,6 +44,7 @@
 .contactUs-form-text {
   margin-bottom: 50px !important;
   color: #fff !important;
+  width: 90%;
 }
 
 .contactUs-form {

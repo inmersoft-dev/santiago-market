@@ -22,9 +22,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 70vw;
+    width: 85vw;
     margin-left: auto;
-    margin-right: auto;
-    height: 620px;
-    justify-content: space-between;
+    margin-right: auto;   
+    margin-top: 30px;
 }

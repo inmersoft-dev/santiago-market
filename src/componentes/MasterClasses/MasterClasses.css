@@ -1,5 +1,5 @@
 .masterClasses-container {
-  height: 2000px;
+  height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -7,20 +7,18 @@
 
 .massterClasses-sectionTop {
   display: flex;
-  flex: 0.5 1;
+  flex: 0.4 1;
   width: 100vw;
   height: 1000px !important;
   overflow: hidden;
 }
 
-.sectiontop-img {
-  object-fit: cover;
-  width: 100vw;
-}
 
 .massterClasses-sectionTop img {
   object-fit: cover;
   width: 100vw;
+  height: 520px;
+
 }
 
 .massterClasses-sectionBottom {
@@ -29,16 +27,17 @@
   display: flex;
 }
 
-.sectionBottom-left {
-  flex: 0.5 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.sectionBottom-left{
+  flex: 0.6 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.sectionBottom-right {
-  flex: 0.5 1;
+.sectionBottom-rigth{
+  flex: 0.4 1;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .sectionBottom-left-text {
@@ -49,22 +48,24 @@
   font-weight: 500 !important;
 }
 
-.sectionBottom-left-title {
-  text-transform: uppercase;
-  font-weight: 600 !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+.sectionBottom-left-title{
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
-.imgMain-container {
-  height: 850px;
-  width: 35vw;
+.imgMain-container{
+  height: 550px;
+  width: 27vw;
   display: flex;
 }
 
-.imgMain-container > img {
+
+
+.imgMain-container > img{
   object-fit: cover;
   width: 100%;
   position: relative;
-  bottom: 425px;
+  bottom: 275px;
 }

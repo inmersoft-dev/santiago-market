@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 
 import CarruselItem from "./../Carruseltem/CarruselItem";
@@ -8,19 +8,24 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "./CarruselSimple.css";
 
-export default class CarruselSimple extends Component {
+export default class CarruselSimple extends React.Component {
+  constructor(props) {
+    super(props);
+    console.log(props);
+  }
+
   render() {
     const settings = {
       className: "carruselSimple-slide",
-      dots: true,
+      dots: false,
       infinite: true,
-      slidesToShow: 2.9,
-      slidesToScroll: 2,
+      slidesToShow: 2.6,
+      slidesToScroll: 1,
       adaptiveHeight: true,
       centerMode: true,
 
       nextArrow: (
-        <button type="button" class="slick-next" /* style={{marginright:10}} */>
+        <button type="button" class="slick-next">
           Next
         </button>
       ),
@@ -67,38 +72,32 @@ export default class CarruselSimple extends Component {
             marginRight: 49,
           }}
         >
-          <div className="Slide-container">
-            <CarruselItem />
+          <div className="Slide-container">            
+            <CarruselItem contenido={this.props.contenido} buttom={this.props.buttom}/>
           </div>
-          <div className="Slide-container">
-            <CarruselItem />
+          <div className="Slide-container">            
+            <CarruselItem contenido={this.props.contenido} buttom={this.props.buttom}/>
           </div>
-          <div className="Slide-container">
-            <CarruselItem />
+          <div className="Slide-container">            
+            <CarruselItem contenido={this.props.contenido} buttom={this.props.buttom}/>
           </div>
-
-          <div className="Slide-container">
-            <CarruselItem />
+          <div className="Slide-container">            
+            <CarruselItem contenido={this.props.contenido} buttom={this.props.buttom}/>
           </div>
-          <div className="Slide-container">
-            <CarruselItem />
+          <div className="Slide-container">            
+            <CarruselItem contenido={this.props.contenido} buttom={this.props.buttom}/>
           </div>
-          <div className="Slide-container">
-            <CarruselItem />
+          <div className="Slide-container">            
+            <CarruselItem contenido={this.props.contenido} buttom={this.props.buttom}/>
           </div>
-          <div className="Slide-container">
-            <CarruselItem />
+          <div className="Slide-container">            
+            <CarruselItem contenido={this.props.contenido} buttom={this.props.buttom}/>
           </div>
-          <div className="Slide-container">
-            <CarruselItem />
+          <div className="Slide-container">            
+            <CarruselItem contenido={this.props.contenido} buttom={this.props.buttom}/>
           </div>
-
-          <div className="Slide-container">
-            <CarruselItem />
-          </div>
-          <div className="Slide-container">
-            <CarruselItem />
-          </div>
+          
+          
         </Slider>
       </div>
     );

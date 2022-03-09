@@ -27,7 +27,7 @@ const Description = () => {
         <div className="description-title-container">
           <Typography
             className="description-title"
-            variant="h2"
+            variant="h3"
             color="initial"
           >
             Este es el titulo de la Section
@@ -39,7 +39,7 @@ const Description = () => {
           {descriptions.map((item) => {
             return (
               <ListItem className="itemList">
-                <Typography className="itemText" variant="h5" color="#fff">
+                <Typography className="itemText" variant="body1" color="#fff">
                   {item}
                 </Typography>
               </ListItem>

@@ -4,12 +4,13 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
+
 
 
 
 import './Masonry.css';
 import { Box } from '@mui/material';
+import CustomAddButtom from '../CustomAddButtom/CustomAddButtom';
 
 const itemData = [
     {
@@ -42,7 +43,7 @@ const itemData = [
 const Masonry = () => {
   return (
     <Box className='masonry-container' sx={{ width: 900, height: 900, /* overflowY: 'scroll' */ }}>
-    <ImageList variant="masonry" cols={3}  gap={0} >
+    <ImageList variant="masonry" cols={3}  gap={2} >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -57,10 +58,10 @@ const Masonry = () => {
             actionIcon={
               <IconButton
                 className='masonry-iconbutton'
-                sx={{  }}
+                sx={{ marginRight: 2 }}
                 aria-label={`info about ${item.title}`}
               >
-                <AddCircleIcon className='masonry-icon' fontSize='large'/>
+                <CustomAddButtom/>
               </IconButton>
             }
           />

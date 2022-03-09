@@ -12,7 +12,7 @@ const Workshop = () => {
   const [imgSelect, SetimgSelect] = useState({ img1 });
 
   const mouseImg = (e) => {
-    console.log(":(");
+    console.log(e.target.currentSrc);
     SetimgSelect(e.target.currentSrc);
   };
 
