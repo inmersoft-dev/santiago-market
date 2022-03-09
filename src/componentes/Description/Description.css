@@ -3,31 +3,28 @@
   width: 100%;
   display: flex;
   background-color: #0c2372;
+  justify-content: center;
 }
 .descripton-left {
   display: flex;
-  flex: 0.6 1;
   flex-direction: column;
-  
+
   /* align-content: center; */
   position: relative;
 }
 
 .descripton-right {
   display: flex;
-  flex: 0.4 1;
   align-items: center;
- 
   padding-bottom: 100px;
 }
 
 .description-img-container {
   display: flex;
-    height: 550px;
-    width: 450px;
-    position: relative;
-    bottom: 400px;
-    left: 135px;
+  height: 550px;
+  width: 450px;
+  position: relative;
+  bottom: 400px;
 }
 
 .description-img {
@@ -41,7 +38,6 @@
   display: flex;
   position: relative;
   bottom: 382px;
-  left: 131px;
 }
 
 .description-title {
@@ -52,6 +48,12 @@
 
 .itemList {
   color: #fff;
+  display: flex !important;
+  align-items: baseline !important;
+}
+
+.itemList .dot {
+  margin-right: 10px;
 }
 
 .description-list {
