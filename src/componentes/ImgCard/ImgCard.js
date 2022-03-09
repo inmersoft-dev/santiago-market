@@ -5,12 +5,13 @@ import PropTypes from "prop-types";
 
 import "./ImgCard.css";
 
-const ImgCard = ({ img, onMouseEnter, onMouseLeave }) => {
+const ImgCard = ({ img, onMouseEnter, onMouseLeave, onClick }) => {
   return (
     <div className="imgCard-container">
       <img
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
+        onClick={onClick}
         clasname="imgCard-img"
         src={img}
         alt=""
@@ -26,12 +27,14 @@ const ImgCard = ({ img, onMouseEnter, onMouseLeave }) => {
 ImgCard.defaultProps = {
   onMouseEnter: null,
   onMouseLeave: null,
+  onClick: null,
 };
 
 ImgCard.propTypes = {
   img: PropTypes.string.isRequired,
   onMouseEnter: PropTypes.func,
   onMouseLeave: PropTypes.func,
+  onClick: PropTypes.func,
 };
 
 export default ImgCard;

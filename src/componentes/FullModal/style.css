@@ -1,7 +1,7 @@
 .full-modal {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   display: flex;
   transition: all 200ms ease;
 }
