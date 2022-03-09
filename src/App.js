@@ -20,14 +20,12 @@ function App() {
       {/*       <Article/> */}
 
       <Routes>
-       
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<AboutUS />} />
-          <Route path="programacion" element={<Programacion />} />
-          <Route path="showcase" element={<ShowCase />} />
-          <Route path="*" element={<Home />} />
-          <Route path="cortografia" element={<Cortografia />} />
-        
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<AboutUS />} />
+        <Route path="programacion" element={<Programacion />} />
+        <Route path="showcase" element={<ShowCase />} />
+        <Route path="*" element={<Home />} />
+        <Route path="cortografia" element={<Cortografia />} />
       </Routes>
     </ThemeProvider>
   );
