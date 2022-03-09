@@ -25,8 +25,14 @@ const AboutUs = () => {
       >
         <div className="aboutUs-container">
           <div className="aboutus-imgs-container">
-            <div className="section1">
-              <img className="aboutus-img1" src={about1} alt="" />
+            <div className="section1"
+            style={{
+              backgroundImage:`url(${about1})`,
+              backgroundSize:'cover',
+              backgroundPosition:'center center'
+            }}
+            >
+            {/*   <img className="aboutus-img1" src={about1} alt="" /> */}
             </div>
             <div className="section2">
               <Typography
