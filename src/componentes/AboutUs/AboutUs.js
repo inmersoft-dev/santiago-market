@@ -45,7 +45,7 @@ const AboutUs = () => {
 
               <Typography
                 className="aboutus-art-text"
-                variant="subtitle1"
+                variant="body1"
                 color="#fff"
               >
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean

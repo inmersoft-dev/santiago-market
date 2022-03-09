@@ -1,23 +1,34 @@
 .aboutUs-container {
   display: flex;
   flex-direction: column;
+  background-color: "secondary";
 }
 
 .aboutus-imgs-container {
   display: flex;
-  flex-wrap: wrap;
+  flex: 0.6;
 }
 
-.aboutus-imgs-container .aboutus-img1 {
-  width: 900px;
-  height: 685px;
+.section1 {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  flex: 0.6 1;
+  width: 676px;
+  height: 650px;
+}
+
+.aboutus-img1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
 }
 
 .section2 {
   display: flex;
-  flex: 1;
+  flex: 0.4 1;
   flex-direction: column;
   /* padding: 100px 160px 85px 160px; */
   justify-content: center;
@@ -29,8 +40,9 @@
 }
 
 .aboutus-img2 {
-  width: 900px;
-  height: 685px;
+  display: flex;
+  width: 100%;
+
   object-fit: cover;
   object-position: center center;
 }

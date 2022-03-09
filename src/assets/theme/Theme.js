@@ -120,7 +120,7 @@ export const dark = createTheme({
       letterSpacing: "0.01em",
     },
     button: {
-      fontSize: "0.8rem",
+      fontSize: "1rem",
       fontWeight: 500,
       lineHeight: 1.75,
       letterSpacing: "0.02em",

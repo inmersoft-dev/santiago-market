@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import "./Staffs.css";
 import Staff from "./Staff/Staff";
 
-import avatar from './../../../assets/avatar.png';
+import avatar from "./../../../assets/avatar.png";
 
 const staffs = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -23,14 +23,7 @@ const Staffs = () => {
           <Staff avatar={avatar} key={index} />
         ))}
       </div>
-      <Divider
-        style={{
-          borderColor: "#fff",
-         /*  marginBottom: "40px", */
-          width: "100%",
-          /* marginTop: "0px", */
-        }}
-      />
+      <Divider />
     </div>
   );
 };

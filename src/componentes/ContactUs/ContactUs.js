@@ -54,7 +54,7 @@ const ContactUs = () => {
         </Typography>
         <Typography
           className="contactUs-form-text"
-          variant="subtitle1"
+          variant="body1"
           color="initial"
         >
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean

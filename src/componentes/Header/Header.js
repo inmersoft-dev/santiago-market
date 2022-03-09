@@ -36,7 +36,7 @@ function Header() {
           </div>
           <div className="banner-section-contenido2">
             <Typography
-              variant="body2"
+              variant="subtitle1"
               color="#fff"
               sx={{
                 padding: "14px",
@@ -46,7 +46,7 @@ function Header() {
               {contenido[1]}
             </Typography>
             <Typography
-              variant="body2"
+              variant="subtitle1"
               color="#fff"
               sx={{
                 padding: "14px",
