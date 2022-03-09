@@ -1,10 +1,9 @@
 .carruselItem-container {
-  width: 25vw;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  
 }
 
 .carruselItem-top {
@@ -27,17 +26,14 @@
 
 .carruselItem-img {
   object-fit: cover;
-  width: 100%;
-  height: 376px;
+  width: 552px;
+  height: 540px;
   border-radius: 20px;
 }
 
 .carruselItem-title {
-  position: absolute;
   text-transform: uppercase;
-  margin-bottom: -7px;
-  padding: 33px;
-  text-align: center;
+  text-align: left;
   z-index: 999;
 }
 
@@ -45,7 +41,7 @@
   height: 250px;
   background-image: linear-gradient(360deg, #dd1a1ed9, transparent);
   position: absolute;
-  width: 25vw;
+  width: 518px;
   border-radius: 0 0 20px 20px;
   transition: background-image 200ms ease;
 }
@@ -55,9 +51,10 @@
   text-align: center;
 }
 
-
-.buttom-container{
-  position: relative;
-    bottom: 45px;
-    right: 43px;
+.title-row {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }

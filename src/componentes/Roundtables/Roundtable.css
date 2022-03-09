@@ -1,31 +1,30 @@
-.roundTable-container{
-    height: 900px;
-    width: 100vw;
-    background-color: #0c2372;   
-
+.roundTable-container {
+  height: 900px;
+  width: 100vw;
+  background-color: #0c2372;
+  padding-bottom: 258px;
 }
 
-.roundTable-textContainer{
-    padding: 70px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 130px;
-
+.roundTable-textContainer {
+  padding: 70px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 130px;
 }
 
-.relleno{
-    flex: 0.5 1;
+.relleno {
+  flex: 0.5 1;
 }
 
-.textContainer{
-    flex: 0.5 1;
+.textContainer {
+  flex: 0.5 1;
 }
 
-.textContainer{
-    width: 500px;
-    margin-top: 35px;
+.textContainer {
+  width: 500px;
+  margin-top: 35px;
 }
 
-.roundTable-carrouselContainer{
-    height: auto;
+.roundTable-carrouselContainer {
+  height: auto;
 }

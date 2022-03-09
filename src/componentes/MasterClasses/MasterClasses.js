@@ -17,7 +17,7 @@ const MasterClasses = () => {
         <div className="sectionBottom-left">
           <Typography
             className="sectionBottom-left-title"
-            variant="h2"
+            variant="h3"
             color="#fff"
           >
             Titulo de la Section
@@ -25,7 +25,7 @@ const MasterClasses = () => {
 
           <Typography
             className="sectionBottom-left-text"
-            variant="h5"
+            variant="body1"
             color="#fff"
           >
             'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -41,27 +41,10 @@ const MasterClasses = () => {
             sociis natoque penatibus et magnis dis parturient montes, nascetur '
           </Typography>
         </div>
-        <div className='massterClasses-sectionBottom'>
-            <div className='sectionBottom-left'>
-              <Typography className='sectionBottom-left-title' variant="h3" color="#fff">
-                      Titulo de la Section
-              </Typography>
-
-              <Typography className='sectionBottom-left-text' variant="body1" color="#fff">
-                  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
-                  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
-                  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
-                  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
-              </Typography>
-
-            </div>
-            <div className='sectionBottom-rigth'>
-
-              <div className='imgMain-container'>
-                <img className='imgMain' src={imgMain} alt=''/>
-              </div>
-
-            </div>
+        <div className="sectionBottom-right">
+          <div className="imgMain-container">
+            <img className="imgMain" src={imgMain} alt="" />
+          </div>
         </div>
       </div>
     </div>

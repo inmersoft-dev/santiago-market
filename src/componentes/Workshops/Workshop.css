@@ -4,7 +4,7 @@
   display: flex;
 }
 
-.workShop-rigth {
+.workShop-right {
   flex: 0.6 1;
   display: flex;
 }
@@ -19,10 +19,10 @@
 
 .colum-2 {
   flex: 0.5 1;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    padding-left: 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 20px;
 }
 
 .workShop-lefth {
@@ -38,6 +38,6 @@
   font-weight: 600 !important;
 }
 
-.workShop-text{
+.workShop-text {
   width: 30vw;
 }
