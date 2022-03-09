@@ -26,12 +26,14 @@ const CarruselItem = (props) => {
         onMouseLeave={unToggleHover}
       >
         <img className="carruselItem-img" src={img} alt="" />
+        {hide ? null : <div className="img-degradado" />}
         <div className="title-row">
           <Typography className="carruselItem-title" variant="h6" color="#fff">
             {props.contenido[0].title}
           </Typography>
+          <div style={{width: "20%"}}>
 
-          {hide ? null : <div className="img-degradado" />}
+          </div>
           <div className="button-container">
             {props.button ? <CustomAddButton /> : null}
           </div>

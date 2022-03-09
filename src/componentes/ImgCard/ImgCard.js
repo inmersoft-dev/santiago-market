@@ -9,11 +9,7 @@ const ImgCard = ({ img }) => {
       <img clasname="imgCard-img" src={img} alt="" />
 
       <div className="customAddbutton-container">
-        <CustomAddButton
-          sx={{
-            marginRight: 10,
-          }}
-        />
+        <CustomAddButton padding={5} fontSize={15} />
       </div>
     </div>
   );

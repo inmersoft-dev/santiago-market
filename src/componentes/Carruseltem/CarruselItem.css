@@ -35,6 +35,8 @@
   text-transform: uppercase;
   text-align: left;
   z-index: 999;
+  flex: 1;
+  width: 100%;
 }
 
 .img-degradado {
