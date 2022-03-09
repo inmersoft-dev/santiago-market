@@ -9,14 +9,16 @@
   border-radius: 20px !important;
 }
 
-/* .imgCard-container > img {
+.imgCard-container > img {
   width: 240px !important;
   height: 300px !important;
   object-fit: cover;
   object-position: center;
   border-radius: 20px !important;
-} */
+}
 
 .customAddButtom-container {
-  margin-bottom: 20px;
+  right: 37px;
+  bottom: 41px;
+  position: relative;
 }

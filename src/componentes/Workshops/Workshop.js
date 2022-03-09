@@ -12,8 +12,8 @@ const Workshop = () => {
   const [imgSelect, SetimgSelect] = useState({ img1 });
 
   const mouseImg = (e) => {
-    console.log(e.target.attributes.style.value);
-    SetimgSelect(e.target.attributes.style.value);
+    console.log(e.target.currentSrc);
+    SetimgSelect(e.target.currentSrc);
   };
 
   const unMouseImg = (e) => {

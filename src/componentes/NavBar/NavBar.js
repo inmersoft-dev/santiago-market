@@ -34,7 +34,7 @@ const sections = [
   },
   {
     id: "Contacto",
-    link: "/about",
+    link: "#aboutUs",
   },
 ];
 

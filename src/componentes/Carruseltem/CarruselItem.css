@@ -1,8 +1,9 @@
 .carruselItem-container {
   width: 25vw;
-  height: 800px;
+  height: auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
   
 }
 
@@ -21,6 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .carruselItem-img {
@@ -51,4 +53,11 @@
 .carruselItem-text {
   padding: 30px;
   text-align: center;
+}
+
+
+.buttom-container{
+  position: relative;
+    bottom: 45px;
+    right: 43px;
 }

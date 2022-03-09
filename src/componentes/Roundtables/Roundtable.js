@@ -2,12 +2,12 @@ import { Typography } from "@mui/material";
 import React from "react";
 import CarruselSimple from "../CarruselSimple/CarruselSimple";
 import CarruselItem from "../Carruseltem/CarruselItem";
-
+import CustomAddButtom from "../CustomAddButtom/CustomAddButtom";
 import "./Roundtable.css";
 
 const contenido =[{
   title:"Este es el titulo de la section",
-  texto:"Esto es el precontenido del articulo para llenar el cuerpo del articulo que sera parte del contenido del carrusel"
+  texto:""
 }
 ]
 
@@ -30,8 +30,10 @@ const Roundtable = () => {
       </div>
 
       <div className="roundTable-carrouselContainer">
-        <CarruselSimple item={CarruselItem} contenido={contenido}/>
+        <CarruselSimple item={CarruselItem} contenido={contenido} buttom={CustomAddButtom}/>
       </div>
+
+     
     </div>
   );
 };

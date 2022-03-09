@@ -12,7 +12,7 @@ import about2 from "./../../assets/AboutUs/about2.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="aboutUs-container">
+    <div className="aboutUs-container" id="aboutUs">
       <div
         className="aboutUs-imgfondo"
         style={{
