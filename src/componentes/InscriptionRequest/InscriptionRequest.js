@@ -47,11 +47,11 @@ const InscriptionRequest = () => {
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
             </Typography>
-            <Typography
-            >
+            <Typography>
               'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur '
+            </Typography>
           </div>
         </div>
         <div className="section-right">
@@ -104,7 +104,7 @@ const InscriptionRequest = () => {
       <div className="inscripReq-sectionFooter">
         <div className="sectionFooter-title">
           <Typography className="section-leftTitle" variant="h5" color="#fff">
-          Title Test of Section Title Test of Section Title Test of Section
+            Title Test of Section Title Test of Section Title Test of Section
           </Typography>
         </div>
 

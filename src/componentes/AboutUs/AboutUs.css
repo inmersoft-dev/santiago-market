@@ -5,16 +5,7 @@
 
 .aboutus-imgs-container {
   display: flex;
-  flex: 0.6;
-}
-
-.section1 {
-  display: flex;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  flex: 0.6 1;
-  width: 676px;
-  height: 650px;
+  flex-wrap: wrap;
 }
 
 .aboutus-imgs-container .aboutus-img1 {

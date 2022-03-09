@@ -13,25 +13,17 @@
   margin: 200px;
 }
 
-.banner-section-rigth{
-   display: flex;
-   flex: 0.8 1;  
-   flex-wrap: wrap;
-   /* padding-top: 144px; */
+.banner-section-contenido1 {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
 }
 
-.banner-section-rigth-contenido1{
-   display: flex;
-   flex: 0.5 1;
-   flex-direction: row;
-   padding-top: 200px;
-}
-
-.banner-section-rigth-contenido2{
-   display: flex;
-    flex: 0.5 1;
-    flex-direction: row;
-    height: 800px;
-    align-content: center;
-    align-items: center;
+.banner-section-contenido2 {
+  margin-top: 190px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  min-width: 400px;
 }
