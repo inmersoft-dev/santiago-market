@@ -39,7 +39,7 @@ const Description = () => {
           {descriptions.map((item) => {
             return (
               <ListItem className="itemList">
-                <div className="dot">●</div>
+                {/*<div className="dot">●</div>*/}
                 <Typography className="itemText" variant="body1" color="#fff">
                   {item}
                 </Typography>
