@@ -98,7 +98,7 @@ const Workshop = () => {
           </Typography>
 
           <Typography className="workShop-text" variant="h6" color="#fff">
-            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur '
           </Typography>

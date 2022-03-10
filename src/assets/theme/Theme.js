@@ -4,15 +4,15 @@ export const dark = createTheme({
   palette: {
     type: "dark",
     primary: {
-      main: "#3f51b5",
-      light: "#6573c3",
-      dark: "#2c387e",
+      main: "#DD1A1E",
+      light: "#e3474b",
+      dark: "#9a1215",
       contrastText: "#ffffff",
     },
     secondary: {
-      main: "#f50057",
-      light: "#f73378",
-      dark: "#ab003c",
+      main: "#0C2372",
+      light: "#3c4f8e",
+      dark: "#08184f",
       contrastText: "#ffffff",
     },
     background: {
