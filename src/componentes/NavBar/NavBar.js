@@ -10,6 +10,7 @@ import { Link, Outlet } from "react-router-dom";
 import "./NavBar.css";
 
 import Logo from "./../../assets/logo.svg";
+import { dark } from "../../assets/theme/Theme";
 
 const sections = [
   {
@@ -86,7 +87,6 @@ export default function NavBar() {
   const linkClicked = (e) => {
     const { id } = e.target;
     const reduced = id.substring(1);
-    console.log(reduced);
     sessionStorage.setItem("active", reduced);
     setActiveLink(Number(reduced));
     return true;
@@ -110,6 +110,14 @@ export default function NavBar() {
                 className={`navbar-center-link-text ${
                   activeLink === i ? "active-link" : ""
                 } `}
+                style={{
+                  color:
+                    activeLink === i
+                      ? fondo
+                        ? dark.palette.secondary.main
+                        : dark.palette.primary.main
+                      : "",
+                }}
                 key={`link${id}`}
                 to={link}
                 id={`l${i}`}
@@ -128,7 +136,11 @@ export default function NavBar() {
             {/* <input type="text" /> */}
             <SearchIcon fontSize="medium" style={{ color: "#fff" }} />
           </div>
-          <Button className="navbar-button-right" variant="contained">
+          <Button
+            className="navbar-button-right"
+            color="primary"
+            variant="contained"
+          >
             Suscribir
           </Button>
         </div>

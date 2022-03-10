@@ -86,8 +86,8 @@ const ContactUs = () => {
 
           <Button
             className="contactUs-form-button"
-            /* color="secondary" */ variant="contained"
-            sx={{ backgroundColor: "#7188df" }}
+            color="secondary"
+            variant="contained"
           >
             Enviar
           </Button>

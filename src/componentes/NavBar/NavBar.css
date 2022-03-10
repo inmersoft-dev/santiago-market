@@ -56,12 +56,10 @@
 }
 
 .navbar .active-link {
-  color: red;
   text-decoration: underline !important;
 }
 
 .navbar-center-link-text:hover {
-  color: red;
   text-decoration: underline;
 }
 
@@ -88,13 +86,6 @@
   font-size: 20px;
 } */
 
-.navbar-button-right {
-  background-color: #e3474b !important;
-}
-
-.navbar-button-right:hover {
-  background-color: #dd1a1e !important;
-}
 .navbar-right-search input:focus {
   background: cornflowerblue;
   border: 1px solid darkgrey;
