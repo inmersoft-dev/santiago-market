@@ -2,6 +2,8 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    margin-bottom: 200px;
+   
    /*  margin-bottom: 100px; */
 }
 
@@ -29,3 +31,9 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+.css-yzy8or-MuiImageListItemBar-title{
+  font-size: 25px !important;
+  line-height: 35px !important;
+}
+
