@@ -15,14 +15,13 @@
   margin-top: 100px !important;
 }
 
-.inscripReq-sectionBody{
-    flex: 0.5 1;
-    display: flex;
-    
-    width: 90%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    
+.inscripReq-sectionBody {
+  flex: 0.5 1;
+  display: flex;
+
+  width: 90%;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .inscripReq-sectionFooter {
@@ -49,22 +48,21 @@
   align-items: center;
 }
 
-.section-left-title{
-    margin-bottom: 50px;
+.section-left-title {
+  margin-bottom: 50px;
 }
 
-.section-left-text{
-    width: 400px !important;
-    
+.section-left-text {
+  width: 400px !important;
 }
 
-.inscripReq-sectionFooter{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    align-items: center;
-    width: 70%;
-    margin-bottom: 100px;
+.inscripReq-sectionFooter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 100px;
 }
 
 .sectionFooter-text,
