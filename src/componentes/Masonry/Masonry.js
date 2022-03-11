@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -6,7 +6,7 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import IconButton from "@mui/material/IconButton";
 
 import "./Masonry.css";
-/* import { Box } from "@mui/material"; */
+
 import CustomAddButton from "../CustomAddButton/CustomAddButton";
 
 const itemData = [
@@ -83,7 +83,17 @@ function srcset(image, size, rows = 1, cols = 1) {
   };
 }
 
+let hover = false;
 const Masonry = () => {
+
+  const [hide,setHide]=useState(false);
+
+ /*  const setVisibilidad=(e)=>{
+    setHide(!hide);
+    console.log(e);
+  } */
+
+  
   return (
     <ImageList
       className="masonry-container"
@@ -97,17 +107,30 @@ const Masonry = () => {
           key={item.img}
           cols={item.cols || 1}
           rows={item.rows || 2}
+          /* onMouseOver={setVisibilidad}
+          onMouseLeave={setVisibilidad} */
         >
           <img
             {...srcset(item.img, 121, item.rows, item.cols)}
             alt={item.title}
             loading="lazy"
+            onMouseOver={() => {
+              hover = true;
+              setTimeout(() => {
+                if (hover) {
+                  setHide(true);
+                }
+              }, 500);
+            }}
+            onMouseOut={() => {
+              hover = false;
+              setHide(false);
+            }}
           />
-          <ImageListItemBar
-          className="titleItem"
+       {hide ? <ImageListItemBar
+            className="titleItem"
             title={item.title}
-            style={{
-              
+            style={{              
               fontWeight: "bold",
             }}
             actionIcon={
@@ -119,7 +142,7 @@ const Masonry = () => {
                 <CustomAddButton />
               </IconButton>
             }
-          />
+          /> : null }
         </ImageListItem>
       ))}
     </ImageList>
