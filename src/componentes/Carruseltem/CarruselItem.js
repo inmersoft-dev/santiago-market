@@ -19,7 +19,7 @@ const CarruselItem = (props) => {
 
   return (
     <div className="carruselItem-container">
-      {console.log(props)}
+      
       <div
         className="carruselItem-top"
         onMouseEnter={toggleHover}
@@ -28,12 +28,12 @@ const CarruselItem = (props) => {
         <img className="carruselItem-img" src={img} alt="" />
         {hide ? null : <div className="img-degradado" />}
         <div className="title-row">
-          <Typography className="carruselItem-title" variant="h6" color="#fff">
+          <Typography className="carruselItem-title" variant="h5" color="#fff">
             {props.contenido[0].title}
           </Typography>
-          <div style={{width: "20%"}}>
+          {props.button ? <div style={{width: "20%"}}> 
 
-          </div>
+          </div>:null }
           <div className="button-container">
             {props.button ? <CustomAddButton /> : null}
           </div>

@@ -1,7 +1,7 @@
 .simpleHeader-container {
   background-color: #0c2372;
   width: 100vw;
-  height: 600px;
+  height: auto;
 }
 
 .simpleHeader-text {
