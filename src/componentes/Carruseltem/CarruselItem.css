@@ -39,11 +39,15 @@
   width: 100%;
 }
 
+.left h5 {
+  text-align: left;
+}
+
 .img-degradado {
   height: 250px;
   background-image: linear-gradient(360deg, #dd1a1ed9, transparent);
   position: absolute;
-  
+
   width: 380px !important;
   border-radius: 0 0 20px 20px;
   transition: background-image 200ms ease;
@@ -51,12 +55,12 @@
 
 .carruselItem-text {
   padding: 30px;
-  text-align: center ;
+  text-align: center;
 }
 
 .title-row {
   display: flex;
   position: absolute;
-  padding-bottom: 30px;  
+  padding-bottom: 30px;
   width: 350px;
 }

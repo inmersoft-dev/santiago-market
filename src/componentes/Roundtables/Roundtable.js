@@ -35,6 +35,7 @@ const Roundtable = () => {
           item={CarruselItem}
           contenido={contenido}
           button={CustomAddButton}
+          itemTextAlign={"left"}
         />
       </div>
     </div>
