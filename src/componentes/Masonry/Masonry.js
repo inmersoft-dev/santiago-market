@@ -45,33 +45,6 @@ const itemData = [
     rows: 2,
     cols: 2,
   },
-  /* {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
-    rows: 2,
-    cols: 2,
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
-    cols: 2,
-  }, */
 ];
 
 function srcset(image, size, rows = 1, cols = 1) {
@@ -83,17 +56,9 @@ function srcset(image, size, rows = 1, cols = 1) {
   };
 }
 
-let hover = false;
 const Masonry = () => {
+  const [hide, setHide] = useState(-1);
 
-  const [hide,setHide]=useState(false);
-
- /*  const setVisibilidad=(e)=>{
-    setHide(!hide);
-    console.log(e);
-  } */
-
-  
   return (
     <ImageList
       className="masonry-container"
@@ -102,37 +67,27 @@ const Masonry = () => {
       cols={4}
       rowHeight={121}
     >
-      {itemData.map((item) => (
+      {itemData.map((item, i) => (
         <ImageListItem
           key={item.img}
           cols={item.cols || 1}
           rows={item.rows || 2}
-          /* onMouseOver={setVisibilidad}
-          onMouseLeave={setVisibilidad} */
         >
           <img
             {...srcset(item.img, 121, item.rows, item.cols)}
             alt={item.title}
             loading="lazy"
-            onMouseOver={() => {
-              hover = true;
-              setTimeout(() => {
-                if (hover) {
-                  setHide(true);
-                }
-              }, 500);
+            onMouseEnter={() => {
+              setHide(i);
             }}
-            onMouseOut={() => {
-              hover = false;
-              setHide(false);
+            onMouseLeave={() => {
+              setHide(-1);
             }}
           />
-       {hide ? <ImageListItemBar
-            className="titleItem"
+          <ImageListItemBar
+            className="title-item"
             title={item.title}
-            style={{              
-              fontWeight: "bold",
-            }}
+            style={{ opacity: hide === i ? 1 : 0 }}
             actionIcon={
               <IconButton
                 className="masonry-iconbutton"
@@ -142,7 +97,7 @@ const Masonry = () => {
                 <CustomAddButton />
               </IconButton>
             }
-          /> : null }
+          />
         </ImageListItem>
       ))}
     </ImageList>
