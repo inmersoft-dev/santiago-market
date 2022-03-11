@@ -1,5 +1,5 @@
 .carruselItem-container {
-  width: 90%;
+  width: 380px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 
 .carruselItem-top {
   flex: 0.5 1;
-  width: auto;
+  width: 380px;
   height: auto;
   display: flex;
   align-items: flex-end;
@@ -33,7 +33,7 @@
 
 .carruselItem-title {
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   z-index: 999;
   flex: 1;
   width: 100%;
@@ -43,20 +43,20 @@
   height: 250px;
   background-image: linear-gradient(360deg, #dd1a1ed9, transparent);
   position: absolute;
-  width: 518px;
+  
+  width: 380px !important;
   border-radius: 0 0 20px 20px;
   transition: background-image 200ms ease;
 }
 
 .carruselItem-text {
   padding: 30px;
-  text-align: center;
+  text-align: center ;
 }
 
 .title-row {
   display: flex;
   position: absolute;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 30px;  
+  width: 350px;
 }
