@@ -22,10 +22,9 @@ function Icons({ color }) {
     <div className="socialNetwork">
       {socialNet.map((item, index) => {
         return (
-          <div className="socialNetwork-container">
+          <div className="socialNetwork-container" key={`social${index}`}>
             <SvgIcon
               className="socialNetwork-icon"
-              key={index}
               component={item}
               fontSize="medium"
               sx={{ color: { color } }}
