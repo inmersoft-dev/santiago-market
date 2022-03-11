@@ -84,10 +84,11 @@ const CarruselSimple = (props) => {
 
 CarruselItem.defaultProps = {
   itemTextAlign: "center",
+  contenido: [],
 };
 
 CarruselItem.propTypes = {
-  contenido: PropTypes.arrayOf(PropTypes.string).isRequired,
+  contenido: PropTypes.arrayOf(PropTypes.string),
   button: PropTypes.node.isRequired,
   itemTextAlign: PropTypes.string,
 };

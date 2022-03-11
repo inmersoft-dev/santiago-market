@@ -9,30 +9,28 @@ import "./AboutUs.css";
 /**Importando Imagenes del about Us */
 import about1 from "./../../assets/AboutUs/about1.jpg";
 import about2 from "./../../assets/AboutUs/about2.jpg";
+import { dark } from "../../assets/theme/Theme";
 
 const AboutUs = () => {
   return (
-    <div className="aboutUs-container" id="aboutUs">
+    <div
+      className="aboutUs-container"
+      style={{ background: dark.palette.secondary.main }}
+      id="aboutUs"
+    >
       <div
         className="aboutUs-imgfondo"
-        style={{
-          backgroundSize: "cover",
-          backgroundColor: "#0c2372",
-          backgroundPosition: "center center",
-          width: "100%",
-          height: "1200px",
-        }}
+        style={{ background: dark.palette.secondary.main }}
       >
         <div className="aboutUs-container">
           <div className="aboutus-imgs-container">
-            <div className="section1"
-            style={{
-              backgroundImage:`url(${about1})`,
-              backgroundSize:'cover',
-              backgroundPosition:'center center'
-            }}
+            <div
+              className="section1"
+              style={{
+                backgroundImage: `url(${about1})`,
+              }}
             >
-            {/*   <img className="aboutus-img1" src={about1} alt="" /> */}
+              {/*   <img className="aboutus-img1" src={about1} alt="" /> */}
             </div>
             <div className="section2">
               <Typography

@@ -43,6 +43,10 @@
   text-align: left;
 }
 
+.right h5 {
+  text-align: right;
+}
+
 .img-degradado {
   height: 250px;
   background-image: linear-gradient(360deg, #dd1a1ed9, transparent);

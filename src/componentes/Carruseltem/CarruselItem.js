@@ -11,6 +11,7 @@ import CustomAddButton from "./../CustomAddButton/CustomAddButton";
 
 // mui components
 import Typography from "@mui/material/Typography";
+import { dark } from "../../assets/theme/Theme";
 
 const CarruselItem = (props) => {
   const { textAlign } = props;
@@ -34,7 +35,14 @@ const CarruselItem = (props) => {
         onMouseLeave={unToggleHover}
       >
         <img className="carruselItem-img" src={img} alt="" />
-        {hide ? null : <div className="img-degradado" />}
+        {hide ? null : (
+          <div
+            style={{
+              background: `linear-gradient(360deg, ${dark.palette.primary.main}d9, transparent)`,
+            }}
+            className="img-degradado"
+          />
+        )}
         <div className={`title-row  ${textAlign}`}>
           <Typography className="carruselItem-title" variant="h5" color="#fff">
             {props.contenido[0].title}
