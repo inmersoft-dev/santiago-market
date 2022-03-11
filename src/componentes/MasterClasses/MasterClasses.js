@@ -20,7 +20,7 @@ const MasterClasses = () => {
             variant="h3"
             color="#fff"
           >
-            Titulo de la Section
+            Market Sessions
           </Typography>
 
           <Typography
@@ -28,17 +28,14 @@ const MasterClasses = () => {
             variant="body1"
             color="#fff"
           >
-            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ' 'Lorem ipsum
-            dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-            parturient montes, nascetur ' 'Lorem ipsum dolor sit amet,
-            consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-            montes, nascetur ' 'Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-            sociis natoque penatibus et magnis dis parturient montes, nascetur '
+            Como sociedad e industria atravesamos un momento único que nos
+            permite replantear y reflexionar sobre nuestro recorrido. En este
+            espacio, usted podrá hacer parte de las conversaciones que nos
+            permiten conocer el estado actual de la industria, cómo lo
+            aprovechamos y qué nos aguarda en un futuro. Los invitados son
+            expertos audiovisuales de diferentes sectores, a continuación
+            conozca sus perfiles y las temáticas de cada conversación. Market
+            sessions en español
           </Typography>
         </div>
         <div className="sectionBottom-right">

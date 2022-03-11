@@ -94,13 +94,13 @@ const Workshop = () => {
         </div>
         <div className="workShop-left">
           <Typography className="workShop-title" variant="h3" color="#fff">
-            Title of Section
+            Workshops
           </Typography>
 
           <Typography className="workShop-text" variant="h6" color="#fff">
-            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur '
+            Encuentros con profesionales de la industria, donde podràs extender
+            tu campo de realización ya que fortalecerás tus conocimientos
+            pràcticos.
           </Typography>
         </div>
       </div>

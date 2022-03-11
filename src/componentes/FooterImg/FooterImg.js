@@ -17,7 +17,7 @@ const FooterImg = () => {
 
       <div className="footer-text-container">
         <Typography className="footer-title" variant="h3" color="initial">
-          Title of Section
+        Sedes
         </Typography>
 
         <Typography className="footer-text" variant="h6" color="initial">

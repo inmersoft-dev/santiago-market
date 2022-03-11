@@ -12,7 +12,7 @@ const Sponsors = () => {
     <div className="sponsors-container">
       <div className="sponsors-title-container">
         <Typography className="sponsors-title" variant="h3" color="#fff">
-          Paternnes
+          Partners
         </Typography>
       </div>
 

@@ -12,10 +12,10 @@ const Disruptor = () => {
       <div className="disruptor-head">
         <div>
            <Typography className="disruptor-head-title" variant="h3" color="#fff">
-          Title Section
+          DISRUPTORS
         </Typography>
         <Typography className="disruptor-head-text" variant="body1" color="#fff">
-            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur '
+            Personalidades relevantes de la industria exponiendo sus criterios y experiencia en el campo audiovisual
         </Typography>
         </div>
        

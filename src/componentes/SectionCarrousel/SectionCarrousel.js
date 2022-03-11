@@ -18,18 +18,16 @@ const SectionCarrousel = () => {
     <div className="sectionCarrousel-container">
       <div className="sectionCarrousel-textContainer">
         <Typography className="textContainer-title" variant="h3" color="#fff">
-          Title of Section
+          Masterclasses
         </Typography>
 
         <Typography className="textContainer-text" variant="body1" color="#fff">
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur '
+        Clases impartidas  por expertos de la industria , en las cuales se abordan temas de gran interès y sigificaciòn para creadores y aficionados
         </Typography>
       </div>
 
       <div className="sectionCarrousel-carrouselContainer">
-        <CarruseSimple item={<CarruselItem/>} contenido={contenido} />
+        <CarruseSimple item={<CarruselItem />} contenido={contenido} />
       </div>
     </div>
   );

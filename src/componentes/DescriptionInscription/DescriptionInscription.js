@@ -15,7 +15,7 @@ const DescriptionInscription = () => {
             variant="h3"
             color="#fff"
           >
-            Title of Section
+            ¿QUIÉNES PUEDEN INSCRIBIRSE?
           </Typography>
 
           <Typography
@@ -23,9 +23,9 @@ const DescriptionInscription = () => {
             variant="body1"
             color="#fff"
           >
-            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur '
+            Pueden inscribirse al Mercado personas naturales mayores de edad y/o
+            representantes de empresas del sector audiovisual y/o cultural que
+            logren demostrar experiencia profesional en su campo específico.
           </Typography>
           <Divider className="divider" />
         </div>
@@ -35,7 +35,7 @@ const DescriptionInscription = () => {
             variant="h3"
             color="#fff"
           >
-            Title of Section
+            FECHAS Y PRECIO DE INSCRIPCIÓN
           </Typography>
 
           <Typography
@@ -43,9 +43,12 @@ const DescriptionInscription = () => {
             variant="body1"
             color="#fff"
           >
-            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur '
+            La inscripción al SANTMARKET estará abierta desde el 31 de mayo y
+            hasta el 1 de julio de 2022 únicamente a través de la página web
+            www.santiagomarket.com
+
+            <br/>
+            Valor de inscripción: 120.000 COP / 35 USD.
           </Typography>
         </div>
       </div>

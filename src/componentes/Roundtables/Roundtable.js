@@ -19,13 +19,11 @@ const Roundtable = () => {
         <div className="relleno"></div>
         <div className="textContainer">
           <Typography className="textContainer-title" variant="h3" color="#fff">
-            Title of Section
+          RoundTables
           </Typography>
 
           <Typography className="textContainer-text" variant="h6" color="#fff">
-            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur '
+          ¡Bienvenidos al nuevo espacio de networking dentro del BAM! Realice su preinscripción para participar de estas mesas redondas, donde podrá intercambiar aprendizajes y conocer a más expertos y profesionales de la industria audiovisual. Cada mesa redonda tratará una temática diferente, le invitamos a conocer la agenda y perfiles de invitados que liderarán la conversación. Prueba en español
           </Typography>
         </div>
       </div>

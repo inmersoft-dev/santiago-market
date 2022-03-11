@@ -57,9 +57,7 @@ const ContactUs = () => {
           variant="body1"
           color="initial"
         >
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur '
+          'Si el mundo de la realización audiovisual es el que te apasiona y quieres dar a conocer tu trabajo. ¡Únetenos!'
         </Typography>
 
         <FormControl className="contactUs-form" variant="standard">

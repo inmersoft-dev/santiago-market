@@ -25,14 +25,15 @@ const AboutUs = () => {
       >
         <div className="aboutUs-container">
           <div className="aboutus-imgs-container">
-            <div className="section1"
-            style={{
-              backgroundImage:`url(${about1})`,
-              backgroundSize:'cover',
-              backgroundPosition:'center center'
-            }}
+            <div
+              className="section1"
+              style={{
+                backgroundImage: `url(${about1})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+              }}
             >
-            {/*   <img className="aboutus-img1" src={about1} alt="" /> */}
+              {/*   <img className="aboutus-img1" src={about1} alt="" /> */}
             </div>
             <div className="section2">
               <Typography
@@ -48,14 +49,10 @@ const AboutUs = () => {
                 variant="body1"
                 color="#fff"
               >
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
-                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-                felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                Son muchas las actividades que permiten el desarrollo
+                profesional de los creadores entre ellas: reuniones, sesiones,
+                conferencias centradas en temas diversos, talleres y muchas
+                otras màs.
               </Typography>
 
               <Link className="aboutus-art-button" to="/">
@@ -71,9 +68,11 @@ const AboutUs = () => {
                 variant="subtilte1"
                 color="#fff"
               >
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur
+                Para mantenernos al corriente con los tiempos y las
+                circunstancias creadas por la pandemia del Covid 19; nuestra
+                plataforma cuenta con actividades tanto presenciales como en
+                línea, para así mantener viva nuestra principal misión de
+                colaboración y apoyo mutuo.
               </Typography>
             </div>
 
