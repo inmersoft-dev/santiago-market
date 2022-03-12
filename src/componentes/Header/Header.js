@@ -14,9 +14,9 @@ import banner from "./../../assets/banner.jpg";
   
 ]; */
 
-function Header({contenido, margin,display}) {
+function Header(props) {
 
-  console.log(display);
+  const {display, margin, contenido}=props;
   return (
     <header
       className="banner"
@@ -31,35 +31,27 @@ function Header({contenido, margin,display}) {
       
       <div className="section-container">
         <div className="banner-section" style={{
-          display:{display},
-          marginLeft:{margin}
+          display:display,
+          marginLeft:margin
         }}>
           <div className="banner-section-contenido1">
             <Typography variant="h4" color="#fff" sx={{ fontWeight: "600" }}>
-              {contenido[0]}
+               {contenido[0]} 
             </Typography>
           </div>
-          <div className="banner-section-contenido2">
+          <div className="banner-section-contenido2" style={{
+            marginLeft:margin
+          }}>
             <Typography
               variant="h6"
               color="#fff"
               sx={{
-                padding: "14px",
-                /* lineHeight:'40px' */
+                padding: "14px",                
               }}
             >
               {contenido[1]}
             </Typography>
-            <Typography
-              variant="h6"
-              color="#fff"
-              sx={{
-                padding: "14px",
-                /* lineHeight:'40px' */
-              }}
-            >
-              {contenido[2]}
-            </Typography>
+             
           </div>
         </div>
       </div>
