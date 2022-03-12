@@ -22,7 +22,7 @@
 .staffs-logos {
   display: flex;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 85vw;
   margin-top: 30px;
   justify-content: center;
 }

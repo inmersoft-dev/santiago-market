@@ -9,7 +9,7 @@
 
 .banner-section {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 200px;
 }
 

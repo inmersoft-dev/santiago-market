@@ -46,7 +46,7 @@ const AboutUs = () => {
 
               <Typography
                 className="aboutus-art-text"
-                variant="body1"
+                variant="h6"
                 color="#fff"
               >
                 Son muchas las actividades que permiten el desarrollo
@@ -65,7 +65,7 @@ const AboutUs = () => {
             <div className="section3">
               <Typography
                 className="aboutus-art-text"
-                variant="subtilte1"
+                variant="h6"
                 color="#fff"
               >
                 Para mantenernos al corriente con los tiempos y las

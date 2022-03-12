@@ -54,7 +54,7 @@ const ContactUs = () => {
         </Typography>
         <Typography
           className="contactUs-form-text"
-          variant="body1"
+          variant="h6"
           color="initial"
         >
           'Si el mundo de la realización audiovisual es el que te apasiona y quieres dar a conocer tu trabajo. ¡Únetenos!'
