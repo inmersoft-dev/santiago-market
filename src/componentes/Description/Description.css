@@ -5,17 +5,15 @@
   background-color: #0c2372;
   justify-content: center;
 }
+
 .descripton-left {
   display: flex;
   flex-direction: column;
 
-  /* align-content: center; */
   position: relative;
 }
 
 .descripton-right {
-  display: flex;
-  align-items: center;
   padding-bottom: 100px;
 }
 
@@ -31,19 +29,21 @@
   display: flex;
   object-fit: cover;
   width: 100%;
+  border-radius: 15px;
 }
 
 .description-title-container {
-  width: 60%;
+  width: 450px;
   display: flex;
   position: relative;
   bottom: 382px;
+  margin-top: 70px;
 }
 
 .description-title {
   color: #fff !important;
   font-weight: 600 !important ;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .itemList {
@@ -57,7 +57,7 @@
 }
 
 .description-list {
-  width: 700px !important;
+  width: 650px !important;
   margin-left: 50px !important;
   margin-top: 100px !important;
 }

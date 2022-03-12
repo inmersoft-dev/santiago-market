@@ -5,6 +5,8 @@ import Typography from "@mui/material/Typography";
 import { Divider } from "@mui/material";
 
 import ImgDescription from "./../../assets/masonry/2.jpg";
+
+
 const DescriptionInscription = () => {
   return (
     <div className="descripIns-container">

@@ -97,7 +97,7 @@ const Workshop = () => {
             Workshops
           </Typography>
 
-          <Typography className="workShop-text" variant="h6" color="#fff">
+          <Typography className="workShop-text" variant="body1" color="#fff">
             Encuentros con profesionales de la industria, donde podràs extender
             tu campo de realización ya que fortalecerás tus conocimientos
             pràcticos.

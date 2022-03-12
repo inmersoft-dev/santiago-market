@@ -3,9 +3,9 @@
   flex-direction: column;
   position: fixed;
   z-index: 999;
-  margin-left: 23px;
+ /*  margin-left: 23px; */
   top: 65vh;
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .socialNetwork-container {

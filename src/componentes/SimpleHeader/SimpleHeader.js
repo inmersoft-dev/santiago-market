@@ -7,7 +7,7 @@ const SimpleHeader = () => {
   return (
     <div className="simpleHeader-container">
       <div className="text-container">
-        <Typography className="simpleHeader-text" variant="h6" color="#fff">
+        <Typography className="simpleHeader-text" variant="body1" color="#fff">
           'Proyectos de largometrajes, series y cortometrajes de ficción,
           animación y documental. Películas (cortas y largas) en avanzado estado
           de postproducción. Guionistas colombianos con sus más recientes

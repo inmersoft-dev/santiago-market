@@ -55,4 +55,5 @@
   height: 480px;
   width: 380px;
   object-fit: cover;
+  border-radius: 15px;
 }

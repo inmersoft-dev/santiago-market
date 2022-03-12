@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../NavBar/NavBar";
+
 
 import Typography from "@mui/material/Typography";
 
@@ -8,13 +8,15 @@ import "./Header.css";
 
 import banner from "./../../assets/banner.jpg";
 
-const contenido = [
+/* const contenido = [
   "Explora Santiago de los Caballeros en búsqueda de la oportunidad",
   "Santiago Market es un lugar en el cual el audiovisual nacional encuentra su sitio. En este espacio, tanto ideas, proyectos como creadores se unen para enriquecer su obra y aumentar sus relaciones. Esta  es una plataforma que busca concentrar las producciones cinematográficas nacionales y atraer la mayor visibilidad internacional posible.",
   
-];
+]; */
 
-function Header() {
+function Header({contenido, margin,display}) {
+
+  console.log(display);
   return (
     <header
       className="banner"
@@ -26,9 +28,12 @@ function Header() {
         height: "auto",
       }}
     >
-      <NavBar />
+      
       <div className="section-container">
-        <div className="banner-section">
+        <div className="banner-section" style={{
+          display:{display},
+          marginLeft:{margin}
+        }}>
           <div className="banner-section-contenido1">
             <Typography variant="h4" color="#fff" sx={{ fontWeight: "600" }}>
               {contenido[0]}

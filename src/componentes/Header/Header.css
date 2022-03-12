@@ -8,22 +8,23 @@
 }
 
 .banner-section {
-  display: flex;
+ /*  display: flex; */
   /* flex-wrap: wrap; */
   margin: 200px;
 }
 
+
+
 .banner-section-contenido1 {
-  display: flex;
-  flex-direction: row;
   width: 500px;
 }
 
 .banner-section-contenido2 {
-  margin-top: 190px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  min-width: 500px;
+margin-top: 150px;
+flex: 1;
+display: flex;
+flex-direction: column;
+max-width: 500px;
+min-width: 200px;
+/*  margin-left: 200px; */
 }

@@ -20,7 +20,7 @@ const FooterImg = () => {
         Sedes
         </Typography>
 
-        <Typography className="footer-text" variant="h6" color="initial">
+        <Typography className="footer-text" variant="body1" color="initial">
           'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur '
