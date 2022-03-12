@@ -1,10 +1,10 @@
-.masonry-container{
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    margin-bottom: 200px;
-   
-   /*  margin-bottom: 100px; */
+.masonry-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-bottom: 200px;
+
+  /*  margin-bottom: 100px; */
 }
 
 .masonry-iconbutton {
@@ -29,11 +29,15 @@
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-.css-yzy8or-MuiImageListItemBar-title{
+.title-item {
+  font-weight: bold;
+  transition: all 200ms ease;
+}
+
+.css-yzy8or-MuiImageListItemBar-title {
   font-size: 25px !important;
   line-height: 35px !important;
 }
-

@@ -1,7 +1,6 @@
 .aboutUs-container {
   display: flex;
   flex-direction: column;
-  background-color: "secondary";
 }
 
 .aboutus-imgs-container {
@@ -9,13 +8,20 @@
   flex: 0.6;
 }
 
+.aboutUs-imgfondo {
+  background-position: center;
+  width: 100%;
+  height: 1200px;
+  background-size: cover;
+}
+
 .section1 {
   display: flex;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
   flex: 0.6 1;
   width: 676px;
   height: 650px;
+  background-size: cover;
+  background-position: center;
 }
 
 .aboutus-img1 {

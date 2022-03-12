@@ -105,7 +105,7 @@ export default function NavBar() {
         {/* Section Central del la Barra de Navegacion */}
         <div className="navbar-center">
           {sections.map(({ id, link }, i) => (
-            <div className="navbar-center-link">
+            <div className="navbar-center-link" key={`link${i}`}>
               <Link
                 className={`navbar-center-link-text ${
                   activeLink === i ? "active-link" : ""

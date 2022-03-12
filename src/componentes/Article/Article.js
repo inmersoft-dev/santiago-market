@@ -1,24 +1,34 @@
 import React from "react";
+
+// theme
+import { dark } from "../../assets/theme/Theme";
+
+// mui components
+import { Typography, SvgIcon } from "@mui/material/";
+
+// mui icons
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import Typography from "@mui/material/Typography";
-import SvgIcon from "@mui/material/SvgIcon";
 
-import imagenArticulo from "./../../assets/AboutUs/about1.jpg";
-
+// styles
 import "./Article.css";
 
-const Article = ({img}) => {
+const Article = ({ img }) => {
   return (
-    <div className='article-container'>
-        <div className='article-leftSide'>
-            <img className='article-img' src={img} alt=''/>
-            
-            <button className='article-arrowIcon-container'>
-              <SvgIcon  className="article-arrowIcon"  component={ArrowBackIosNewIcon} fontSize="medium" sx={{color: '#fff'}}/>
-            </button>
-            <Typography className='article-title' variant="h3" color="#fff">                
-                Introducción a la producción virtual
-            </Typography>
+    <div className="article-container">
+      <div className="article-leftSide">
+        <img className="article-img" src={img} alt="" />
+
+        <button className="article-arrowIcon-container">
+          <SvgIcon
+            className="article-arrowIcon"
+            component={ArrowBackIosNewIcon}
+            fontSize="medium"
+            sx={{ color: "#fff" }}
+          />
+        </button>
+        <Typography className="article-title" variant="h3" color="#fff">
+          Introducción a la producción virtual
+        </Typography>
 
         <button className="article-arrowIcon-container">
           <SvgIcon
@@ -32,7 +42,10 @@ const Article = ({img}) => {
           Introducción a la producción virtual
         </Typography>
       </div>
-      <div className="article-rightSide">
+      <div
+        className="article-rightSide"
+        style={{ background: dark.palette.secondary.main }}
+      >
         <Typography className="article-text" variant="body1" color="#fff">
           'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus

@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 
+import PropTypes from "prop-types";
+
+// styles
 import "./CarruselItem.css";
 
+// components
 import img from "./../../assets/masonry/6.jpg";
-import Typography from "@mui/material/Typography";
 import CustomAddButton from "./../CustomAddButton/CustomAddButton";
 
+// mui components
+import Typography from "@mui/material/Typography";
+import { dark } from "../../assets/theme/Theme";
+
 const CarruselItem = (props) => {
+  const { textAlign } = props;
   const [hide, setHide] = useState(true);
+
+  console.log(textAlign);
 
   const toggleHover = (e) => {
     setHide(false);
@@ -19,21 +29,25 @@ const CarruselItem = (props) => {
 
   return (
     <div className="carruselItem-container">
-      
       <div
         className="carruselItem-top"
         onMouseEnter={toggleHover}
         onMouseLeave={unToggleHover}
       >
         <img className="carruselItem-img" src={img} alt="" />
-        {hide ? null : <div className="img-degradado" />}
-        <div className="title-row">
+        {hide ? null : (
+          <div
+            style={{
+              background: `linear-gradient(360deg, ${dark.palette.primary.main}d9, transparent)`,
+            }}
+            className="img-degradado"
+          />
+        )}
+        <div className={`title-row  ${textAlign}`}>
           <Typography className="carruselItem-title" variant="h5" color="#fff">
             {props.contenido[0].title}
           </Typography>
-          {props.button ? <div style={{width: "20%"}}> 
-
-          </div>:null }
+          {props.button ? <div style={{ width: "20%" }}></div> : null}
           <div className="button-container">
             {props.button ? <CustomAddButton /> : null}
           </div>
@@ -53,6 +67,14 @@ const CarruselItem = (props) => {
       </div>
     </div>
   );
+};
+
+CarruselItem.defaultProps = {
+  textAlign: "center",
+};
+
+CarruselItem.propTypes = {
+  textAlign: PropTypes.string,
 };
 
 export default CarruselItem;

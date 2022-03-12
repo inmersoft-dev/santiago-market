@@ -17,6 +17,7 @@ import icono1 from "./../../assets/carrusel/icons/Grupo 14.svg";
 import icono2 from "./../../assets/carrusel/icons/Grupo 16.svg";
 import icono3 from "./../../assets/carrusel/icons/Grupo 18.svg";
 import icono4 from "./../../assets/carrusel/icons/Grupo 20.svg";
+import { dark } from "../../assets/theme/Theme";
 
 const slide = [carrusel1, carrusel2, carrusel3, carrusel4];
 
@@ -27,7 +28,7 @@ const icons = [icono1, icono2, icono3, icono4];
 function Carrusel() {
   const [photoToggled, setPhotoToggled] = useState(-1);
 
-  const toggleHover = (e) => {    
+  const toggleHover = (e) => {
     setPhotoToggled(Number(e.target.id.substring(1)));
   };
 
@@ -36,7 +37,10 @@ function Carrusel() {
   };
 
   return (
-    <div className="container-carrusel">
+    <div
+      className="container-carrusel"
+      style={{ background: dark.palette.primary.main }}
+    >
       <div className="carrusel-full" style={{ position: "absolute" }}>
         {slide.map((item, index) => {
           return (
@@ -60,15 +64,7 @@ function Carrusel() {
       <div className="carrusel-full">
         {slide.map((item, index) => {
           return (
-            <div
-              key={index}
-              className="carrusel-item"
-              style={{
-                backgroundSize: "cover",
-                /* backgroundImage: `url(${item})`, */
-                backgroundPosition: "center",
-              }}
-            >
+            <div key={index} className="carrusel-item">
               <div
                 onMouseEnter={toggleHover}
                 onMouseLeave={unToggleHover}

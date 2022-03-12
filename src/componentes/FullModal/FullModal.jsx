@@ -19,7 +19,13 @@ const FullModal = (props) => {
   const { title, text, img, onBack, opacity } = props;
   const [zIndex, setZIndex] = useState(0);
   useEffect(() => {
-    if (opacity === 1) setZIndex(999);
+    if (opacity === 1) {
+      document.body.style.overflow = "hidden";
+      setZIndex(999);
+    } else {
+      document.body.style.overflow = "auto";
+      setZIndex(-1);
+    }
   }, [opacity]);
 
   return (

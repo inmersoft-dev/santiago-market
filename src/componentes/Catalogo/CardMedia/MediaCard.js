@@ -1,26 +1,33 @@
-import React from 'react'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import media from './../../../assets/masonry/4.jpg';
+import React from "react";
 
+import PropTypes from "prop-types";
 
-import './MediaCard.css';
-const MediaCard = () => {
+// mui components
+import {
+  CardActionArea,
+  Typography,
+  CardMedia,
+  CardContent,
+  Card,
+} from "@mui/material";
+
+// images
+import media from "./../../../assets/masonry/4.jpg";
+
+// styles
+import "./MediaCard.css";
+
+const MediaCard = (props) => {
+  const { className } = props;
   return (
-    <Card sx={{ maxWidth: 150, margin:2, height:220}}>
+    <Card className={`card-media ${className}`}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="150"
-          image={media}
-          alt="Title of media"
-        />
-        <CardContent sx={{padding:'6px !important', paddingLeft:'15px!important'}}>
-          <Typography  variant="body2" component="div">
-           Title Media
+        <CardMedia component="img" image={media} alt="Title of media" />
+        <CardContent
+          sx={{ padding: "6px !important", paddingLeft: "15px!important" }}
+        >
+          <Typography variant="body2" component="div">
+            Title Media
           </Typography>
           <Typography variant="subtitle2" color="text.secondary">
             Description about the film
@@ -28,7 +35,15 @@ const MediaCard = () => {
         </CardContent>
       </CardActionArea>
     </Card>
-  )
-}
+  );
+};
 
-export default MediaCard
+MediaCard.defaultProps = {
+  className: "",
+};
+
+MediaCard.propTypes = {
+  className: PropTypes.string,
+};
+
+export default MediaCard;

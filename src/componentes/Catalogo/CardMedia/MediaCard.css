@@ -1,0 +1,21 @@
+.card-media {
+  height: 290px;
+  width: 190px;
+  margin-bottom: 10px;
+}
+
+.card-media button {
+  height: 100%;
+}
+
+.card-media button img {
+  height: 83%;
+}
+
+.new-column {
+  margin-right: 20px;
+}
+
+.same-column {
+  margin-right: 10px;
+}

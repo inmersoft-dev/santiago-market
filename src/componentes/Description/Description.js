@@ -38,10 +38,10 @@ const Description = () => {
       </div>
       <div className="descripton-right">
         <List className="description-list">
-          {descriptions.map((item) => {
+          {descriptions.map((item, i) => {
             return (
-              <ListItem className="itemList">
-                <div className="dot">●</div>
+              <ListItem className="itemList" key={`list${i}`}>
+                {/*<div className="dot">●</div>*/}
                 <Typography className="itemText" variant="body1" color="#fff">
                   {item}
                 </Typography>
