@@ -80,7 +80,7 @@ export default function NavBar() {
   // active setter
   useEffect(() => {
     const result = sessionStorage.getItem("active");
-    console.log(result);
+    
     if (result !== null) setActiveLink(Number(result));
   });
 

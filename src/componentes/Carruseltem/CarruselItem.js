@@ -17,7 +17,7 @@ const CarruselItem = (props) => {
   const { textAlign } = props;
   const [hide, setHide] = useState(true);
 
-  console.log(textAlign);
+  
 
   const toggleHover = (e) => {
     setHide(false);
