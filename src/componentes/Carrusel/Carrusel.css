@@ -7,7 +7,7 @@
 
 .carrusel-full {
   width: 100%;
-  height: 1031px;
+  height: 80vh;
   display: inline-flex;
   justify-content: left;
 }
@@ -15,7 +15,7 @@
 .carrusel-item {
   display: flex;
   width: 25%;
-  height: 1031px;
+  height: 80vh;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
