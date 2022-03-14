@@ -16,8 +16,7 @@ import banner from "./../../assets/banner.jpg";
 ]; */
 
 function Header(props) {
-  const { contenido, margin, display } = props;
-  console.log(display);
+  const { display, margin, contenido } = props;
   return (
     <header
       className="banner"
@@ -33,7 +32,7 @@ function Header(props) {
         <div
           className="banner-section"
           style={{
-            display,
+            display: display,
             marginLeft: margin,
           }}
         >
@@ -42,26 +41,20 @@ function Header(props) {
               {contenido[0]}
             </Typography>
           </div>
-          <div className="banner-section-contenido2">
+          <div
+            className="banner-section-contenido2"
+            style={{
+              marginLeft: margin,
+            }}
+          >
             <Typography
               variant="h6"
               color="#fff"
               sx={{
                 padding: "14px",
-                /* lineHeight:'40px' */
               }}
             >
               {contenido[1]}
-            </Typography>
-            <Typography
-              variant="h6"
-              color="#fff"
-              sx={{
-                padding: "14px",
-                /* lineHeight:'40px' */
-              }}
-            >
-              {contenido[2]}
             </Typography>
           </div>
         </div>

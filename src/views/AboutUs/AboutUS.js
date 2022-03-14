@@ -16,7 +16,7 @@ const AboutUS = () => {
   return (
     <>
       <NavBar />
-      <Header contenido={contenido} margin={200} />
+      <Header contenido={contenido} margin={330} />
       <Icons color="#e8eaf6" />
       <Description />
       <DescriptionInscription />

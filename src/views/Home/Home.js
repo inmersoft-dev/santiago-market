@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Header contenido={contenido} margin="0" display="flex" />
+      <Header contenido={contenido} display="flex" />
       <Icons color="#e8eaf6" />
       <Carrusel />
       <AboutUs />
