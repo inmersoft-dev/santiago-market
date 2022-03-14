@@ -1,5 +1,6 @@
 import React from "react";
 
+import PropTypes from "prop-types";
 
 import Typography from "@mui/material/Typography";
 
@@ -14,8 +15,8 @@ import banner from "./../../assets/banner.jpg";
   
 ]; */
 
-function Header({contenido, margin,display}) {
-
+function Header(props) {
+  const { contenido, margin, display } = props;
   console.log(display);
   return (
     <header
@@ -28,12 +29,14 @@ function Header({contenido, margin,display}) {
         height: "auto",
       }}
     >
-      
       <div className="section-container">
-        <div className="banner-section" style={{
-          display:{display},
-          marginLeft:{margin}
-        }}>
+        <div
+          className="banner-section"
+          style={{
+            display,
+            marginLeft: margin,
+          }}
+        >
           <div className="banner-section-contenido1">
             <Typography variant="h4" color="#fff" sx={{ fontWeight: "600" }}>
               {contenido[0]}
