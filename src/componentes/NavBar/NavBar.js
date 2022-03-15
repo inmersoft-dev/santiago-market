@@ -102,8 +102,8 @@ export default function NavBar() {
       style={{ width: "100%" }}
     >
       <Box className="navbar-container"  sx={{
-        px:{md:"50px", xs:"20px", lg:"110px"},
-        justifyContent: "space-between"
+        px:{md:"40px", xs:"40px", lg:"110px"},
+        justifyContent: {xs:"space-between", /* md:"space-between" */}
 
         
       }}>
