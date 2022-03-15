@@ -10,12 +10,16 @@ import "./AboutUs.css";
 import about1 from "./../../assets/AboutUs/about1.jpg";
 import about2 from "./../../assets/AboutUs/about2.jpg";
 import { dark } from "../../assets/theme/Theme";
+import { Box } from "@mui/material";
 
 const AboutUs = () => {
   return (
-    <div
+    <Box
       className="aboutUs-container"
-      style={{ background: dark.palette.secondary.main }}
+      sx={{
+        background: dark.palette.secondary.main,
+        py: { xs: "200px", sm: 0 },
+      }}
       id="aboutUs"
     >
       <div
@@ -23,16 +27,31 @@ const AboutUs = () => {
         style={{ background: dark.palette.secondary.main }}
       >
         <div className="aboutUs-container">
-          <div className="aboutus-imgs-container">
-            <div
+          <Box className="aboutus-imgs-container"
+          sx={{
+            marginLeft: { xs: 'auto',sm:'0' },
+                marginRight: { xs: 'auto',sm:'0' },
+                width: { xs: "68%", sm:'auto' },
+          }}
+          >
+            <Box
               className="section1"
-              style={{
+              sx={{
                 backgroundImage: `url(${about1})`,
+                display: { xs: "none", sm: "flex" },
+
+                
               }}
             >
               {/*   <img className="aboutus-img1" src={about1} alt="" /> */}
-            </div>
-            <div className="section2">
+            </Box>
+            <Box
+              className="section2"
+              sx={{
+                flex: { xs: "1", sm: "0.4 1" },
+                paddingLeft: { sm: "50px" },
+              }}
+            >
               <Typography
                 className="aboutus-art-text1"
                 variant="h3"
@@ -55,11 +74,17 @@ const AboutUs = () => {
               <Link className="aboutus-art-button" to="/">
                 Saber más
               </Link>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
           <div className="aboutus-art-container">
-            <div className="section3">
+            <Box
+              className="section3"
+              sx={{
+                flex: { xs: "1", sm: "0.5 1" },
+                marginTop: { xs: "50px" },
+              }}
+            >
               <Typography
                 className="aboutus-art-text"
                 variant="body1"
@@ -71,15 +96,19 @@ const AboutUs = () => {
                 línea, para así mantener viva nuestra principal misión de
                 colaboración y apoyo mutuo.
               </Typography>
-            </div>
+            </Box>
 
-            <div className="section4">
-              <img className="aboutus-img2" src={about2} alt="" />
-            </div>
+            <Box
+              className="section4"
+              sx={{
+                backgroundImage: `url(${about2})`,
+                display: { xs: "none", sm: "flex" },
+              }}
+            ></Box>
           </div>
         </div>
       </div>
-    </div>
+    </Box>
   );
 };
 
