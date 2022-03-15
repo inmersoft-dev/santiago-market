@@ -1,13 +1,13 @@
 import React from "react";
 
-import PropTypes from "prop-types";
+/* import PropTypes from "prop-types"; */
 
 import Typography from "@mui/material/Typography";
 
 /**Importando estilos Css */
 import "./Header.css";
 
-import banner from "./../../assets/banner.jpg";
+
 
 /* const contenido = [
   "Explora Santiago de los Caballeros en búsqueda de la oportunidad",
@@ -16,13 +16,13 @@ import banner from "./../../assets/banner.jpg";
 ]; */
 
 function Header(props) {
-  const { display, margin, contenido } = props;
+  const { display, margin, contenido, img } = props;
   return (
     <header
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url(${banner})`,
+        backgroundImage: `url(${img})`,
         backgroundPosition: "center center",
         width: "100%",
         height: "auto",
