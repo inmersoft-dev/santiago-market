@@ -6,6 +6,7 @@ import InscriptionRequest from "../../componentes/InscriptionRequest/Inscription
 import Icons from "../../componentes/Icons/Icons";
 import NavBar from "../../componentes/NavBar/NavBar";
 import "./AboutUs.css";
+import footerImg from "./../../assets/footer.png";
 
 const contenido = [
   "Explora Santiago de los Caballeros en búsqueda de la oportunidad",
@@ -16,7 +17,7 @@ const AboutUS = () => {
   return (
     <>
       <NavBar />
-      <Header contenido={contenido} margin={330} />
+      <Header img={footerImg} contenido={contenido} margin={330} />
       <Icons color="#e8eaf6" />
       <Description />
       <DescriptionInscription />

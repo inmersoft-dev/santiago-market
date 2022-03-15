@@ -2,8 +2,12 @@
 import React, { useEffect, useState } from "react";
 
 // mui components
-import { Button } from "@mui/material";
+import { Box, Button, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import MenuIcon from "@mui/icons-material/Menu";
+import Menu from "@mui/material/Menu";
+import Typography from "@mui/material/Typography";
+import MenuItem from "@mui/material/MenuItem";
 
 import { Link, Outlet } from "react-router-dom";
 
@@ -43,10 +47,22 @@ export default function NavBar() {
   const [fondo, handleFondo] = useState(false);
   const [activeLink, setActiveLink] = useState(0);
 
-  /* const [hide, handleHide] = useState(false);
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  /* const [anchorElUser, setAnchorElUser] = React.useState(null); */
 
-  const hideControl = () => {
-    handleHide(!hide)   
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  /*  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  }; */
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  /*  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
   }; */
 
   const transitionNavBar = () => {
@@ -56,18 +72,6 @@ export default function NavBar() {
       handleFondo(false);
     }
   };
-
-  /* const hideNavBar=()=>{
-
-}; */
-
-  /* useEffect(()=>{
-  const hidetime = () =>
-  setTimeout(() => {      
-    hideControl();    
-  }, 4000);
-  return ()=>clearTimeout(hidetime);
-},[hideControl]) */
 
   // scroll handler
   useEffect(() => {
@@ -80,7 +84,7 @@ export default function NavBar() {
   // active setter
   useEffect(() => {
     const result = sessionStorage.getItem("active");
-    
+
     if (result !== null) setActiveLink(Number(result));
   });
 
@@ -97,13 +101,58 @@ export default function NavBar() {
       className={`navbar ${fondo && "nav-painted"}`}
       style={{ width: "100%" }}
     >
-      <div className="navbar-container">
+      <Box className="navbar-container"  sx={{
+        px:{md:"40px", xs:"40px", lg:"110px"},
+        justifyContent: {xs:"space-between", /* md:"space-between" */}
+
+        
+      }}>
         {/* Section izquierda del la Barra de Navegacion */}
         <div className="navbar-left">
+          <Box sx={{ flexGrow: 1, display: { md: "flex", lg: "none" } }}>
+            <IconButton
+              className="menu-icon"
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {sections.map((page) => (
+                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.id}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
           <img className="navbar-left-log" src={Logo} alt="" />
         </div>
         {/* Section Central del la Barra de Navegacion */}
-        <div className="navbar-center">
+        <Box
+          className="navbar-center"
+          sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}
+        >
           {sections.map(({ id, link }, i) => (
             <div className="navbar-center-link" key={`link${i}`}>
               <Link
@@ -128,7 +177,7 @@ export default function NavBar() {
             </div>
           ))}
           <div style={{ width: "10%" }}></div>
-        </div>
+        </Box>
         <Outlet />
         {/* Section Derecha del la Barra de Navegacion */}
         <div className="navbar-right">
@@ -144,7 +193,7 @@ export default function NavBar() {
             Suscribir
           </Button>
         </div>
-      </div>
+      </Box>
     </div>
   );
 }

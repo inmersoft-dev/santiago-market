@@ -61,163 +61,88 @@ function Carrusel() {
 
   return (
     <>
-      {/*<div
-        className="container-carrusel"
-        style={{ background: dark.palette.primary.main }}
-      >
-        <div className="carrusel-full" style={{ position: "absolute" }}>
-          {photoToggled !== -1 && (
-            <img
-              src={slide[photoToggled]}
-              alt="img"
-              style={{
-                flex: "1",
-                opacity: photoToggled !== -1 ? 1 : 0,
-              }}
-            />
-          )}
-        </div>
+      {
         <div
-          className="carrusel-full"
-          style={{
-            position: "absolute",
-            background: "aliceblue",
-            transition: "all 400ms ease",
-            opacity: !outIn ? 1 : 0,
-          }}
-        ></div>
-        <div className="carrusel-full" style={{ position: "absolute" }}>
-          {slide.map((item, index) => {
-            return (
-              <img
-                onMouseEnter={toggleHover}
-                onMouseLeave={unToggleHover}
-                key={`image${index}`}
-                id={`i${index}`}
-                src={item}
-                alt="img"
-                style={{
-                  width: "25%",
-                  flex: "none",
-                  opacity: photoToggled !== -1 ? 0 : 1,
-                }}
-              />
-            );
-          })}
-        </div>
-        <div className="carrusel-full">
-          {slide.map((item, index) => {
-            return (
-              <div key={index} className="carrusel-item">
-                <div
-                  onMouseEnter={toggleHover}
-                  onMouseLeave={null}
-                  style={{ zIndex: 1 }}
-                  id={`d${index}`}
-                  className="carrusel-column"
-                >
-                  <div className="carrusel-icon-item" id={`c${index}`}>
-                    <img src={icons[index]} alt="" id={`i${index}`} />
-                  </div>
-                  <Typography
-                    className="section"
-                    variant="h4"
-                    color="#fff"
-                    sx={{
-                      position: "relative",
-                      textTransform: "uppercase",
-                      marginTop: "84px",
-                    }}
-                    id={`t${index}`}
-                  >
-                    {" "}
-                    Prueba
-                  </Typography>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
-      {/* codigo de sito */}
-      <div
-        onMouseLeave={unToggleHoverA}
-        id="eldiv"
-        style={{ display: "flex", height: "80vh" }}
-      >
-        <div className="carrusel-full" style={{ position: "absolute" }}>
-          {photoToggled !== -1 && (
-            <img
-              src={slide[photoToggled]}
-              alt="img"
-              style={{
-                flex: "1",
-                opacity: photoToggled !== -1 ? 1 : 0,
-              }}
-            />
-          )}
-        </div>
-        <div
-          className="carrusel-full"
-          style={{
-            position: "absolute",
-            background: "aliceblue",
-            transition: "all 200ms ease",
-            opacity: !outIn ? 1 : 0,
-          }}
-        ></div>
-        {slide.map((item, index) => {
-          return (
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                width: "25%",
-                zIndex: 99,
-              }}
-              onMouseEnter={toggleHover}
-              onMouseLeave={unToggleHover}
-            >
-              <img
-                id={`i${index}`}
-                src={item}
-                alt="img"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  flex: "none",
-                  opacity: photoToggled !== -1 ? 0 : 1,
-                }}
-              />
-              <div
-                style={{ zIndex: 1, position: "absolute" }}
-                id={`d${index}`}
-                className="carrusel-column"
-              >
-                <div className="carrusel-icon-item" id={`c${index}`}>
-                  <img src={icons[index]} alt="" id={`i${index}`} />
-                </div>
-                <Typography
-                  className="section"
-                  variant="h4"
-                  color="#fff"
-                  sx={{
-                    position: "relative",
-                    textTransform: "uppercase",
-                    marginTop: "84px",
+          className="container-carrusel"
+          style={{ background: dark.palette.primary.main }}
+        >
+          {/* codigo de sito */}
+          <div style={{ display: "flex", height: "80vh" }}>
+            <div className="carrusel-full" style={{ position: "absolute" }}>
+              {photoToggled !== -1 && (
+                <img
+                  src={slide[photoToggled]}
+                  alt="img"
+                  style={{
+                    flex: "1",
+                    opacity: photoToggled !== -1 ? 1 : 0,
                   }}
-                  id={`t${index}`}
-                >
-                  {" "}
-                  Prueba
-                </Typography>
-              </div>
+                />
+              )}
             </div>
-          );
-        })}
-      </div>
+            <div
+              className="carrusel-full"
+              style={{
+                position: "absolute",
+                background: "aliceblue",
+                transition: "all 400ms ease",
+                opacity: !outIn ? 1 : 0,
+              }}
+            ></div>
+            {slide.map((item, index) => {
+              return (
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "25%",
+                    zIndex: 99,
+                  }}
+                  onMouseEnter={toggleHover}
+                  onMouseLeave={unToggleHover}
+                >
+                  <img
+                    id={`i${index}`}
+                    src={item}
+                    alt="img"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      flex: "none",
+                      opacity: photoToggled !== -1 ? 0 : 1,
+                    }}
+                  />
+                  <div
+                    style={{ zIndex: 1, position: "absolute" }}
+                    id={`d${index}`}
+                    className="carrusel-column"
+                  >
+                    <div className="carrusel-icon-item" id={`c${index}`}>
+                      <img src={icons[index]} alt="" id={`i${index}`} />
+                    </div>
+                    <Typography
+                      className="section"
+                      variant="h4"
+                      color="#fff"
+                      sx={{
+                        position: "relative",
+                        textTransform: "uppercase",
+                        marginTop: "34px",
+                      }}
+                      id={`t${index}`}
+                    >
+                      {" "}
+                      Prueba
+                    </Typography>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      }
     </>
   );
 }
