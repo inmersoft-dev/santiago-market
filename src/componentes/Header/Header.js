@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 
 /**Importando estilos Css */
 import "./Header.css";
+import { Box } from "@mui/material";
 
 
 
@@ -17,6 +18,7 @@ import "./Header.css";
 
 function Header(props) {
   const { display, margin, contenido, img } = props;
+  console.log({margin});
   return (
     <header
       className="banner"
@@ -28,12 +30,18 @@ function Header(props) {
         height: "auto",
       }}
     >
-      <div className="section-container">
-        <div
+      <Box className="section-container" 
+      sx={{
+        justifyContent:{xs:"center"}
+      }}
+      >
+        <Box
           className="banner-section"
-          style={{
-            display: display,
-            marginLeft: margin,
+          sx={{
+            display: {lg:`${display}`, md:"default"},
+            marginLeft:{ lg:{margin}, md:0},
+            marginY:{xs:"200px"}
+
           }}
         >
           <div className="banner-section-contenido1">
@@ -44,7 +52,7 @@ function Header(props) {
           <div
             className="banner-section-contenido2"
             style={{
-              marginLeft: margin,
+              marginLeft: {lg: margin},
             }}
           >
             <Typography
@@ -57,8 +65,8 @@ function Header(props) {
               {contenido[1]}
             </Typography>
           </div>
-        </div>
-      </div>
+        </Box>
+      </Box>
     </header>
   );
 }
