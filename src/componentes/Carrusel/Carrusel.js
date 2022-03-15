@@ -46,10 +46,13 @@ function Carrusel() {
       setOutIn(value);
     }, 100);
   };
-
+  const unToggleHoverA = (e) => {
+    console.log("hola");
+    setPhotoToggled(-1);
+    transition(false);
+  };
   const unToggleHover = (e) => {
     const { id } = e.target;
-    console.log(id);
     if (id.indexOf("i") !== -1) {
       setPhotoToggled(-1);
       setOutIn(false);
@@ -58,8 +61,7 @@ function Carrusel() {
 
   return (
     <>
-      {
-      /*<div
+      {/*<div
         className="container-carrusel"
         style={{ background: dark.palette.primary.main }}
       >
@@ -136,10 +138,13 @@ function Carrusel() {
             );
           })}
         </div>
-      </div> */
-      }
+      </div> */}
       {/* codigo de sito */}
-      <div style={{ display: "flex", height: "80vh" }}>
+      <div
+        onMouseLeave={unToggleHoverA}
+        id="eldiv"
+        style={{ display: "flex", height: "80vh" }}
+      >
         <div className="carrusel-full" style={{ position: "absolute" }}>
           {photoToggled !== -1 && (
             <img
@@ -157,7 +162,7 @@ function Carrusel() {
           style={{
             position: "absolute",
             background: "aliceblue",
-            transition: "all 400ms ease",
+            transition: "all 200ms ease",
             opacity: !outIn ? 1 : 0,
           }}
         ></div>
