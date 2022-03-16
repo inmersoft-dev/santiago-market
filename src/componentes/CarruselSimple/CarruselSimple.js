@@ -63,22 +63,53 @@ const CarruselSimple = (props) => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 706,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 0.85,
           slidesToScroll: 2,
-          initialSlide: 2,
-          variableWidth:true,
-          adaptiveHeight: true,
+          initialSlide: 1,
         },
       },
       {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 0.9,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          variableWidth:false,
+          adaptiveHeight: false,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 0.9,
+          slidesToScroll: 1,
+          variableWidth:false,
+          adaptiveHeight: false,
+          centerMode: false,
+        },
+      },
+      
+      {
         breakpoint: 480,
+        settings: {
+          slidesToShow: 0.5,
+          slidesToScroll: 0.5,
+          variableWidth:false,
+          adaptiveHeight: false,
+          centerMode: false,
+        },
+      },
+
+      {
+        breakpoint: 400,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           variableWidth:true,
-          adaptiveHeight: true,
+          adaptiveHeight: false,
+          centerMode: false,
         },
       },
     ],

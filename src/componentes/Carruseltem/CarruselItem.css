@@ -68,3 +68,38 @@
   padding-bottom: 30px;
   width: 350px;
 }
+
+@media (max-width: 450px) {
+  .carruselItem-container {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .img-degradado {    
+  
+    width: 300px !important;
+    
+  }
+
+  .carruselItem-img {
+    object-fit: cover;
+    width: 300px;
+    height: 540px;
+    border-radius: 20px;
+  }
+
+  .title-row {
+    display: flex;
+    position: absolute;
+    padding-bottom: 30px;
+    width: 300px;
+    margin-left: 24px;
+  }
+
+  .button-container{
+    margin: 30px 35px 0 0;
+  }
+}

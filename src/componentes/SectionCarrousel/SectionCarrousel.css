@@ -25,3 +25,19 @@
 .textContainer-title{
     font-weight: 700 !important;
 }
+
+
+@media (max-width:800px) {
+    .sectionCarrousel-textContainer{
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .textContainer-text{
+        width:400px ;
+    }
+}

@@ -62,7 +62,7 @@ const Masonry = () => {
   return (
     <ImageList
       className="masonry-container"
-      sx={{ width: 900, height: "auto" }}
+      sx={{ width: {md:"900px", xs:"600px" }, height: "auto" }}
       variant="quilted"
       cols={4}
       rowHeight={121}
@@ -70,8 +70,14 @@ const Masonry = () => {
       {itemData.map((item, i) => (
         <ImageListItem
           key={item.img}
-          cols={item.cols || 1}
-          rows={item.rows || 2}
+          className="image-list-item"
+            cols={item.cols || 1}
+            rows={item.rows || 2}
+
+         /*  sx={{
+            cols:{xs:'1'},
+            rows:{xs:'1'}
+          }} */
         >
           <img
             {...srcset(item.img, 121, item.rows, item.cols)}
