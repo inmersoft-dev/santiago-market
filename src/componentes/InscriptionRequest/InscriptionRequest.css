@@ -44,7 +44,7 @@
   flex: 0.5 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .section-left-title {
@@ -53,6 +53,7 @@
 
 .section-left-text {
   width: 400px !important;
+  
 }
 
 .inscripReq-sectionFooter {
@@ -70,5 +71,5 @@
 }
 
 .section-leftText {
-  margin-bottom: 30px !important;
+  margin-bottom: 20px !important;
 }
