@@ -8,7 +8,7 @@
 
 .contactUs-form-container {
   padding: 0 52px 0 86px;
-  width: 653px;
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +18,7 @@
     rgb(221 26 30 / 73%),
     #ff1418c4
   );
-  margin-left: 120px;
+  /* margin-left: 120px; */
 }
 
 .contactUs-img-container {
@@ -85,4 +85,16 @@
     rgb(221 26 30 / 82%),
     #dd1a1e
   );
+}
+
+
+@media (max-width: 1000px) {
+  .contactUs-form-button {
+    width: 150px;
+    height: 50px;
+  }
+  .contactUs-form-items {
+    margin-bottom: 40px !important;
+    width: 95%;
+  }
 }

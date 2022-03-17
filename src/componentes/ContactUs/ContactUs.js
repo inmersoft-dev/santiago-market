@@ -6,11 +6,12 @@ import Button from "@mui/material/Button";
 import FormControl from "@mui/material/FormControl";
 import { styled } from "@mui/material/styles";
 
-import sideImg from "./../../assets/carrusel/3.jpg";
+
 import banner2 from "./../../assets/banner2.jpg";
 
 /**Importando Estilos CSS */
 import "./ContactUs.css";
+import { Box } from "@mui/material";
 
 const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
@@ -41,10 +42,14 @@ const ContactUs = () => {
         backgroundImage: `url(${banner2})`,
         backgroundPosition: "center center",
         width: "100%",
-        height: "1080px",
+        height: "auto",
       }}
     >
-      <div className="contactUs-form-container">
+      <Box className="contactUs-form-container" sx={{
+        marginLeft:{xs:"auto", md:"120px"},
+        marginRight:{xs:"auto"},
+        width:{xs:"98%",md: "50%"}
+      }}>
         <Typography
           className="contactUs-form-bold"
           variant="h3"
@@ -60,7 +65,11 @@ const ContactUs = () => {
           'Si el mundo de la realización audiovisual es el que te apasiona y quieres dar a conocer tu trabajo. ¡Únetenos!'
         </Typography>
 
-        <FormControl className="contactUs-form" variant="standard">
+        <FormControl className="contactUs-form" variant="standard" 
+        sx={{
+          width:{xs:"80%"}
+        }}
+        >
           <CssTextField
             className="contactUs-form-items"
             id="nombre"
@@ -90,7 +99,7 @@ const ContactUs = () => {
             Enviar
           </Button>
         </FormControl>
-      </div>
+      </Box>
       <div className="contactUs-img-container"></div>
     </div>
   );

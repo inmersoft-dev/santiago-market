@@ -28,3 +28,19 @@
 .roundTable-carrouselContainer {
   height: auto;
 }
+
+
+@media (max-width:800px) {
+  .roundTable-textContainer {
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+  }
+}
+
+@media (max-width:600px) {
+  .textContainer-text{
+      width:350px ;
+  }
+}

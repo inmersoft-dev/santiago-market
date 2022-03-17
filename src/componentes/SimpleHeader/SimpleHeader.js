@@ -2,11 +2,12 @@ import React from "react";
 
 import "./SimpleHeader.css";
 import Typography from "@mui/material/Typography";
+import { Box } from "@mui/material";
 
 const SimpleHeader = () => {
   return (
     <div className="simpleHeader-container">
-      <div className="text-container">
+      <Box className="text-container" >
         <Typography className="simpleHeader-text" variant="body1" color="#fff">
           'Proyectos de largometrajes, series y cortometrajes de ficción,
           animación y documental. Películas (cortas y largas) en avanzado estado
@@ -21,7 +22,7 @@ const SimpleHeader = () => {
           está pensando y moviendo el audiovisual en Colombia. ¡Encontrémonos
           para hacer BAM! '
         </Typography>
-      </div>
+      </Box>
     </div>
   );
 };
