@@ -18,7 +18,7 @@ const AboutUs = () => {
       className="aboutUs-container"
       sx={{
         background: dark.palette.secondary.main,
-        py: { xs: "200px", sm: 0 },
+        py: { xs: "80px", md: "0", sm: 0 },
       }}
       id="aboutUs"
     >
@@ -27,20 +27,19 @@ const AboutUs = () => {
         style={{ background: dark.palette.secondary.main }}
       >
         <div className="aboutUs-container">
-          <Box className="aboutus-imgs-container"
-          sx={{
-            marginLeft: { xs: 'auto',sm:'0' },
-                marginRight: { xs: 'auto',sm:'0' },
-                width: { xs: "68%", sm:'auto' },
-          }}
+          <Box
+            className="aboutus-imgs-container"
+            sx={{
+              marginLeft: { xs: "auto", sm: "0" },
+              marginRight: { xs: "auto", sm: "0" },
+              width: { xs: "68%", sm: "auto" },
+            }}
           >
             <Box
               className="section1"
               sx={{
                 backgroundImage: `url(${about1})`,
                 display: { xs: "none", sm: "flex" },
-
-                
               }}
             >
               {/*   <img className="aboutus-img1" src={about1} alt="" /> */}
