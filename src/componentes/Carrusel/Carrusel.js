@@ -44,12 +44,11 @@ function Carrusel() {
   const transition = (value) => {
     setTimeout(() => {
       setOutIn(value);
-    }, 100);
+    }, 200);
   };
   const unToggleHoverA = (e) => {
-    console.log("hola");
-    setPhotoToggled(-1);
-    transition(false);
+    if (outIn) setOutIn(false);
+    transition(true);
   };
   const unToggleHover = (e) => {
     const { id } = e.target;
@@ -67,7 +66,10 @@ function Carrusel() {
           style={{ background: dark.palette.primary.main }}
         >
           {/* codigo de sito */}
-          <div style={{ display: "flex", height: "80vh" }}>
+          <div
+            onMouseLeave={unToggleHoverA}
+            style={{ display: "flex", height: "80vh" }}
+          >
             <div className="carrusel-full" style={{ position: "absolute" }}>
               {photoToggled !== -1 && (
                 <img
@@ -84,8 +86,8 @@ function Carrusel() {
               className="carrusel-full"
               style={{
                 position: "absolute",
-                background: "aliceblue",
-                transition: "all 400ms ease",
+                background: "rgba(240, 248, 255, 0.541",
+                transition: "all 200ms ease",
                 opacity: !outIn ? 1 : 0,
               }}
             ></div>
