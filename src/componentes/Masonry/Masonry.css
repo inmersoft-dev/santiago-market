@@ -7,14 +7,7 @@
   /*  margin-bottom: 100px; */
 }
 
-.masonry-iconbutton {
-  /* padding: 0px !important;
-  width: 35px !important;
-  height: 35px !important;
-  border-radius: 50%;
-  color: #0c2372 !important;
-  background: #fff !important; */
-}
+
 
 .masonry-icon {
   width: 100%;
@@ -40,4 +33,14 @@
 .css-yzy8or-MuiImageListItemBar-title {
   font-size: 25px !important;
   line-height: 35px !important;
+}
+
+
+@media (max-width:600px) {
+  .image-list-item{
+    grid-column: 1/5 !important;
+    grid-auto-rows: minmax(100px, auto);
+
+  }
+  
 }

@@ -38,7 +38,7 @@ function Header(props) {
         <Box
           className="banner-section"
           sx={{
-            display: {lg:`${display}`, md:"default"},
+            display: {md:`${display}`, sm:"default"},
             marginLeft:{ lg:{margin}, md:0},
             marginY:{xs:"200px"}
 

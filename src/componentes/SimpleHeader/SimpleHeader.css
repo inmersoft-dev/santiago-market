@@ -6,15 +6,19 @@
 
 .simpleHeader-text {
   display: flex;
-  position: relative;
-  width: 950px;
-  /*  margin-left: auto !important;
-    margin-right: auto !important; */
+  position: relative;  
   top: 233px;
   text-align: center;
+  width: 90%;
 }
 
 .text-container {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width:800px) {
+  .simpleHeader-container {    
+    height: 600px !important;
+  }
 }

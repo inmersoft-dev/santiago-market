@@ -41,7 +41,7 @@ const Description = () => {
           {descriptions.map((item, i) => {
             return (
               <ListItem className="itemList" key={`list${i}`}>
-                {/*<div className="dot">●</div>*/}
+                
                 <Typography className="itemText" variant="body1" color="#fff">
                   {item}
                 </Typography>

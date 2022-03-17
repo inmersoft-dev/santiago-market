@@ -66,3 +66,38 @@
   margin-bottom: 20px !important;
   width: 850px;
 }
+
+
+@media (max-width:901px) {
+  .description-container {    
+    justify-content: center;
+    flex-direction: column !important;
+    align-items: center;
+}
+
+.description-img-container {
+  display: flex;
+  height: 550px;
+  width: 450px;
+  position: relative;
+  bottom: 165px;
+}
+
+.description-title-container {
+ 
+  display: flex;
+  position: relative;
+  bottom: 90px;
+  margin-top: 70px;
+}
+}
+
+
+@media (max-width: 660px) {
+  .description-list {
+    width: 500px !important;
+    margin-left: 0px !important;
+    margin-top: 100px !important;
+}
+  
+}
