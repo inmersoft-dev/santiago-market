@@ -7,7 +7,6 @@
 }
 
 .contactUs-form-container {
-  padding: 0 52px 0 86px;
   /* width: 50%; */
   display: flex;
   flex-direction: column;
@@ -86,7 +85,6 @@
     #dd1a1e
   );
 }
-
 
 @media (max-width: 1000px) {
   .contactUs-form-button {

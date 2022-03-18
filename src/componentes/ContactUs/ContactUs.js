@@ -6,7 +6,6 @@ import Button from "@mui/material/Button";
 import FormControl from "@mui/material/FormControl";
 import { styled } from "@mui/material/styles";
 
-
 import banner2 from "./../../assets/banner2.jpg";
 
 /**Importando Estilos CSS */
@@ -45,11 +44,18 @@ const ContactUs = () => {
         height: "auto",
       }}
     >
-      <Box className="contactUs-form-container" sx={{
-        marginLeft:{xs:"auto", md:"120px"},
-        marginRight:{xs:"auto"},
-        width:{xs:"98%",md: "50%"}
-      }}>
+      <Box
+        className="contactUs-form-container"
+        sx={{
+          marginLeft: { xs: "auto", md: "120px" },
+          marginRight: { xs: "auto" },
+          width: { xs: "98%", md: "50%" },
+          padding: {
+            xs: "80px 52px 80px 52px",
+            md: "100px 52px 100px 86px",
+          },
+        }}
+      >
         <Typography
           className="contactUs-form-bold"
           variant="h3"
@@ -62,13 +68,16 @@ const ContactUs = () => {
           variant="body1"
           color="initial"
         >
-          'Si el mundo de la realización audiovisual es el que te apasiona y quieres dar a conocer tu trabajo. ¡Únetenos!'
+          'Si el mundo de la realización audiovisual es el que te apasiona y
+          quieres dar a conocer tu trabajo. ¡Únetenos!'
         </Typography>
 
-        <FormControl className="contactUs-form" variant="standard" 
-        sx={{
-          width:{xs:"80%"}
-        }}
+        <FormControl
+          className="contactUs-form"
+          variant="standard"
+          sx={{
+            width: { xs: "100%", md: "80%" },
+          }}
         >
           <CssTextField
             className="contactUs-form-items"
@@ -90,17 +99,17 @@ const ContactUs = () => {
             rows={4}
             defaultValue=""
           />
-
-          <Button
-            className="contactUs-form-button"
-            color="secondary"
-            variant="contained"
-          >
-            Enviar
-          </Button>
+          <div>
+            <Button
+              className="contactUs-form-button"
+              color="secondary"
+              variant="contained"
+            >
+              Enviar
+            </Button>
+          </div>
         </FormControl>
       </Box>
-      <div className="contactUs-img-container"></div>
     </div>
   );
 };

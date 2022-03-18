@@ -15,7 +15,7 @@
   background-size: cover;
 }
 
-.section1 {  
+.section1 {
   flex: 0.6 1;
   width: 676px;
   height: 650px;
@@ -36,9 +36,9 @@
   /* flex: 0.4 1; */
   flex-direction: column;
   /* padding: 100px 160px 85px 160px; */
-  
+
   justify-content: center;
- /*  padding-left: 80px; */
+  /*  padding-left: 80px; */
 }
 
 .section2 h6 {
@@ -56,11 +56,10 @@
 .aboutus-art-container {
   display: flex;
   flex: 0.4;
-  
 }
 
 .aboutus-art-text1 {
- /*  margin-left: 20px; */
+  /*  margin-left: 20px; */
   width: 90%;
   margin-bottom: 30px !important;
   font-weight: 700 !important;
@@ -95,7 +94,7 @@
   justify-content: center;
 }
 
-.section4 {  
+.section4 {
   flex: 0.5;
   height: 550px;
   width: 676px;
