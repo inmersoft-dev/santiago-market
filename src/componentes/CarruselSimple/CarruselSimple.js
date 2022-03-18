@@ -107,7 +107,7 @@ const CarruselSimple = (props) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          variableWidth:true,
+          variableWidth:false,
           adaptiveHeight: false,
           centerMode: false,
         },

@@ -12,3 +12,7 @@
 .space-between {
   justify-content: space-between !important;
 }
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */

@@ -27,6 +27,7 @@
 
 .roundTable-carrouselContainer {
   height: auto;
+  overflow: hidden;
 }
 
 

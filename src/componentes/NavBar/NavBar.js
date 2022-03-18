@@ -6,7 +6,7 @@ import { Box, Button, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
-import Typography from "@mui/material/Typography";
+
 import MenuItem from "@mui/material/MenuItem";
 
 import { Link, Outlet } from "react-router-dom";
@@ -48,22 +48,18 @@ export default function NavBar() {
   const [activeLink, setActiveLink] = useState(0);
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  /* const [anchorElUser, setAnchorElUser] = React.useState(null); */
+ 
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  /*  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  }; */
+  
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  /*  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  }; */
+  
 
   const transitionNavBar = () => {
     if (window.scrollY > 100) {
@@ -139,9 +135,21 @@ export default function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {sections.map((page) => (
-                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.id}</Typography>
+              {sections.map(({ id, link }, i) => (
+                <MenuItem key={id} onClick={handleCloseNavMenu}>
+                  <Link textAlign="center" to={link}
+                  className={`navbar-col-link-text ${
+                    activeLink === i ? "active-link" : ""
+                  } `}
+                  style={{
+                    color:
+                      activeLink === i
+                        ? fondo
+                          ? dark.palette.secondary.main
+                          : dark.palette.primary.main
+                        : "",
+                  }}
+                  >{id}</Link>
                 </MenuItem>
               ))}
             </Menu>

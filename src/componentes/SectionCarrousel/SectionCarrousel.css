@@ -20,6 +20,7 @@
 
 .sectionCarrousel-carrouselContainer{
     height: auto;
+    overflow: hidden !important;
 }
 
 .textContainer-title{

@@ -3,6 +3,7 @@
 .slick-track {
   position: relative;
   display: block;
+ 
 }
 .slick-loading .slick-slide,
 .slick-loading .slick-track {

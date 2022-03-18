@@ -93,3 +93,11 @@
 /* @media screen {
   
 } */
+
+
+.navbar-col-link-text{
+  color: #fff !important;
+  text-decoration: none;
+}
+
+
