@@ -63,6 +63,9 @@ const AboutUs = () => {
                 className="aboutus-art-text"
                 variant="body1"
                 color="#fff"
+                sx={{
+                  width: { xs: "100%", md: "default" },
+                }}
               >
                 Son muchas las actividades que permiten el desarrollo
                 profesional de los creadores entre ellas: reuniones, sesiones,
