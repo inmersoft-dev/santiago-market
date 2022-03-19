@@ -15,22 +15,23 @@
   margin-bottom: 50px;
 }
 
+
+
+
 .disruptor-head-title{
     font-weight: 700 !important;
     text-transform: uppercase;
     margin-bottom: 50px !important;
     display: flex;
-  /*   justify-content: flex-end; */
+  
 }
 
 .disruptor-head p{
-    margin-top: 50px;
-    
+    margin-top: 50px;    
 }
 
 .disruptor-head-text{
-  width: 350px !important;
- 
+  width: 350px; 
 }
 .disruptor-articles{
   display: flex;
@@ -38,4 +39,27 @@
   height: auto;
     
 
+}
+
+@media (max-width: 600px) {
+  .disruptor-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 0px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 350px) {
+  .disruptor-head{
+    width: 250px;
+  }
+
+  .disruptor-head-text{
+    width: 250px !important;
+  }
 }
