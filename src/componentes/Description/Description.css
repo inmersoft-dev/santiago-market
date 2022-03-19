@@ -144,7 +144,7 @@
 }
 
 
-@media (max-width:360px) {
+@media (max-width:370px) {
   .description-img-container {
     display: flex;
     height: 450px;
@@ -154,7 +154,7 @@
 }
 
 .description-title-container {
-  width: 350px;
+  width: 350px !important;
   display: flex;
   position: relative;
  
