@@ -118,46 +118,65 @@
 
   .description-textTop {
     width: 400px;
-}
+  }
 
-.description-textTop-text {
-  width: 400px;
-}
-}
+  .description-textTop-text {
+    width: 400px;
+  }
 
-
-@media (max-width: 620px){
-  .description-textTop, .description-textBottom {
+  .description-textTop,
+  .description-textBottom {
     width: 350px;
+  }
+
+  .description-textTop-text {
+    width: 340px;
+  }
+
+  .description-textBottom-text,
+  .description-textTop-text {
+    width: 340px;
+  }
 }
 
-.description-textTop-text {
-  width: 340px;
-}
-
-.description-textBottom-text, .description-textTop-text {
-  width: 340px;
-}
-}
-
-@media (max-width: 399px){
+@media (max-width: 399px) {
   .imgDescription-container {
     height: 480px;
     width: 340px;
     display: flex;
+  }
+
+  .description-textTop,
+  .description-textBottom {
+    width: 320px;
+  }
+
+  .description-textTop-text {
+    width: 320px;
+  }
+
+  .description-textBottom-text,
+  .description-textTop-text {
+    width: 320px;
+  }
 }
 
-.description-textTop, .description-textBottom {
-  width: 320px;
+@media (max-width: 470px) {
+  .inscripReq-sectionTitle {
+    margin-left: 0px;
+  }
+
+  .inscripReq-sectionTitle {
+    flex: 0.1 1;
+    display: flex;
+    width: 340px;
+
+    margin-top: 100px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-left-text {
+    width: 330px !important;
 }
-
-.description-textTop-text {
-width: 320px;
-}
-
-.description-textBottom-text, .description-textTop-text {
-width: 320px;
-}
-
-
 }
