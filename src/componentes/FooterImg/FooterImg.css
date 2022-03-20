@@ -58,3 +58,12 @@
         
     }
 }
+
+@media (max-width:700px) {
+    .footer-text-container{
+        position: absolute;
+        width: 300px; 
+        margin: 0px;
+        
+    }
+}

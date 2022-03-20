@@ -70,7 +70,7 @@
 
 @media (max-width: 900px) {
   .sectionBottom-right {
-    height: 450px;
+    height: 350px;
     display: flex;
     position: relative;
     bottom: 12px;
@@ -84,5 +84,32 @@
   justify-content: center; */
   flex-direction: column-reverse;
   align-items: center;
+}
+}
+
+
+@media (max-width: 400px) {
+  .sectionBottom-right {
+    /* height: 450px; */
+    display: flex;
+    position: relative;
+    bottom: 12px;
+    
+}
+
+.imgMain-container {
+  height: 450px;
+  display: flex;
+  position: relative;
+  bottom: 175px;
+}
+
+.sectionBottom-left {
+  padding: 0 5% 20% 5%;
+  width: 340px;
+}
+.sectionBottom-left-text {
+  margin-top: 50px !important;
+  width: 335px;
 }
 }
