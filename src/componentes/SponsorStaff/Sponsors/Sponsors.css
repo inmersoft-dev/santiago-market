@@ -7,8 +7,8 @@
 
 .sponsors-logos {
   display: flex;
-  justify-content: center;
- /*  width: 900px; */
+  /* width: 60vw; */
+  justify-content: center; /*  width: 900px; */
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;

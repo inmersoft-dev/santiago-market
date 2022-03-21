@@ -3,8 +3,6 @@
   position: fixed;
   z-index: 999;
   display: flex;
- /*  align-items: center; */
-  /* justify-content: center; */
   width: 100%;
 }
 
@@ -12,8 +10,7 @@
   display: flex;
   align-items: center;
   width: 100vw;
-  /* padding: 0 120px; */
- 
+  
 }
 
 .nav-painted {
@@ -37,18 +34,22 @@
   height: 45px;
 }
 
-.menu-icon{
+.navbar-left-log2{
+  margin-right: 10px;
+  height: 45px;
+  padding: 20px 0 20px 20px;
+}
+
+.menu-icon {
   color: #fff !important;
 }
 
 .navbar-center {
-  
   width: 100%;
   align-items: center;
 }
 
 .navbar-center-link {
-
   text-transform: uppercase;
   margin: 20px;
 }
@@ -94,10 +95,15 @@
   
 } */
 
-
-.navbar-col-link-text{
+.navbar-col-link-text {
   color: #fff !important;
   text-decoration: none;
 }
 
 
+@media (max-width:1200px) {
+  .navbar-left-log{
+    display: none;
+  }
+  
+}
