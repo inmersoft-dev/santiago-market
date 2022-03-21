@@ -47,7 +47,17 @@
 
 @media (max-width: 500px) {
   .roundTable-textContainer {
-    padding: 60px;
+    padding: 60px 45px 60px 45px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+}
+
+
+@media (max-width: 350px) {
+  .roundTable-textContainer {
+    padding: 30px 30px 70px 30px;
     display: flex;
     flex-direction: column;
     margin-left: 0px;
