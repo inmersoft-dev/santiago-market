@@ -5,10 +5,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
-.section:hover {
-  border-bottom: 1px solid #fff;
-}
 
-.space-between {
-  justify-content: space-between !important;
-}
+/* ::-webkit-scrollbar {
+  display: none;
+} */

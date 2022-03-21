@@ -15,12 +15,13 @@
 
 .descripton-right {
   padding-bottom: 100px;
+  width: 60vw;
 }
 
 .description-img-container {
   display: flex;
   height: 550px;
-  width: 450px;
+  width: 32vw;
   position: relative;
   bottom: 400px;
 }
@@ -33,7 +34,7 @@
 }
 
 .description-title-container {
-  width: 450px;
+  width: 30vw;
   display: flex;
   position: relative;
   bottom: 382px;
@@ -64,15 +65,16 @@
 
 .itemText {
   margin-bottom: 20px !important;
-  width: 850px;
+  width: 50vw;
 }
 
 
-@media (max-width:901px) {
+@media (max-width:900px) {
   .description-container {    
     justify-content: center;
     flex-direction: column !important;
     align-items: center;
+    padding: 80px 0 80px 0;
 }
 
 .description-img-container {
@@ -80,16 +82,37 @@
   height: 550px;
   width: 450px;
   position: relative;
-  bottom: 165px;
+  bottom: 0px;
 }
 
-.description-title-container {
- 
+.description-title-container { 
   display: flex;
   position: relative;
-  bottom: 90px;
-  margin-top: 70px;
+  bottom: 0px;
+  margin-top: 50px;
+  width: 60vw;
 }
+
+.description-list {
+  width: 100% !important;
+  margin-left: 0px !important;
+  margin-top: 50px !important;
+}
+
+.descripton-right {
+  padding-bottom: 0px;
+  width: 70vw;
+}
+
+.itemText {
+ 
+    margin-bottom: 20px !important;
+    width: 70vw;
+
+  
+}
+
+
 }
 
 
@@ -97,7 +120,60 @@
   .description-list {
     width: 500px !important;
     margin-left: 0px !important;
-    margin-top: 100px !important;
+    margin-top: 50px !important;
+}
+.descripton-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
 }
   
+}
+
+@media (max-width:500px) {
+  .description-list {
+    width: 500px !important;
+    margin-left: 0px !important;
+    margin-top: 50px !important;
+}
+
+.description-img-container {
+  display: flex;
+  height: 450px;
+  width: 350px;
+  position: relative;
+  bottom: 0px;
+}
+
+.description-title {
+  text-align: center;
+}
+
+.description-list{
+  width: 387px !important;
+}
+  
+}
+
+
+@media (max-width:370px) {
+  .description-img-container {
+    display: flex;
+    height: 450px;
+    width: 320px;
+    position: relative;
+    bottom: 0px;
+}
+
+.description-title-container {
+  width: 350px !important;
+  display: flex;
+  position: relative;
+ 
+}
+
+.description-list{
+  width: 357px !important;
+}
 }

@@ -94,7 +94,7 @@ const CarruselSimple = (props) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 0.5,
+          slidesToShow: 0.9,
           slidesToScroll: 0.5,
           variableWidth:false,
           adaptiveHeight: false,
@@ -105,9 +105,20 @@ const CarruselSimple = (props) => {
       {
         breakpoint: 400,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 0.9,
           slidesToScroll: 1,
-          variableWidth:true,
+          variableWidth:false,
+          adaptiveHeight: false,
+          centerMode: false,
+        },
+      },
+
+      {
+        breakpoint: 365,
+        settings: {
+          slidesToShow: 0.94,
+          slidesToScroll: 1,
+          variableWidth:false,
           adaptiveHeight: false,
           centerMode: false,
         },

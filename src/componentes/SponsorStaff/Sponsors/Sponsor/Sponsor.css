@@ -1,11 +1,18 @@
-.sponsor{
-    width: 250px;
-    height: 112px;    
-    margin: 20px;
-    background-size: contain;
-    background-repeat-x: no-repeat;
-    background-position: center center;
+.sponsor {
+  width: 189px;
+  height: 125px;
+  margin: 20px;
+  background-size: contain;
+
+  background-position: center center;
 }
 
-
-
+@media (max-width: 450px) {
+  .sponsor {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    background-size: contain;
+    background-position: center center;
+  }
+}

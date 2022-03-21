@@ -73,11 +73,13 @@
   padding: 0px;
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
 }
 
 .catalogo-text {
   display: flex;
   justify-content: center;
+  width: 300px;
 }
 
 .catalogo-textBody {
