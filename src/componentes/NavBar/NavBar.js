@@ -219,7 +219,7 @@ export default function NavBar() {
               onClose={toggleDrawer(false)}
               onOpen={toggleDrawer(true)}
             >
-              {list(open)}
+              {list}
             </SwipeableDrawer>
             {/*  </React.Fragment> */}
             {/* <React.Fragment >
