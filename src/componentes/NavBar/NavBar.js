@@ -13,10 +13,6 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
-/* import Menu from "@mui/material/Menu";
-
-import MenuItem from "@mui/material/MenuItem"; */
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 
 import ListItem from "@mui/material/ListItem";
 
@@ -29,6 +25,7 @@ import "./NavBar.css";
 
 import Logo from "./../../assets/logo.svg";
 import { dark } from "../../assets/theme/Theme";
+import TemporaryDrawer from "../TempDrawer/TempDrawer";
 
 const sections = [
   {
@@ -61,49 +58,6 @@ export default function NavBar() {
   const [fondo, handleFondo] = useState(false);
   const [activeLink, setActiveLink] = useState(0);
 
-  /* const [anchorElNav, setAnchorElNav] = React.useState(null); */
-
-  const [open, setOpen] = useState("false");
-
-  
-  /* const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  }); */
-
-  /* const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  }; */
-
-  //Menu lateral
-  const toggleDrawer = (open) => (event) => {
-    console.log("Entre al toggleDrawer");
-    if (
-      event &&
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-    setOpen(open);
-    console.log(open);
-  };
-
-  /* const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
-  }; */
-
   const transitionNavBar = () => {
     if (window.scrollY > 100) {
       handleFondo(true);
@@ -135,58 +89,6 @@ export default function NavBar() {
     return true;
   };
 
-  const list =()=> (
-    <Box
-      sx={{
-        width: /* anchor === 'top' || anchor === 'bottom' ?  'auto' :*/ 230,
-      }}
-      role="presentation"
-      onClick={toggleDrawer( false)}
-      onKeyDown={toggleDrawer( false)}
-    >
-      <List>
-        <img className="navbar-left-log2" src={Logo} alt="" />
-        <Divider />
-        {sections.map(({ id, link }, i) => (
-          <ListItem button key={id}>
-            <Divider />
-            <ListItemIcon>
-              {i % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <Link
-              textAlign="center"
-              to={link}
-              className={`navbar-col-link-text ${
-                activeLink === i ? "active-link" : ""
-              } `}
-              style={{
-                color:
-                  activeLink === i
-                    ? fondo
-                      ? dark.palette.secondary.main
-                      : dark.palette.primary.main
-                    : "",
-              }}
-            >
-              {id}
-            </Link>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
   return (
     <div
       className={`navbar ${fondo && "nav-painted"}`}
@@ -199,43 +101,7 @@ export default function NavBar() {
           justifyContent: { xs: "space-between" /* md:"space-between" */ },
         }}
       >
-        {/* Section izquierda del la Barra de Navegacion */}
-        <div className="navbar-left">
-          <Box sx={{ flexGrow: 1, display: { md: "flex", lg: "none" } }}>
-            {/*  <React.Fragment > */}
-            <IconButton
-              className="menu-icon"
-              size="large"
-              aria-label="Logo"
-              aria-controls="menu-appbar"
-              aria-haspopup="false"
-              /* onClick={handleOpenNavMenu} */
-              onClick={toggleDrawer(true)}
-            >
-              <MenuIcon />
-            </IconButton>
-            <SwipeableDrawer
-              open={open?true:false}
-              onClose={toggleDrawer(false)}
-              onOpen={toggleDrawer(true)}
-            >
-              {list(open)}
-            </SwipeableDrawer>
-            {/*  </React.Fragment> */}
-            {/* <React.Fragment >
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <SwipeableDrawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-            onOpen={toggleDrawer(anchor, true)}
-          >
-            {list(anchor)}
-          </SwipeableDrawer>
-        </React.Fragment> */}
-          </Box>
-          <img className="navbar-left-log" src={Logo} alt="" />
-        </div>
+        <TemporaryDrawer />
         {/* Section Central del la Barra de Navegacion */}
         <Box
           className="navbar-center"
