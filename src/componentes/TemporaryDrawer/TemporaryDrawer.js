@@ -1,6 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
+import { useState } from "react";
 
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
@@ -13,8 +14,23 @@ import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import Logo from "./../../assets/logo.svg";
+import { Link } from "react-router-dom";
+import { dark } from "../../assets/theme/Theme";
 
-export default function TemporaryDrawer() {
+import './TemporaryDrawer.css';
+
+export default function TemporaryDrawer({ sections }) {
+  const [activeLink, setActiveLink] = useState(0);
+
+  const linkClicked = (e) => {
+    const { id } = e.target;
+    const reduced = id.substring(1);
+    sessionStorage.setItem("active", reduced);
+    setActiveLink(Number(reduced));
+    return true;
+  };
+
+  
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -41,14 +57,33 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-      <img className="navbar-left-log2" src={Logo} alt="" />
+        <img className="navbar-left-log2" src={Logo} alt="" />
         <Divider />
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
+        {sections.map(({ id, link }, i) => (
+          <ListItem button key={id}>
             <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              {i % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
-            <ListItemText primary={text} />
+            
+            <Link
+              className={`tempdrawer-link-text ${
+                activeLink === i ? "-active-link" : ""
+              } `}
+              style={{
+                color:
+                  activeLink === i
+                  
+                      ? dark.palette.secondary.main
+                      : `#fff`
+                    ,
+              }}
+              key={`link${id}`}
+              to={link}
+              id={`l${i}`}
+              onClick={linkClicked}
+            >
+              {id}
+            </Link>
           </ListItem>
         ))}
       </List>
@@ -74,8 +109,6 @@ export default function TemporaryDrawer() {
         aria-label="Logo"
         aria-controls="menu-appbar"
         aria-haspopup="false"
-        /* onClick={handleOpenNavMenu} */
-        /* onClick={toggleDrawer(true)} */
         onClick={toggleDrawer("left", true)}
       >
         <MenuIcon />

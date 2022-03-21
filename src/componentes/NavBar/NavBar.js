@@ -103,7 +103,7 @@ export default function NavBar() {
           <Box sx={{ flexGrow: 1, display: { md: "flex", lg: "none" } }}>
             
             
-            <TemporaryDrawer/>
+            <TemporaryDrawer sections={sections}/>
            
           </Box>
           <img className="navbar-left-log" src={Logo} alt="" />

@@ -94,6 +94,12 @@ const Masonry = () => {
             className="title-item"
             title={item.title}
             style={{ opacity: hide === i ? 1 : 0 }}
+            onMouseEnter={() => {
+              setHide(i);
+            }}
+            onMouseLeave={() => {
+              setHide(-1);
+            }}
             actionIcon={
               <IconButton
                 className="masonry-iconbutton"
