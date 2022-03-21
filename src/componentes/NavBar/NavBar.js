@@ -217,7 +217,7 @@ export default function NavBar() {
             <SwipeableDrawer
               open={open?true:false}
               onClose={toggleDrawer(false)}
-              onOpen={toggleDrawer(true)}
+             /*  onOpen={toggleDrawer(true)} */
             >
               {list}
             </SwipeableDrawer>
