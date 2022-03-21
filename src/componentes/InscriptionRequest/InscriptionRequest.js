@@ -39,7 +39,7 @@ const InscriptionRequest = () => {
             </Typography>
           </div>
 
-          <div className="section-left-text">
+          <div className="section-lefText">
             {
               juridica.contenido.map((text, index)=>(
                 <Typography
@@ -63,7 +63,7 @@ const InscriptionRequest = () => {
             </Typography>
           </div>
 
-          <div className="section-left-text">
+          <div className="section-leftText">
           {
               natural.contenido.map((text, index)=>(
                 <Typography
