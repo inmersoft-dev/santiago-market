@@ -32,34 +32,15 @@
 @media (max-width:680px) {
   .sponsors-logos {
     display: none;
-    justify-content: center;
-    /* width: 200px; */
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    flex-direction: row ;
+    
   }
 
   .slideshow-content{
     display: inline;
+    padding: 100px 0px 100px 0px;
   }
 
 
   
 }
 
-
-@media (max-width:400px) {
-  .sponsors-logos {
-    display: flex;
-    justify-content: center;
-    /* width: 200px; */
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    flex-direction: column ;
-  }
-  
-}
