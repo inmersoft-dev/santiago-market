@@ -27,14 +27,14 @@ const Slideshow = () => {
   return (
     <div className="slide-container">
       <Slide>
-         {slideImages.map((slideImage, index)=> (
-            <div className="each-slide" key={index}>
-              <div className='each-slide-component'  style={{'backgroundImage': `url(${slideImage.url})`}}>
-               
-              </div>
+        {slideImages.map((slideImage, index) => (
+          <div className="each-slide" key={index}>
+            <div className='each-slide-component' style={{ 'backgroundImage': `url(${slideImage.url})` }}>
+
             </div>
-          ))} 
-        </Slide>
+          </div>
+        ))}
+      </Slide>
     </div>
   )
 }

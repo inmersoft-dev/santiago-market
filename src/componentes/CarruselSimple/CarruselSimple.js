@@ -25,17 +25,6 @@ const CarruselSimple = (props) => {
     slidesToScroll: 1,
     adaptiveHeight: true,
     centerMode: true,
-
-    /*  nextArrow: (
-      <button type="button" class="slick-next">
-        Next
-      </button>
-    ),
-    prevArrow: (
-      <button type="button" class="slick-prev">
-        Previous
-      </button>
-    ), */
     responsive: [
       {
         breakpoint: 1104,
@@ -76,7 +65,7 @@ const CarruselSimple = (props) => {
           slidesToShow: 0.9,
           slidesToScroll: 1,
           initialSlide: 2,
-          variableWidth:false,
+          variableWidth: false,
           adaptiveHeight: false,
         },
       },
@@ -85,18 +74,18 @@ const CarruselSimple = (props) => {
         settings: {
           slidesToShow: 0.9,
           slidesToScroll: 1,
-          variableWidth:false,
+          variableWidth: false,
           adaptiveHeight: false,
           centerMode: false,
         },
       },
-      
+
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 0.9,
           slidesToScroll: 0.5,
-          variableWidth:false,
+          variableWidth: false,
           adaptiveHeight: false,
           centerMode: false,
         },
@@ -107,7 +96,7 @@ const CarruselSimple = (props) => {
         settings: {
           slidesToShow: 0.9,
           slidesToScroll: 1,
-          variableWidth:false,
+          variableWidth: false,
           adaptiveHeight: false,
           centerMode: false,
         },
@@ -118,7 +107,7 @@ const CarruselSimple = (props) => {
         settings: {
           slidesToShow: 0.94,
           slidesToScroll: 1,
-          variableWidth:false,
+          variableWidth: false,
           adaptiveHeight: false,
           centerMode: false,
         },
