@@ -7,7 +7,7 @@ import sponsorImg from "./../../../assets/sponsor.png";
 import Slideshow from "../../Slideshow/Slideshow";
 import { Box } from "@mui/material";
 
-const sponsors = [1, 2, 3, 4, 5];
+const sponsors = [sponsorImg, sponsorImg, sponsorImg, sponsorImg, sponsorImg];
 
 const Sponsors = () => {
   return (
@@ -18,21 +18,13 @@ const Sponsors = () => {
         </Typography>
       </div>
 
-      <div className="sponsors-logos">
+      <Box className="sponsors-logos" style={{display: {md:"none" , lg:"flex"} }}>
         {sponsors.map((item, index) => (
           <Sponsor sponsor={sponsorImg} key={index} />
         ))}
-      </div>
-      <Box /* sx={{display:  }} */>
-        
-          <Slideshow>
-          <div>          
-              {sponsors.map((item, index) => (
-                <Sponsor sponsor={sponsorImg} key={index} />
-              ))}
-            </div>
-          </Slideshow>
-       
+      </Box>
+      <Box className="slideshow-content">
+        <Slideshow />
       </Box>
 
       <Divider style={{ borderColor: "#fff" }} />
