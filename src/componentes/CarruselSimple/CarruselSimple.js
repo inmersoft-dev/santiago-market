@@ -54,17 +54,34 @@ const CarruselSimple = (props) => {
       {
         breakpoint: 706,
         settings: {
-          slidesToShow: 0.85,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           initialSlide: 1,
+          infinite: true,
+          variableWidth: false,
+          adaptiveHeight: false,
+          
+        },
+      },
+
+      {
+        breakpoint: 690,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+          variableWidth: false,
+          adaptiveHeight: false,
+          
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 0.9,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
+          initialSlide: 1,
           variableWidth: false,
           adaptiveHeight: false,
         },
