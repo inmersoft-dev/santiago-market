@@ -25,7 +25,7 @@
 }
 
 .slideshow-content {
-  display: none;
+ display: none;
 }
 
 @media (max-width: 680px) {
@@ -35,7 +35,7 @@
 
   .slideshow-content {
     display: inline;
-    padding: 100px 0px 100px 0px;
+    /* padding: 100px 0px 100px 0px; */
   }
 
   .slick-slide.slick-active.slick-current {

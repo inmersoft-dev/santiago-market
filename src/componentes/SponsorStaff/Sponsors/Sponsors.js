@@ -21,7 +21,7 @@ const Sponsors = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    
     centerMode: false,
     arrows: false,
     autoplay: true,
@@ -54,7 +54,7 @@ const Sponsors = () => {
         </Typography>
       </div>
 
-      <Box className="sponsors-logos" style={{ display: { md: "none", lg: "flex" } }}>
+      <Box className="sponsors-logos" /* style={{ display: { md: "none", lg: "flex" } }} */>
         {sponsors.map((item, index) => (
           <Sponsor sponsor={sponsorImg} key={index} />
         ))}

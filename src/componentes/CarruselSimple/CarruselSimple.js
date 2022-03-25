@@ -73,6 +73,7 @@ const CarruselSimple = (props) => {
           infinite: true,
           variableWidth: false,
           adaptiveHeight: false,
+          centerMode: false,
           
         },
       },
@@ -84,6 +85,7 @@ const CarruselSimple = (props) => {
           initialSlide: 1,
           variableWidth: false,
           adaptiveHeight: false,
+          centerMode: false,
         },
       },
       {
