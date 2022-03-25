@@ -43,6 +43,11 @@
   .textContainer-text {
     width: 350px;
   }
+
+  .textContainer {
+    width: 410px;
+    margin-top: 35px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -52,6 +57,12 @@
     flex-direction: column;
     margin-left: 0px;
   }
+
+  .textContainer {
+    width: 310px;
+    margin-top: 35px;
+  }
+  
 }
 
 
@@ -61,5 +72,10 @@
     display: flex;
     flex-direction: column;
     margin-left: 0px;
+  }
+
+  .textContainer {
+    width: 250px;
+    margin-top: 35px;
   }
 }
