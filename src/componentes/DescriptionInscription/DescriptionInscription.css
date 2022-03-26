@@ -76,21 +76,20 @@
 }
 
 @media (max-width: 989px) {
-  .inscripReq-sectionBody {
-    flex: 0.5 1;
-    display: flex;
-    width: 90%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    flex-direction: column;
-  }
+  
 
-  .section-right {
+ /*  .section-right {
     flex: 0.5 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+  } */
+
+  .dedescripIns-right {
+    flex: 0.35 1;
+    display: flex;
+    padding-left: 0px;
   }
 }
 

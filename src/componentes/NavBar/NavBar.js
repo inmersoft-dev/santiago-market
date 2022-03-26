@@ -2,22 +2,8 @@
 import React, { useEffect, useState } from "react";
 
 // mui components
-import {
-  Box,
-  Button,
-  Divider,
-  IconButton,
-  List,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
+import { Box, Button } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import MenuIcon from "@mui/icons-material/Menu";
-
-import ListItem from "@mui/material/ListItem";
-
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 
 import { Link, Outlet } from "react-router-dom";
 
@@ -25,7 +11,7 @@ import "./NavBar.css";
 
 import Logo from "./../../assets/logo.svg";
 import { dark } from "../../assets/theme/Theme";
-import TemporaryDrawer from "../TempDrawer/TempDrawer";
+import TemporaryDrawer from "../TemporaryDrawer/TemporaryDrawer";
 
 const sections = [
   {
@@ -101,7 +87,13 @@ export default function NavBar() {
           justifyContent: { xs: "space-between" /* md:"space-between" */ },
         }}
       >
-        <TemporaryDrawer />
+        {/* Section izquierda del la Barra de Navegacion */}
+        <div className="navbar-left">
+          <Box sx={{ flexGrow: 1, display: { md: "flex", lg: "none" } }}>
+            <TemporaryDrawer sections={sections} />
+          </Box>
+          <img className="navbar-left-log" src={Logo} alt="" />
+        </div>
         {/* Section Central del la Barra de Navegacion */}
         <Box
           className="navbar-center"

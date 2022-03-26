@@ -62,7 +62,7 @@ const Masonry = () => {
   return (
     <ImageList
       className="masonry-container"
-      sx={{ width: {md:"900px", xs:"600px" }, height: "auto" }}
+      sx={{ width: {md:"830px", sm:"600px",xs:"400px" }, height: "auto" }}
       variant="quilted"
       cols={4}
       rowHeight={121}
@@ -94,6 +94,12 @@ const Masonry = () => {
             className="title-item"
             title={item.title}
             style={{ opacity: hide === i ? 1 : 0 }}
+            onMouseEnter={() => {
+              setHide(i);
+            }}
+            onMouseLeave={() => {
+              setHide(-1);
+            }}
             actionIcon={
               <IconButton
                 className="masonry-iconbutton"
