@@ -134,5 +134,19 @@
 .workShop-text {
   width: 60vw;
 }
+
+.carruselWorkshop-slide{
+  width: 400px;
+  height: 300px;
+}
+
+.slideshowWorkshop-content{
+  width: 400px;
+  height: 300px;
+}
+
+.slick-slide.slick-active.slick-current {
+  display: flex;
+}
   
 }

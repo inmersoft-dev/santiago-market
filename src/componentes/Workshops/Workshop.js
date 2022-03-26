@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import ImgCard from "../ImgCard/ImgCard";
 
+//Carusel component
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 // mui components
 import Typography from "@mui/material/Typography";
 
@@ -14,6 +19,7 @@ import img3 from "./../../assets/masonry/5.jpg";
 
 // styles
 import "./Workshop.css";
+import { Box } from "@mui/material";
 
 const Workshop = () => {
   const [imgSelect, SetimgSelect] = useState({ img1 });
@@ -50,6 +56,38 @@ const Workshop = () => {
     setFullModalOpacity(0);
   };
 
+
+  /* Propiedades del carusel */
+  const settings = {
+    className: "carruselWorkshop-slide",
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: false,
+    arrows: false,
+    autoplay: false,   
+    pauseOnFocus: true,   
+    fade: false,
+    cssEase: 'linear',
+    responsive: [
+
+
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          variableWidth: false,
+          adaptiveHeight: false,
+        },
+      },
+
+    ],
+    useCSS: true,
+  };
+
   return (
     <div>
       <FullModal
@@ -67,7 +105,7 @@ const Workshop = () => {
         }}
       ></div>
       <div className="workShop-backgroupd-container">
-        <div className="workShop-right">
+        {/* <div className="workShop-right">
           <div className="colum-1">
             <ImgCard
               img={img1}
@@ -91,7 +129,45 @@ const Workshop = () => {
               onClick={showFullModal}
             />
           </div>
-        </div>
+          <Box className="slideshowWorkshop-content">
+          
+            <Slider {...settings}>
+              {[
+                <ImgCard
+                  img={img2}
+                  onMouseEnter={mouseImg}
+                  onMouseLeave={unMouseImg}
+                  onClick={showFullModal}
+                />,
+                <ImgCard
+                  img={img2}
+                  onMouseEnter={mouseImg}
+                  onMouseLeave={unMouseImg}
+                  onClick={showFullModal}
+                />,
+                <ImgCard
+                  img={img2}
+                  onMouseEnter={mouseImg}
+                  onMouseLeave={unMouseImg}
+                  onClick={showFullModal}
+                />
+              ].map((sponsor, i) => {
+                return (
+                  <div key={`div${i}`} className="workshopSlide-container">
+
+                    <ImgCard
+                      img={img2}
+                      onMouseEnter={mouseImg}
+                      onMouseLeave={unMouseImg}
+                      onClick={showFullModal}
+                    />
+                  </div>
+                );
+              })}
+            </Slider>
+          </Box>
+
+        </div> */}
         <div className="workShop-left">
           <Typography className="workShop-title" variant="h3" color="#fff">
             Workshops
@@ -102,6 +178,44 @@ const Workshop = () => {
             tu campo de realización ya que fortalecerás tus conocimientos
             pràcticos.
           </Typography>
+
+           <Box className="slideshowWorkshop-content">
+          
+            <Slider {...settings}>
+              {[
+                <ImgCard
+                  img={img2}
+                  onMouseEnter={mouseImg}
+                  onMouseLeave={unMouseImg}
+                  onClick={showFullModal}
+                />,
+                <ImgCard
+                  img={img2}
+                  onMouseEnter={mouseImg}
+                  onMouseLeave={unMouseImg}
+                  onClick={showFullModal}
+                />,
+                <ImgCard
+                  img={img2}
+                  onMouseEnter={mouseImg}
+                  onMouseLeave={unMouseImg}
+                  onClick={showFullModal}
+                />
+              ].map((sponsor, i) => {
+                return (
+                  <div key={`div${i}`} className="workshopSlide-container">
+
+                    <ImgCard
+                      img={img2}
+                      onMouseEnter={mouseImg}
+                      onMouseLeave={unMouseImg}
+                      onClick={showFullModal}
+                    />
+                  </div>
+                );
+              })}
+            </Slider>
+          </Box>
         </div>
       </div>
     </div>

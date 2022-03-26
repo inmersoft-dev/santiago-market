@@ -21,13 +21,12 @@ const Sponsors = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    
     centerMode: false,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnFocus: true,
-    mobileFirst: true,
+
     fade: false,
     cssEase: 'linear',
     responsive: [

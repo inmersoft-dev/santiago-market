@@ -34,8 +34,9 @@
   }
 
   .slideshow-content {
-    display: inline;
-    /* padding: 100px 0px 100px 0px; */
+    display: block;
+    padding: 10px 0px 50px 0px;
+
   }
 
   .slick-slide.slick-active.slick-current {
