@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Typography from "@mui/material/Typography";
 
 // own components
-import FullModal from "../FullModal/FullModal";
+/* import FullModal from "../FullModal/FullModal"; */
 
 // images
 import img1 from "./../../assets/masonry/2.jpg";
@@ -81,6 +81,19 @@ const Workshop = () => {
           initialSlide: 1,
           variableWidth: false,
           adaptiveHeight: false,
+          centerMode: false,
+        },
+      },
+
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          variableWidth: false,
+          adaptiveHeight: false,
+          centerMode: false,
         },
       },
 
@@ -90,13 +103,13 @@ const Workshop = () => {
 
   return (
     <div>
-      <FullModal
+      {/* <FullModal
         title={title}
         text={text}
         img={img}
         onBack={hideFullModal}
         opacity={fullModalOpacity}
-      />
+      /> */}
       <div
         className="workShop-container"
         style={{
@@ -105,7 +118,7 @@ const Workshop = () => {
         }}
       ></div>
       <div className="workShop-backgroupd-container">
-        {/* <div className="workShop-right">
+        <div className="workShop-right">
           <div className="colum-1">
             <ImgCard
               img={img1}
@@ -129,7 +142,7 @@ const Workshop = () => {
               onClick={showFullModal}
             />
           </div>
-          <Box className="slideshowWorkshop-content">
+          {/* <Box className="slideshowWorkshop-content">
           
             <Slider {...settings}>
               {[
@@ -165,11 +178,13 @@ const Workshop = () => {
                 );
               })}
             </Slider>
-          </Box>
+          </Box> */}
 
-        </div> */}
+        </div>
         <div className="workShop-left">
-          <Typography className="workShop-title" variant="h3" color="#fff">
+
+          <div className="whorkshop-text-container">
+            <Typography className="workShop-title" variant="h3" color="#fff">
             Workshops
           </Typography>
 
@@ -178,6 +193,8 @@ const Workshop = () => {
             tu campo de realización ya que fortalecerás tus conocimientos
             pràcticos.
           </Typography>
+          </div>
+          
 
            <Box className="slideshowWorkshop-content">
           
