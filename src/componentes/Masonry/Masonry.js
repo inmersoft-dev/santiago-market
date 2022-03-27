@@ -62,7 +62,7 @@ const Masonry = () => {
   return (
     <ImageList
       className="masonry-container"
-      sx={{ width: {md:"830px", sm:"600px",xs:"400px" }, height: "auto" }}
+      sx={{ width: {md:"830px", sm:"600px",xs:"340px" }, height: "auto" }}
       variant="quilted"
       cols={4}
       rowHeight={121}
