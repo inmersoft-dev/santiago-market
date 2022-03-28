@@ -115,10 +115,12 @@ const Workshop = () => {
         className="workShop-container"
         style={{
           opacity,
-          backgroundImage: `url(${imgSelect})`,
+          lg:{backgroundImage: `url(${imgSelect})`},
+          md:{backgroundImage: `url(${imgSelect})`}
         }}
       ></div>
-      <div className="workShop-backgroupd-container">
+      <div className="workShop-backgroupd-container"
+      >
         <div className="workShop-right">
           <div className="colum-1">
             <ImgCard

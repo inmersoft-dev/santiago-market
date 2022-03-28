@@ -1,5 +1,5 @@
 .workShop-container {
-  height: auto;
+  height: 1080px;
   width: 100vw;
   display: flex;
   background-size: cover;
@@ -190,7 +190,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 497px) {
   .slideshowWorkshop-content {
     width: 100%;
     height: 350px;
