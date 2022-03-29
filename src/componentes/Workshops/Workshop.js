@@ -111,14 +111,15 @@ const Workshop = () => {
         onBack={hideFullModal}
         opacity={fullModalOpacity}
       />
-      <div
+      <Box
         className="workShop-container"
-        style={{
+        sx={{
           opacity,
-          lg:{backgroundImage: `url(${imgSelect})`},
-          md:{backgroundImage: `url(${imgSelect})`}
+          backgroundImage:{lg:`url(${imgSelect})`},
+          /* lg:{backgroundImage: `url(${imgSelect})`},
+          md:{backgroundImage: `url(${imgSelect})`} */
         }}
-      ></div>
+      ></Box>
       <div className="workShop-backgroupd-container"
       >
         <div className="workShop-right">
@@ -226,9 +227,7 @@ const Workshop = () => {
                   <div key={`div${i}`} className="workshopSlide-container">
 
                     <ImgCard
-                      img={img2}
-                      onMouseEnter={mouseImg}
-                      onMouseLeave={unMouseImg}
+                      img={img2}                      
                       onClick={showFullModal}
                     />
                   </div>
