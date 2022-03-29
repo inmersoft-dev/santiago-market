@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import "./ImgCard.css";
 
 const ImgCard = ({ img, onMouseEnter, onMouseLeave, onClick }) => {
+  console.log(onMouseEnter)
   return (
     <div className="imgCard-container">
       <img

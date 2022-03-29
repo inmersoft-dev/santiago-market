@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Typography from "@mui/material/Typography";
 
 // own components
-/* import FullModal from "../FullModal/FullModal"; */
+import FullModal from "../FullModal/FullModal";
 
 // images
 import img1 from "./../../assets/masonry/2.jpg";
@@ -32,6 +32,7 @@ const Workshop = () => {
   const [fullModalOpacity, setFullModalOpacity] = useState(0);
 
   const mouseImg = (e) => {
+    console.log(e.target.currentSrc);
     setOpacity(0);
     setTimeout(() => {
       SetimgSelect(e.target.currentSrc);
@@ -66,8 +67,8 @@ const Workshop = () => {
     slidesToScroll: 1,
     centerMode: false,
     arrows: false,
-    autoplay: false,   
-    pauseOnFocus: true,   
+    autoplay: false,
+    pauseOnFocus: true,
     fade: false,
     cssEase: 'linear',
     responsive: [
@@ -103,13 +104,13 @@ const Workshop = () => {
 
   return (
     <div>
-      {/* <FullModal
+      <FullModal
         title={title}
         text={text}
         img={img}
         onBack={hideFullModal}
         opacity={fullModalOpacity}
-      /> */}
+      />
       <div
         className="workShop-container"
         style={{
@@ -185,19 +186,19 @@ const Workshop = () => {
 
           <div className="whorkshop-text-container">
             <Typography className="workShop-title" variant="h3" color="#fff">
-            Workshops
-          </Typography>
+              Workshops
+            </Typography>
 
-          <Typography className="workShop-text" variant="body1" color="#fff">
-            Encuentros con profesionales de la industria, donde podràs extender
-            tu campo de realización ya que fortalecerás tus conocimientos
-            pràcticos.
-          </Typography>
+            <Typography className="workShop-text" variant="body1" color="#fff">
+              Encuentros con profesionales de la industria, donde podràs extender
+              tu campo de realización ya que fortalecerás tus conocimientos
+              pràcticos.
+            </Typography>
           </div>
-          
 
-           <Box className="slideshowWorkshop-content">
-          
+
+          <Box className="slideshowWorkshop-content">
+
             <Slider {...settings}>
               {[
                 <ImgCard
