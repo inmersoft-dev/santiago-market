@@ -115,7 +115,7 @@ const Workshop = () => {
         className="workShop-container"
         sx={{
           opacity,
-          backgroundImage:{lg:`url(${imgSelect})`},
+          backgroundImage: { lg: `url(${imgSelect})` },
           /* lg:{backgroundImage: `url(${imgSelect})`},
           md:{backgroundImage: `url(${imgSelect})`} */
         }}
@@ -146,43 +146,7 @@ const Workshop = () => {
               onClick={showFullModal}
             />
           </div>
-          {/* <Box className="slideshowWorkshop-content">
-          
-            <Slider {...settings}>
-              {[
-                <ImgCard
-                  img={img2}
-                  onMouseEnter={mouseImg}
-                  onMouseLeave={unMouseImg}
-                  onClick={showFullModal}
-                />,
-                <ImgCard
-                  img={img2}
-                  onMouseEnter={mouseImg}
-                  onMouseLeave={unMouseImg}
-                  onClick={showFullModal}
-                />,
-                <ImgCard
-                  img={img2}
-                  onMouseEnter={mouseImg}
-                  onMouseLeave={unMouseImg}
-                  onClick={showFullModal}
-                />
-              ].map((sponsor, i) => {
-                return (
-                  <div key={`div${i}`} className="workshopSlide-container">
 
-                    <ImgCard
-                      img={img2}
-                      onMouseEnter={mouseImg}
-                      onMouseLeave={unMouseImg}
-                      onClick={showFullModal}
-                    />
-                  </div>
-                );
-              })}
-            </Slider>
-          </Box> */}
 
         </div>
         <div className="workShop-left">
@@ -205,31 +169,22 @@ const Workshop = () => {
             <Slider {...settings}>
               {[
                 <ImgCard
-                  img={img2}
-                  onMouseEnter={mouseImg}
-                  onMouseLeave={unMouseImg}
+                  img={img1}
                   onClick={showFullModal}
                 />,
                 <ImgCard
                   img={img2}
-                  onMouseEnter={mouseImg}
-                  onMouseLeave={unMouseImg}
                   onClick={showFullModal}
                 />,
                 <ImgCard
-                  img={img2}
-                  onMouseEnter={mouseImg}
-                  onMouseLeave={unMouseImg}
+                  img={img3}
                   onClick={showFullModal}
                 />
               ].map((sponsor, i) => {
                 return (
                   <div key={`div${i}`} className="workshopSlide-container">
 
-                    <ImgCard
-                      img={img2}                      
-                      onClick={showFullModal}
-                    />
+                    {sponsor}
                   </div>
                 );
               })}
