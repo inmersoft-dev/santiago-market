@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
+
+// views
 import Home from "./views/Home/Home";
 import Programacion from "./views/Programacion/Programacion";
 import ShowCase from "./views/ShowCase/ShowCase";
@@ -10,16 +12,13 @@ import AboutUS from "./views/AboutUs/AboutUS";
 import { dark } from "./assets/theme/Theme";
 
 import "./App.css";
-/* import NavBar from "./componentes/NavBar/NavBar"; */
 
-
-/* import ScrollToTop from "./hooks/ScrollToTop"; */
 function App() {
   return (
     <ThemeProvider theme={dark}>
       {/* <NavBar/> */}
 
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<AboutUS />} />
         <Route path="programacion" element={<Programacion />} />

@@ -2,15 +2,8 @@
 import React, { useEffect, useState } from "react";
 
 // mui components
-import {
-  Box,
-  Button,
-  
-} from "@mui/material";
+import { Box, Button } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-
-
-
 
 import { Link, Outlet } from "react-router-dom";
 
@@ -43,15 +36,13 @@ const sections = [
   },
   {
     id: "Contacto",
-    link: "#aboutUs",
+    link: "/#contact",
   },
 ];
 
 export default function NavBar() {
   const [fondo, handleFondo] = useState(false);
   const [activeLink, setActiveLink] = useState(0);
-
-  
 
   const transitionNavBar = () => {
     if (window.scrollY > 100) {
@@ -84,8 +75,6 @@ export default function NavBar() {
     return true;
   };
 
-  
-
   return (
     <div
       className={`navbar ${fondo && "nav-painted"}`}
@@ -100,40 +89,59 @@ export default function NavBar() {
       >
         {/* Section izquierda del la Barra de Navegacion */}
         <div className="navbar-left">
-          <Box sx={{ flexGrow: 1, display: { md: "flex", lg: "none" } }}>
-            
-            
-            <TemporaryDrawer sections={sections}/>
-           
+          <Box sx={{ flexGrow: 1, display: { md: "flex", xl: "none" } }}>
+            <TemporaryDrawer sections={sections} />
           </Box>
           <img className="navbar-left-log" src={Logo} alt="" />
         </div>
         {/* Section Central del la Barra de Navegacion */}
         <Box
           className="navbar-center"
-          sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}
+          sx={{ flexGrow: 1, display: { xs: "none", xl: "flex" } }}
         >
           {sections.map(({ id, link }, i) => (
             <div className="navbar-center-link" key={`link${i}`}>
-              <Link
-                className={`navbar-center-link-text ${
-                  activeLink === i ? "active-link" : ""
-                } `}
-                style={{
-                  color:
-                    activeLink === i
-                      ? fondo
-                        ? dark.palette.secondary.main
-                        : dark.palette.primary.main
-                      : "",
-                }}
-                key={`link${id}`}
-                to={link}
-                id={`l${i}`}
-                onClick={linkClicked}
-              >
-                {id}
-              </Link>
+              {link.indexOf("#") > -1 ? (
+                <a
+                  className={`navbar-center-link-text ${
+                    activeLink === i ? "active-link" : ""
+                  } `}
+                  style={{
+                    color:
+                      activeLink === i
+                        ? fondo
+                          ? dark.palette.secondary.main
+                          : dark.palette.primary.main
+                        : "",
+                  }}
+                  key={`link${id}`}
+                  href={link}
+                  id={`l${i}`}
+                  onClick={linkClicked}
+                >
+                  {id}
+                </a>
+              ) : (
+                <Link
+                  className={`navbar-center-link-text ${
+                    activeLink === i ? "active-link" : ""
+                  } `}
+                  style={{
+                    color:
+                      activeLink === i
+                        ? fondo
+                          ? dark.palette.secondary.main
+                          : dark.palette.primary.main
+                        : "",
+                  }}
+                  key={`link${id}`}
+                  to={link}
+                  id={`l${i}`}
+                  onClick={linkClicked}
+                >
+                  {id}
+                </Link>
+              )}
             </div>
           ))}
           <div style={{ width: "10%" }}></div>

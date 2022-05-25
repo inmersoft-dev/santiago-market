@@ -71,44 +71,50 @@ const ContactUs = () => {
           'Si el mundo de la realización audiovisual es el que te apasiona y
           quieres dar a conocer tu trabajo. ¡Únetenos!'
         </Typography>
-
-        <FormControl
-          className="contactUs-form"
-          variant="standard"
-          sx={{
-            width: { xs: "100%", md: "80%" },
-          }}
-        >
-          <CssTextField
-            className="contactUs-form-items"
-            id="nombre"
-            label="Nombre y Apellidos"
-            variant="outlined"
-          />
-          <CssTextField
-            className="contactUs-form-items"
-            id="email"
-            label="Correo electronico"
-            variant="outlined"
-          />
-          <CssTextField
-            className="contactUs-form-items"
-            id="multiline"
-            label="Enviar un mensaje"
-            multiline
-            rows={4}
-            defaultValue=""
-          />
-          <div>
-            <Button
-              className="contactUs-form-button"
-              color="secondary"
-              variant="contained"
-            >
-              Enviar
-            </Button>
-          </div>
-        </FormControl>
+        <div id="contact" />
+        <Box component="form">
+          <FormControl
+            className="contactUs-form"
+            variant="standard"
+            sx={{
+              width: { xs: "100%", md: "80%" },
+            }}
+          >
+            <CssTextField
+              className="contactUs-form-items"
+              id="nombre"
+              label="Nombre y Apellidos"
+              variant="outlined"
+              required
+            />
+            <CssTextField
+              className="contactUs-form-items"
+              id="email"
+              label="Correo electronico"
+              variant="outlined"
+              required
+            />
+            <CssTextField
+              className="contactUs-form-items"
+              id="multiline"
+              label="Enviar un mensaje"
+              multiline
+              rows={4}
+              defaultValue=""
+              required
+            />
+            <div>
+              <Button
+                className="contactUs-form-button"
+                color="secondary"
+                variant="contained"
+                type="submit"
+              >
+                Enviar
+              </Button>
+            </div>
+          </FormControl>
+        </Box>
       </Box>
     </div>
   );
