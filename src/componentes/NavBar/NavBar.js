@@ -157,8 +157,11 @@ export default function NavBar() {
             className="navbar-button-right"
             color="primary"
             variant="contained"
+            href="/#contact"
+            target="_blank"
+            rel="noopener"
           >
-            Suscribir
+            Subscribir
           </Button>
         </div>
       </Box>
