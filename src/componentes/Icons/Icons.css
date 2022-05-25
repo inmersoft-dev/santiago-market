@@ -1,0 +1,36 @@
+.socialNetwork {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+ /*  margin-left: 23px; */
+  top: 65vh;
+  margin-left: 40px;
+}
+
+.socialNetwork-container {
+  background: red;
+  /* border-radius: 30px;
+  display: flex;
+  margin-bottom: 11px;
+  padding: 5px 5px 5px 4px;
+  cursor: pointer; */
+}
+
+.socialNetwork-container:hover {
+  background: #f50057;
+}
+
+.rtf--mb{
+  background: #DD1A1E!important;
+}
+
+
+.rtf--mb:hover{
+  background: #9a1215 !important;
+}
+
+.rtf{
+  right: 0px !important;
+ /*  left: 2px !important; */
+}

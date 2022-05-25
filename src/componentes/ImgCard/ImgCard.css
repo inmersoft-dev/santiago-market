@@ -1,0 +1,82 @@
+.imgCard-container {
+  width: 240px !important;
+  height: 310px !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px !important;
+  cursor: pointer;
+}
+
+.imgCard-container > img {
+  width: 240px !important;
+  height: 300px !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px !important;
+}
+
+.customAddbutton-container {
+  right: 37px;
+  bottom: 15px;
+  position: relative;
+}
+
+
+@media (max-width:900px) {
+  .imgCard-container{
+
+    width: 410px !important;
+    height: 500px !important;
+  }
+
+  .imgCard-container > img {
+    width: 410px !important;
+    height: 500px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px !important;
+  }
+
+
+}
+
+
+@media (max-width:500px) {
+  .imgCard-container{
+
+    width: 340px !important;
+    height: 350px !important;
+  }
+
+  .imgCard-container > img {
+    width: 340px !important;
+    height: 350px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px !important;
+  }
+
+
+}
+
+
+@media (max-width:380px) {
+  .imgCard-container{
+
+    width: 300px !important;
+    height: 350px !important;
+  }
+
+  .imgCard-container > img {
+    width: 300px !important;
+    height: 350px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px !important;
+  }
+
+
+}

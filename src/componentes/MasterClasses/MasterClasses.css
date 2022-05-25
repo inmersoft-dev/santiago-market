@@ -1,0 +1,136 @@
+.masterClasses-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.massterClasses-sectionTop {
+  display: flex;
+  flex: 0.4 1;
+  width: 100%;
+  height: 1000px !important;
+  overflow: hidden;
+}
+
+.massterClasses-sectionTop img {
+  object-fit: cover;
+  width: 100vw;
+  height: 520px;
+}
+
+.massterClasses-sectionBottom {
+  background-color: #dd1a1e;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.sectionBottom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 10% 11% 5%;
+}
+
+.sectionBottom-right {
+  display: flex;
+}
+
+.sectionBottom-left-text {
+  margin-top: 50px !important;
+  width: 450px;
+}
+
+.sectionBottom-left-title {
+  text-transform: uppercase;
+  font-weight: bold !important;
+}
+
+.imgMain-container {
+  height: 550px;
+  display: flex;
+  position: relative;
+  bottom: 275px;
+}
+
+.imgMain-container > img {
+  object-fit: cover;
+  width: 100%;  
+  border-radius: 1rem;
+}
+
+
+@media (max-width: 1000px) {
+  .sectionBottom-left {    
+    padding: 0 5% 20% 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .sectionBottom-right {
+    height: 350px;
+    display: flex;
+    position: relative;
+    bottom: 12px;
+    
+}
+
+.massterClasses-sectionBottom {
+ /*  background-color: #dd1a1e;
+  display: flex;
+  width: 100%;
+  justify-content: center; */
+  flex-direction: column-reverse;
+  align-items: center;
+}
+}
+
+@media (max-width: 500px) {
+
+ .sectionBottom-left{
+  padding: 0 5% 20% 5%;
+  /* width: 320px; */
+  display: flex;
+  align-items: center;
+}
+
+.sectionBottom-left-text{
+  width: 350px;
+}
+  
+}
+
+@media (max-width: 400px) {
+  .sectionBottom-right {
+    /* height: 450px; */
+    display: flex;
+    position: relative;
+    bottom: 12px;
+    
+}
+
+.imgMain-container {
+  height: 450px;
+  display: flex;
+  position: relative;
+  bottom: 175px;
+}
+
+.sectionBottom-left {
+  padding: 0 5% 20% 5%;
+ /*  width: 340px; */
+ display: flex;
+ align-items: center;
+}
+.sectionBottom-left-text {
+  margin-top: 50px !important;
+  width: 280px;
+}
+
+.sectionBottom-left-title{
+  text-align: center;
+}
+
+}

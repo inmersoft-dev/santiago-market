@@ -1,0 +1,56 @@
+.masonry-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-bottom: 200px;
+
+  /*  margin-bottom: 100px; */
+}
+
+
+
+.masonry-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.masonry-icon:hover {
+  color: #0c2372;
+  /* background: #fff; */
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.title-item {
+  font-weight: bold;
+  transition: all 200ms ease;
+}
+
+.css-yzy8or-MuiImageListItemBar-title {
+  font-size: 25px !important;
+  line-height: 35px !important;
+}
+
+
+@media (max-width:600px) {
+  .image-list-item{
+    grid-column: 1/5 !important;
+    grid-auto-rows: minmax(100px, auto);
+
+  }
+  
+}
+
+@media (max-width:384px) {
+  .masonry-container{
+    width: 330px;
+
+  }
+
+  
+  
+}

@@ -1,0 +1,28 @@
+.each-slide-component {
+  background-repeat: no-repeat;
+  width: 189px;
+  height: 125px;
+  margin: 20px;
+  background-size: contain;
+  background-position: center center;
+}
+
+.each-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-container {
+  padding: 50px 0 50px 0;
+}
+
+@media (max-width: 450px) {
+  .each-slide-component {
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    background-size: contain;
+    background-position: center center;
+  }
+}
