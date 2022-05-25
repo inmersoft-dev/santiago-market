@@ -1,7 +1,8 @@
 {
   "name": "cultura-santiago",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://inmersoft-dev.github.io/santiago-market/",
+  "private": false,
   "devDependencies": {
     "gh-pages": "^3.2.3"
   },
